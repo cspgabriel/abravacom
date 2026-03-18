@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ShieldCheck, Star, Zap, DollarSign, Mail } from 'lucide-react';
-import BrandLogo from '../components/BrandLogo';
 import ElisBioSection from '../components/ElisBioSection';
 import PartnerMarquee from '../components/PartnerMarquee';
 import { collection, limit, onSnapshot, orderBy, query } from 'firebase/firestore';
@@ -100,33 +99,18 @@ const Home: React.FC = () => {
             }}
             className="flex flex-col items-center space-y-8 py-20"
           >
-            <motion.div
-              variants={{ hidden: { opacity: 0, y: 15 }, visible: { opacity: 1, y: 0 } }}
-              className="rounded-[32px] border border-[rgba(217,173,87,0.18)] bg-[rgba(5,14,28,0.7)] px-6 py-5 shadow-[0_24px_80px_rgba(3,10,20,0.45)] backdrop-blur-xl"
-            >
-              <BrandLogo wordmarkClassName="text-[3.5rem] sm:text-[4.8rem]" subtitleClassName="tracking-[0.35em]" />
-            </motion.div>
-
-            <motion.div
-              variants={{ hidden: { opacity: 0, y: 15 }, visible: { opacity: 1, y: 0 } }}
-              className="inline-flex items-center gap-2 rounded-full bg-white/5 px-4 py-2 text-[10px] font-black uppercase tracking-[0.28em] text-amber-300 shadow-sm"
-            >
-              <span className="h-2 w-2 rounded-full bg-amber-300 animate-pulse" />
-              Identidade premium para credito e consorcio
-            </motion.div>
-
             <motion.h1
               variants={{ hidden: { opacity: 0, y: 15 }, visible: { opacity: 1, y: 0 } }}
               className="max-w-4xl text-4xl font-black uppercase italic tracking-[0.1em] leading-[1.1] text-white sm:text-6xl md:text-7xl"
             >
-              Abravacon une credibilidade patrimonial ao brilho da <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-yellow-100">identidade dourada</span>
+              Multiplique seu patrimonio com <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--brand-gold-soft)] to-[var(--brand-gold)]">inteligencia</span>
             </motion.h1>
 
             <motion.p
               variants={{ hidden: { opacity: 0, y: 15 }, visible: { opacity: 1, y: 0 } }}
               className="max-w-2xl text-lg font-medium leading-relaxed text-[rgba(244,236,223,0.88)] sm:text-xl"
             >
-              Criamos trajetorias financeiras com presente azul-marinho, acentos metalizados e experiencias que colocam sua marca ao lado das cartas mais desejadas.
+              Acesso exclusivo as melhores cartas contempladas do pais. Estrategias sofisticadas de alavancagem de capital, 100% isentas de juros.
             </motion.p>
 
             <motion.div
@@ -135,9 +119,8 @@ const Home: React.FC = () => {
             >
               <Link
                 to="/cartas"
-                className="group relative flex items-center justify-center overflow-hidden rounded-2xl bg-white px-8 py-5 font-black uppercase tracking-[0.3em] text-navy-900 shadow-[0_20px_50px_rgba(255,255,255,0.25)] transition-all hover:scale-105"
+                className="btn-primary group relative flex items-center justify-center overflow-hidden rounded-2xl px-8 py-5 font-black uppercase tracking-[0.3em] transition-all hover:scale-105"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-amber-200 to-yellow-200 opacity-0 transition-opacity duration-300 group-hover:opacity-70" />
                 <span className="relative z-10 flex items-center gap-3">
                   Cartas Disponiveis
                   <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
@@ -146,9 +129,9 @@ const Home: React.FC = () => {
 
               <Link
                 to="/simulacao"
-                className="flex items-center justify-center rounded-2xl border border-[rgba(255,255,255,0.3)] bg-[rgba(255,255,255,0.08)] px-8 py-5 font-black uppercase tracking-[0.3em] text-white shadow-[0_12px_30px_rgba(0,0,0,0.35)] transition hover:border-[rgba(221,177,97,0.7)] hover:bg-[rgba(255,255,255,0.15)]"
+                className="btn-secondary flex items-center justify-center rounded-2xl px-8 py-5 font-black uppercase tracking-[0.3em] transition"
               >
-                Simular com consultor
+                Simular novo credito
               </Link>
             </motion.div>
 

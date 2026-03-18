@@ -1,16 +1,16 @@
 :root {
   /* Slightly smaller base to tone down large Tailwind rem-based sizes */
   font-size: 15px;
-  --brand-navy: #041528;
-  --brand-navy-deep: #010b16;
-  --brand-navy-soft: #0a2a4a;
-  --brand-gold: #0a2a4a; /* unify to navy */
-  --brand-gold-soft: #0f3b62; /* softer navy accent */
-  --brand-ivory: #e8f0f6;
+  --brand-navy: #0d2238;
+  --brand-navy-deep: #071726;
+  --brand-navy-soft: #15324f;
+  --brand-gold: #c99c4a;
+  --brand-gold-soft: #ddb161;
+  --brand-ivory: #f4ecdf;
   color: var(--brand-ivory);
   background:
-    radial-gradient(circle at top, rgba(10, 42, 74, 0.16), transparent 28%),
-    linear-gradient(180deg, #041528 0%, #031023 52%, #010d17 100%);
+    radial-gradient(circle at top, rgba(217, 173, 87, 0.16), transparent 28%),
+    linear-gradient(180deg, #0d2238 0%, #0b1c30 52%, #07131f 100%);
 }
 
 html, body {
@@ -85,28 +85,30 @@ table td, table th { padding: 0.9rem 1.2rem; }
 
 /* Brand button styles */
 .btn-primary {
-  background-color: var(--brand-navy);
-  color: var(--brand-ivory);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, #ddb161 0%, #c99c4a 45%, #b98734 100%);
+  color: #0b1d31;
+  border: 1px solid rgba(221, 177, 97, 0.45);
+  box-shadow: 0 18px 36px rgba(185, 135, 52, 0.32);
 }
 
 .btn-primary:hover {
-  background-color: var(--brand-navy-soft);
+  filter: brightness(1.05);
 }
 
 .btn-secondary {
-  background-color: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.05);
   color: var(--brand-ivory);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(221, 177, 97, 0.24);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
 }
 
 .btn-secondary:hover {
-  background-color: rgba(255, 255, 255, 0.14);
+  background-color: rgba(255, 255, 255, 0.09);
+  border-color: rgba(221, 177, 97, 0.45);
 }
 
 .brand-shell {
   background:
-    radial-gradient(circle at top, rgba(10, 42, 74, 0.18), transparent 24%),
-    linear-gradient(160deg, rgba(4, 21, 40, 0.94) 0%, rgba(3, 16, 28, 0.97) 100%);
+    radial-gradient(circle at top, rgba(214, 174, 94, 0.18), transparent 24%),
+    linear-gradient(160deg, rgba(16, 40, 67, 0.94) 0%, rgba(8, 23, 40, 0.97) 100%);
 }
