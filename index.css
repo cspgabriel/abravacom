@@ -112,3 +112,58 @@ table td, table th { padding: 0.9rem 1.2rem; }
     radial-gradient(circle at top, rgba(214, 174, 94, 0.18), transparent 24%),
     linear-gradient(160deg, rgba(16, 40, 67, 0.94) 0%, rgba(8, 23, 40, 0.97) 100%);
 }
+
+/* Override Tailwind green/emerald/teal utilities to match Abravacon brand colors */
+.bg-green-50,
+.bg-emerald-50,
+.bg-teal-50 {
+  background-color: rgba(221, 177, 97, 0.12) !important;
+}
+.bg-green-100,
+.bg-emerald-100 {
+  background-color: rgba(221, 177, 97, 0.18) !important;
+}
+.bg-green-500,
+.bg-green-600,
+.bg-emerald-500,
+.bg-emerald-600,
+.bg-teal-500 {
+  background-color: var(--brand-gold) !important;
+}
+.bg-green-700,
+.bg-emerald-700 {
+  background-color: var(--brand-gold-soft) !important;
+}
+
+.text-green-600,
+.text-green-700,
+.text-emerald-600,
+.text-emerald-700 {
+  color: var(--brand-gold) !important;
+}
+.text-emerald-400 {
+  color: rgba(221, 177, 97, 0.9) !important;
+}
+
+.border-green-200,
+.border-emerald-200 {
+  border-color: rgba(221, 177, 97, 0.45) !important;
+}
+
+.shadow-green-200 {
+  box-shadow: 0 10px 25px rgba(221, 177, 97, 0.25) !important;
+}
+.hover\:bg-green-50:hover {
+  background-color: rgba(221, 177, 97, 0.12) !important;
+}
+
+.accent-emerald-600 {
+  accent-color: var(--brand-gold) !important;
+}
+.ring-emerald-500 {
+  --tw-ring-color: rgba(221, 177, 97, 0.8) !important;
+}
+
+.focus\:ring-emerald-500:focus {
+  --tw-ring-color: rgba(221, 177, 97, 0.8) !important;
+}

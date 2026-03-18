@@ -7,11 +7,7 @@ import PartnerMarquee from '../components/PartnerMarquee';
 import { collection, limit, onSnapshot, orderBy, query } from 'firebase/firestore';
 import { db } from '../firebase';
 
-const heroHighlights = [
-  'Presenca de marca impecavel',
-  'Operacao segura certificada',
-  'Cartas contempladas com respaldo juridico',
-];
+const heroTitleWords = ['Multiplique', 'seu', 'patrimonio', 'com'];
 
 const featureList = [
   {
@@ -100,10 +96,28 @@ const Home: React.FC = () => {
             className="flex flex-col items-center space-y-8 py-20"
           >
             <motion.h1
-              variants={{ hidden: { opacity: 0, y: 15 }, visible: { opacity: 1, y: 0 } }}
+              variants={{
+                hidden: {},
+                visible: { transition: { staggerChildren: 0.08 } },
+              }}
               className="max-w-4xl text-4xl font-black uppercase italic tracking-[0.1em] leading-[1.1] text-white sm:text-6xl md:text-7xl"
             >
-              Multiplique seu patrimonio com <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--brand-gold-soft)] to-[var(--brand-gold)]">inteligencia</span>
+              {heroTitleWords.map((word, idx) => (
+                <motion.span
+                  key={`${word}-${idx}`}
+                  variants={{ hidden: { opacity: 0, y: 15 }, visible: { opacity: 1, y: 0 } }}
+                  className="inline-block"
+                >
+                  {word}
+                  {" "}
+                </motion.span>
+              ))}
+              <motion.span
+                variants={{ hidden: { opacity: 0, y: 15 }, visible: { opacity: 1, y: 0 } }}
+                className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-[var(--brand-gold-soft)] to-[var(--brand-gold)]"
+              >
+                inteligencia
+              </motion.span>
             </motion.h1>
 
             <motion.p
@@ -135,20 +149,6 @@ const Home: React.FC = () => {
               </Link>
             </motion.div>
 
-            <motion.div
-              variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
-              className="grid w-full max-w-3xl grid-cols-1 gap-4 pt-10 sm:grid-cols-3"
-            >
-              {heroHighlights.map((tag, index) => (
-                <div
-                  key={tag}
-                  className="rounded-2xl border border-[rgba(255,255,255,0.15)] bg-white/5 px-4 py-3 text-center text-[10px] font-black uppercase tracking-[0.3em] text-[rgba(244,236,223,0.75)] transition hover:border-[rgba(221,177,97,0.5)] hover:text-[var(--brand-gold-soft)]"
-                  style={{ animationDelay: `${index * 80}ms` }}
-                >
-                  {tag}
-                </div>
-              ))}
-            </motion.div>
           </motion.div>
         </div>
       </section>
