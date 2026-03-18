@@ -9,7 +9,7 @@ type BrandLogoProps = {
 };
 
 // PNG used as the official Abravacon logo
-const BRAND_LOGO_URL = 'https://i.postimg.cc/qqQh9Tyk/3cc9175c-0ef1-455b-b9d5-7a9ccd84e8ed-removebg-preview.png';
+const BRAND_LOGO_URL = 'https://i.ibb.co/4wCtPpnC/image-1773870221155.png';
 
 const BrandLogo: React.FC<BrandLogoProps> = ({
   className = '',
