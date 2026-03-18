@@ -8,25 +8,25 @@ import { useState, useEffect } from 'react';
 
 const ConsorcioLanding: React.FC = () => {
   return (
-    <div className="w-full bg-slate-900">
-      <section className="relative min-h-[48vh] flex items-center overflow-hidden bg-slate-900 pt-24 pb-12">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-emerald-950 to-teal-900 opacity-100" />
-        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-teal-600 rounded-full blur-[150px] opacity-20 -translate-x-1/2 -translate-y-1/2" />
-        <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-emerald-500 rounded-full blur-[120px] opacity-20 translate-x-1/3 translate-y-1/3" />
-        
+    <div className="w-full">
+      <section className="relative flex min-h-[72vh] w-full items-center justify-center overflow-hidden brand-shell pt-28 pb-12">
+        <div className="absolute inset-0 opacity-80" />
+        <div className="absolute -top-16 -right-12 h-[28rem] w-[28rem] rounded-full bg-[rgba(214,174,94,0.25)] blur-[160px] opacity-60" />
+        <div className="absolute -left-24 top-20 h-[28rem] w-[28rem] rounded-full bg-[rgba(5,9,19,0.65)] blur-[140px] opacity-90" />
+
         <div className="relative z-10 w-full max-w-5xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="space-y-6 text-white">
             <div className="inline-flex items-center space-x-3 bg-white/5 backdrop-blur-xl border border-white/10 px-4 py-2 rounded-full text-xs font-black uppercase tracking-widest shadow-xl">
-              <ShieldCheck size={16} className="text-emerald-400" />
-              <span className="text-emerald-50">Consórcios</span>
+              <ShieldCheck size={16} className="text-[var(--brand-gold)]" />
+              <span className="text-[var(--brand-gold-soft)]">Consórcios</span>
             </div>
-            
+
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tighter italic">
-              Planejamento Inteligente e <br/>
-              <span className="text-emerald-400">Transparente</span>
+              Planejamento Inteligente e <br />
+              <span className="text-[var(--brand-gold)]">Transparente</span>
             </h1>
-            
-            <p className="text-white max-w-md text-base sm:text-lg font-medium leading-relaxed">
+
+            <p className="text-[rgba(244,236,223,0.92)] max-w-md text-base sm:text-lg font-medium leading-relaxed">
               Dê o primeiro passo para a sua próxima grande conquista. Preencha seus dados para receber propostas personalizadas e acesso exclusivo ao nosso portal de parceiros.
             </p>
           </motion.div>
