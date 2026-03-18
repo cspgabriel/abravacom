@@ -10,7 +10,7 @@ import {
   MessageCircle, Edit2, Trash2, ArrowLeft, Calendar, ChevronDown, 
   ChevronUp, UserPlus, UserMinus, XCircle, RefreshCw, Link as LinkIcon,
   Database, Globe, AlertTriangle, Play, Mail as MailIcon, Share, ExternalLink,
-  Star, Map, Hotel, Settings, FileSpreadsheet, List, Copy, FileInput, Check,
+    Star, Hotel, Settings, FileSpreadsheet, List, Copy, FileInput, Check,
   History as HistoryIcon, PlusCircle, Loader2, Repeat, Lock, LogOut,
   ArrowUpDown, MoreVertical, Tag, Map as MapIcon, CalendarDays, AtSign,
   Zap, Sparkles, Bot, Camera, Share2, Image as ImageIcon,

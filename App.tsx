@@ -72,7 +72,7 @@ function App() {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 selection:bg-emerald-500/30">
+    <div className="min-h-screen bg-transparent text-[var(--brand-ivory)] selection:bg-[rgba(201,156,74,0.3)]">
       {!isCrmRoute && <Background />}
       {!isCrmRoute && <Navbar />}
 
@@ -114,8 +114,8 @@ function App() {
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.02); }
-        ::-webkit-scrollbar-thumb { background: rgba(16, 185, 129, 0.2); border-radius: 10px; }
-        ::-webkit-scrollbar-thumb:hover { background: rgba(16, 185, 129, 0.4); }
+        ::-webkit-scrollbar-thumb { background: rgba(201, 156, 74, 0.28); border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: rgba(201, 156, 74, 0.5); }
         @media print {
           nav, footer, .print\\:hidden { display: none !important; }
         }

@@ -29,12 +29,12 @@ const EmailCapture: React.FC = () => {
   return (
     <div className="w-full p-6 rounded-[1.5rem] border border-slate-200 bg-white shadow-2xl shadow-slate-200/50 transition-all duration-500 modal-panel modal-panel-inner">
       <div className="flex items-center gap-4 mb-4">
-        <div className="p-3 bg-emerald-50 rounded-2xl text-emerald-600">
+        <div className="p-3 bg-[rgba(10,42,74,0.25)] rounded-2xl text-[var(--brand-ivory)]">
           <Mail size={20} />
         </div>
         <div>
           <h3 className="font-black text-slate-900 text-lg uppercase tracking-tighter italic">
-            Newsletter <span className="text-emerald-600">VIP</span>
+            Newsletter <span className="text-[var(--brand-navy-soft)]">VIP</span>
           </h3>
           <p className="text-[10px] text-slate-400 font-black uppercase tracking-widest">Oportunidades Exclusivas</p>
         </div>
@@ -66,13 +66,13 @@ const EmailCapture: React.FC = () => {
             placeholder="Seu melhor e-mail"
             required
             disabled={status === 'loading'}
-            className="w-full px-6 py-5 rounded-2xl bg-slate-50 border border-slate-200 text-slate-900 placeholder:text-slate-400 focus:ring-2 focus:ring-emerald-600 outline-none transition-all disabled:opacity-50 font-medium"
+            className="w-full px-6 py-5 rounded-2xl bg-slate-50 border border-slate-200 text-slate-900 placeholder:text-slate-400 focus:ring-2 focus:ring-[var(--brand-navy-soft)] outline-none transition-all disabled:opacity-50 font-medium"
           />
           
           <button
             type="submit"
             disabled={status === 'loading'}
-            className="w-full py-5 px-8 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-black uppercase tracking-widest shadow-xl shadow-emerald-600/20 active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-4 disabled:opacity-70"
+            className="w-full py-5 px-8 rounded-2xl btn-primary hover:bg-[var(--brand-navy-soft)] font-black uppercase tracking-widest active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-4 disabled:opacity-70"
           >
             {status === 'loading' ? (
               <Loader2 className="animate-spin w-6 h-6" />
