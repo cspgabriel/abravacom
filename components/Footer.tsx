@@ -5,7 +5,7 @@ import BrandLogo from './BrandLogo';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="relative z-10 mt-32 w-full overflow-hidden border-t border-[rgba(217,173,87,0.12)] bg-[linear-gradient(180deg,rgba(7,23,38,0.65)_0%,rgba(5,15,25,0.96)_100%)] pt-20 pb-12 text-[var(--brand-ivory)]">
+    <footer className="relative z-10 mt-32 w-full overflow-hidden border-t border-[rgba(217,173,87,0.12)] bg-[linear-gradient(180deg,#04172e_0%,#02121f_100%)] pt-20 pb-12 text-white">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(217,173,87,0.5),transparent)]" />
       <div className="mx-auto max-w-6xl px-6">
         <div className="mb-20 grid grid-cols-1 gap-16 md:grid-cols-4">
@@ -59,13 +59,13 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="flex flex-col items-center justify-between gap-4 border-t border-[rgba(217,173,87,0.14)] pt-10 md:flex-row">
-          <p className="text-[10px] font-bold uppercase tracking-widest text-[rgba(244,236,223,0.68)]">
-            © {new Date().getFullYear()} Abravacon. Todos os direitos reservados.
-          </p>
-          <div className="flex gap-8">
-            <a href="#" className="text-[10px] font-black uppercase tracking-widest text-[rgba(244,236,223,0.68)] transition-colors hover:text-white">Privacidade</a>
-            <a href="#" className="text-[10px] font-black uppercase tracking-widest text-[rgba(244,236,223,0.68)] transition-colors hover:text-white">Termos de Uso</a>
-            <Link to="/sobre" className="text-[10px] font-black uppercase tracking-widest text-[rgba(244,236,223,0.68)] transition-colors hover:text-white">Sobre o Projeto</Link>
+            <p className="text-[10px] font-bold uppercase tracking-widest text-white/70">
+              © {new Date().getFullYear()} Abravacon. Todos os direitos reservados.
+            </p>
+            <div className="flex gap-8">
+              <a href="#" className="text-[10px] font-black uppercase tracking-widest text-white/70 transition-colors hover:text-white">Privacidade</a>
+              <a href="#" className="text-[10px] font-black uppercase tracking-widest text-white/70 transition-colors hover:text-white">Termos de Uso</a>
+              <Link to="/sobre" className="text-[10px] font-black uppercase tracking-widest text-white/70 transition-colors hover:text-white">Sobre o Projeto</Link>
           </div>
         </div>
       </div>

@@ -20,13 +20,13 @@ const BrandLogo: React.FC<BrandLogoProps> = ({
   return (
     <div className={`flex items-center gap-3 ${className}`.trim()}>
       <div
-        className={`relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl border border-[rgba(201,156,74,0.35)] bg-[linear-gradient(145deg,#102843_0%,#0b1f35_58%,#081728_100%)] shadow-[0_18px_45px_rgba(3,10,20,0.45)] ${iconClassName}`.trim()}
+        className={`relative flex h-14 w-[180px] items-center justify-center overflow-hidden rounded-2xl border border-[rgba(201,156,74,0.35)] bg-[linear-gradient(145deg,#102843_0%,#0b1f35_58%,#081728_100%)] shadow-[0_18px_45px_rgba(3,10,20,0.45)] ${iconClassName}`.trim()}
       >
         {logoLoaded ? (
           <img
             src={BRAND_LOGO_URL}
             alt="Abravacon"
-            className="h-full w-full object-contain"
+            className="h-full w-auto max-w-full"
             onError={() => setLogoLoaded(false)}
           />
         ) : (

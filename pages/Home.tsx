@@ -161,12 +161,6 @@ const Home: React.FC = () => {
         <ElisBioSection />
       </div>
 
-      <HomeQuickBoardsSection
-        simulations={recentSimulations}
-        campaigns={recentCampaigns}
-        formatCurrency={formatCurrency}
-      />
-
       <div className="w-full py-12">
         <HomeFeaturesSection />
       </div>
@@ -231,103 +225,6 @@ const HomeFeaturesSection = () => {
   );
 };
 
-const HomeQuickBoardsSection = ({ simulations, campaigns, formatCurrency }: any) => {
-  return (
-    <section className="relative overflow-hidden bg-[linear-gradient(180deg,#071726,#0d2238)] py-20">
-      <div className="pointer-events-none absolute inset-0 opacity-80 brand-shell" />
-      <div className="relative z-10 mx-auto max-w-6xl px-6 space-y-10">
-        <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-          <div>
-            <h2 className="text-2xl font-black uppercase tracking-[0.3em] text-white">Painel rapido</h2>
-            <p className="text-[10px] font-semibold uppercase tracking-[0.35em] text-[rgba(244,236,223,0.7)]">
-              Ultimas cartas e campanhas alinhadas
-            </p>
-          </div>
-          <Link
-            to="/crm?view=campaign-new"
-            className="inline-flex items-center gap-2 rounded-2xl border border-[rgba(255,255,255,0.25)] bg-white/10 px-5 py-3 text-[10px] font-black uppercase tracking-[0.32em] text-white transition hover:border-[rgba(221,177,97,0.7)] hover:bg-white/20"
-          >
-            <Mail size={16} />
-            Nova campanha
-          </Link>
-        </div>
-
-        <div className="grid gap-6 lg:grid-cols-2">
-          <div className="rounded-[32px] border border-[rgba(255,255,255,0.15)] bg-[rgba(255,255,255,0.04)] shadow-[0_20px_60px_rgba(2,6,23,0.55)]">
-            <div className="flex items-center justify-between rounded-t-[32px] border-b border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.03)] px-6 py-5">
-              <h3 className="text-[10px] font-black uppercase tracking-[0.3em] text-[var(--brand-gold-soft)]">
-                Simulacoes recentes
-              </h3>
-              <Link to="/crm" className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-ivory)] transition hover:text-[var(--brand-gold-soft)]">
-                ver CRM
-              </Link>
-            </div>
-            <div className="overflow-x-auto">
-              <table className="w-full text-left text-[13px] text-[rgba(244,236,223,0.7)]">
-                <thead className="bg-[rgba(255,255,255,0.03)] text-[rgba(244,236,223,0.6)]">
-                  <tr>
-                    <th className="px-4 py-3 font-semibold uppercase tracking-[0.25em]">Cliente</th>
-                    <th className="px-4 py-3 font-semibold uppercase tracking-[0.25em]">Credito</th>
-                    <th className="px-4 py-3 font-semibold uppercase tracking-[0.25em]">Tipo</th>
-                    <th className="px-4 py-3 font-semibold uppercase tracking-[0.25em]">Status</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-[rgba(255,255,255,0.05)]">
-                  {simulations.length === 0 && (
-                    <tr>
-                      <td colSpan={4} className="px-4 py-6 text-center text-[rgba(244,236,223,0.6)]">
-                        Nenhuma simulacao encontrada.
-                      </td>
-                    </tr>
-                  )}
-                  {simulations.map((s: any) => (
-                    <tr key={s.id} className="hover:bg-white/5">
-                      <td className="px-4 py-3 font-medium text-[var(--brand-ivory)] truncate">{s.userName || s.userEmail || s.id}</td>
-                      <td className="px-4 py-3 text-[rgba(244,236,223,0.75)]">{formatCurrency(s.creditAmount)}</td>
-                      <td className="px-4 py-3 text-[rgba(244,236,223,0.75)]">{s.type || '-'}</td>
-                      <td className="px-4 py-3 text-[rgba(244,236,223,0.75)]">{s.status || '-'}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <div className="rounded-[32px] border border-[rgba(255,255,255,0.15)] bg-[rgba(255,255,255,0.02)] shadow-[0_20px_60px_rgba(2,6,23,0.45)]">
-            <div className="flex items-center justify-between rounded-t-[32px] border-b border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.03)] px-6 py-5">
-              <h3 className="text-[10px] font-black uppercase tracking-[0.3em] text-[var(--brand-gold-soft)]">
-                Campanhas enviadas
-              </h3>
-              <Link to="/crm" className="text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-ivory)] transition hover:text-[var(--brand-gold-soft)]">
-                historico
-              </Link>
-            </div>
-            <div className="divide-y divide-[rgba(255,255,255,0.05)]">
-              {campaigns.length === 0 && (
-                <div className="px-4 py-6 text-center text-[rgba(244,236,223,0.6)] text-xs italic">
-                  Nenhuma campanha registrada.
-                </div>
-              )}
-              {campaigns.map((c: any) => (
-                <div key={c.id} className="px-4 py-4 hover:bg-white/5">
-                  <div className="flex items-center justify-between">
-                    <p className="font-semibold text-[var(--brand-ivory)] truncate">{c.subject}</p>
-                    <span className="text-[10px] text-[rgba(244,236,223,0.6)]">
-                      {c.date?.seconds ? new Date(c.date.seconds * 1000).toLocaleDateString('pt-BR') : '-'}
-                    </span>
-                  </div>
-                  <div className="mt-1 text-xs text-[rgba(244,236,223,0.6)]">
-                    Responsavel: {c.responsible || '-'}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
 
 const HomeTestimonialsSection = () => {
   return (

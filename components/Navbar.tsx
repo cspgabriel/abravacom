@@ -95,7 +95,7 @@ const Navbar: React.FC = () => {
                 className={`rounded-full px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.28em] transition-all ${
                   isActive(link.path)
                     ? 'bg-[rgba(217,173,87,0.14)] text-[var(--brand-gold-soft)]'
-                    : 'text-[rgba(244,236,223,0.74)] hover:bg-white/5 hover:text-[var(--brand-ivory)]'
+                    : 'text-white/90 hover:bg-white/5 hover:text-white'
                 }`}
               >
                 {link.name}
@@ -114,7 +114,7 @@ const Navbar: React.FC = () => {
                     className={`inline-flex items-center gap-2 rounded-full px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.22em] transition-all ${
                       isActive(link.path)
                         ? 'bg-[rgba(217,173,87,0.14)] text-[var(--brand-gold-soft)]'
-                        : 'text-[rgba(244,236,223,0.7)] hover:text-[var(--brand-ivory)]'
+                        : 'text-white/85 hover:text-white'
                     }`}
                   >
                     <Icon size={14} />
