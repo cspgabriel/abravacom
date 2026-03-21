@@ -1,0 +1,5851 @@
+--- CONTEÚDO DE WA Download Chat Export_Elis Martins.html ---
+9299191455785@lid
+2026/3/9
+9299191455785@lid
+【IMAGE】
+11:20
+11:20
+9299191455785@lid
+【IMAGE】
+11:20
+11:20
+9299191455785@lid
+Oi bom dia
+11:20
+11:20
+9299191455785@lid
+criei uma ideia de como ficaria
+Essa é a pagina de carta contemplada
+11:22
+11:22
+9299191455785@lid
+gostei
+11:23
+11:23
+9299191455785@lid
+mas este é para consorcio que é uma outra pagina de venda
+11:23
+11:23
+9299191455785@lid
+【PTT】
+11:28
+11:28
+9299191455785@lid
+【PTT】
+11:31
+11:31
+9299191455785@lid
+【PTT】
+11:32
+11:32
+9299191455785@lid
+【PTT】
+11:33
+11:33
+2026/3/10
++99360125808664
+Perfeitoo Elis haha sou assim também super te entendo
+17:55
+17:55
++99360125808664
+Uma landing page com carta contemplda apenas ou com abas de consorcio?
+17:56
+17:56
++99360125808664
+A vantagem de fazer uma de cada eh que da pra trabalhar a copy(texto) de forma mais perduasiva pra cada um dos tipos de servicos
+17:56
+17:56
++99360125808664
+Ai conforme ele simular pra carta ou consorcio, gera login pro mesmo painel e la tem outros serviços tb
+17:56
+17:56
+9299191455785@lid
+Depende do valor 
+
+E o que vai rodar melhor para tráfego pago?
+17:57
+17:57
++99360125808664
+【PTT】
+17:58
+17:58
+9299191455785@lid
+Sim
+17:58
+17:58
+9299191455785@lid
+【PTT】
+18:00
+18:00
+9299191455785@lid
+Se achar que o que pensei não funciona pode me dizer
+18:15
+18:15
+9299191455785@lid
+【PTT】
+18:15
+18:15
+9299191455785@lid
+【PTT】
+18:16
+18:16
+9299191455785@lid
+【PTT】
+18:17
+18:17
++99360125808664
+Perfeito! Boa sorte 🍀🙏
+18:44
+18:44
++99360125808664
+【PTT】
+18:49
+18:49
++99360125808664
+O que é o Firebase?
+É a plataforma de infraestrutura do Google. Em vez de alugar um servidor fixo e caro, usamos a nuvem do Google. É a mesma tecnologia usada no Gmail e YouTube, garantindo que seu sistema de consórcios seja rápido, seguro e nunca saia do ar.
+
+
+Vantagens Práticas
+• Segurança: Login e senha protegidos por criptografia do Google.
+• Custo Zero: O Google oferece uma cota gratuita gigante para novos projetos.
+• Certificado SSL: O "cadeado de segurança" já vem incluso de graça.
+Capacidade do Plano Gratuito (Custo R$ 0,00)
+
+
+O sistema suporta sem cobranças:
+• Visitas: Até 15.000 acessos por mês.
+• Simulações: Até 50.000 cálculos ou buscas de cotas por dia.
+• Contas: Até 50.000 usuários cadastrados com login e senha.
+
+
+E se o movimento crescer muito?
+
+Se o portal bombar e o uso dobrar ou triplicar, o custo estimado é de apenas 5 dólares (aprox. R$ 28,00) por mês. Ou seja: você só paga o valor de um "café" quando já estiver com milhares de clientes ativos.
+19:00
+19:00
++99360125808664
+Resumo e mais detalhes do que é essa plataforma do google que vai permitir a gente ter hospedar e gerenciar os dados sistema sem custos mensal
+19:01
+19:01
++99360125808664
+O objetivo é garantir que o projeto seja viável para você a longo prazo e que você não tenha custos fixos todo mês.
+
+Se usarmos uma hospedagem comum, você teria um custo fixo de R$ 150,00 a R$ 400,00 todos os meses, mesmo que ninguém acessasse o site. 
+
+Além disso, teria que pagar por certificados de segurança e suporte técnico para manter o servidor ligado. Em um ano, você gastaria cerca de R$ 3.000,00 apenas de "aluguel".
+19:14
+19:14
++99360125808664
+Alguns detalhes técnicos que não aprofundei no áudio pra completar o feedback 👆
+
+Esses limites gratuitos atenderiam inicialmente ou já teria um volume muito alto de usuários acessos e simulaçoes?
+19:20
+19:20
+9299191455785@lid
+Essa parte não entendi
+20:23
+20:23
+9299191455785@lid
+【PTT】
+20:24
+20:24
+9299191455785@lid
+【PTT】
+20:24
+20:24
+9299191455785@lid
+【PTT】
+20:25
+20:25
++99360125808664
+Depende da gente conseguir encaixar seu projeto utilizando esse serviço do Google pra poder ser viável, se não o custo pra manter ele será bem alto aí não valeria a pena, mas até sexta já saberemos se vai rolar
+21:56
+21:56
++99360125808664
+Acredito que vai dar certo sim! Inclusive essa consulta de crédito você utiliza algum sistema online pra consultar ou é da sua empresa?Precisara do CPF da pessoa na simulação? Porque estava estudando e tem possibilidade de automatizar essa análise do crédito da pessoa pra vc
+21:57
+21:57
++99360125808664
+No caso as opções normais seriam com esse custo mensal pra armazenar o sistema kkkk mas estou tentando implementar nessa outra do Google onde seria gratuito com aqueles limites de acesso
+21:58
+21:58
++99360125808664
+【PTT】
+22:02
+22:02
++99360125808664
+【PTT】
+22:04
+22:04
++99360125808664
+【IMAGE】
+22:14
+22:14
+2026/3/11
+9299191455785@lid
+Oi
+11:38
+11:38
+9299191455785@lid
+Bom dia
+11:38
+11:38
++99360125808664
+Bom dia Elis! Tudo bem? 
+
+chovendo muito aqui hoje e a internet da Claro fora do ar, ela voltando já consigo continuar a trabalhar novamente no projeto
+11:43
+11:43
+9299191455785@lid
+【IMAGE】
+11:50
+11:50
+9299191455785@lid
+Claro,  fica tranquilo
+11:50
+11:50
+9299191455785@lid
+【IMAGE】
+11:54
+11:54
+9299191455785@lid
+【IMAGE】
+11:56
+11:56
+9299191455785@lid
+【PTT】
+11:58
+11:58
+9299191455785@lid
+【PTT】
+12:00
+12:00
+9299191455785@lid
+【PTT】
+12:03
+12:03
+9299191455785@lid
+【PTT】
+12:51
+12:51
+9299191455785@lid
+Parte do consórcio público,  ali vai ter já captura de lead e só após recebe simulação 
+
+A parte de contemplados essa sim, necessário login,  para que eu possa monitorar o que ele busca e simula
+12:54
+12:54
++99360125808664
+Entendido Elis e super de boa de adaptar, ele só chega no painel e vai aparecer a simulação no histórico e vc faz pelo zap
+18:50
+18:50
++99360125808664
+Hoje já trabalhei usando todas as infos que vc passou
+18:50
+18:50
++99360125808664
+Ajudou muito
+18:50
+18:50
++99360125808664
+Super interessante uma boa ideia mesmo, como é mais pra frente vc acha legal gravar a tela ou fazer um vídeo pelo ceo e me mandar? Essas semanas tô numa correria louca aqui na empresa mas achei uma ótima ideias sim
+18:52
+18:52
++99360125808664
+Bom saber mesmo a ideia e um sistema que se adapte a sua rotina e não vc a ele
+18:52
+18:52
++99360125808664
+Pra te facilitar 🙌
+18:52
+18:52
+9299191455785@lid
+Boa tarde 
+
+Posso gravar sim
+18:53
+18:53
++99360125808664
+Aaaaah sim então a gente não tem necessidade e não vai gerar mais lucro p vc agora ne
+18:53
+18:53
++99360125808664
+Com essas funções todas e integrações na outra plataforma seria mais trabalho e custo p vc e não aumentaria seu ticket agora entao a gente deixa pra uma 2a etapa essa parte de automacao e foca no acompanhanento do whats dps
+18:54
+18:54
++99360125808664
+Da simmm! Uma pop up banner
+18:54
+18:54
++99360125808664
+Dentro do portal tambem da
+18:54
+18:54
++99360125808664
+Vc vai segmentar cartas pra usuarios? Ou fica aberto publico
+18:55
+18:55
++99360125808664
+Obrigadooo maravilha
+18:55
+18:55
++99360125808664
+https://consorcio2-blush.vercel.app/
+18:56
+18:56
++99360125808664
+Ainda tem muita alteracao e trabalho a ser feito mas agora vai ter um link p acompanhar as modificacoes
+18:56
+18:56
+9299191455785@lid
+Depende do custo,  posso adaptar
+18:56
+18:56
++99360125808664
+[Not yet supported]
+18:59
+18:59
++99360125808664
+【IMAGE】
+18:59
+18:59
++99360125808664
+【IMAGE】
+18:59
+18:59
++99360125808664
+【IMAGE】
+18:59
+18:59
++99360125808664
+【IMAGE】
+18:59
+18:59
++99360125808664
+【IMAGE】
+18:59
+18:59
++99360125808664
+【IMAGE】
+18:59
+18:59
++99360125808664
+【IMAGE】
+18:59
+18:59
++99360125808664
+【IMAGE】
+18:59
+18:59
++99360125808664
+【IMAGE】
+18:59
+18:59
++99360125808664
+【IMAGE】
+18:59
+18:59
++99360125808664
+No caso teria a pagina das cartas publicas e cartas individuais pra alguns usuarios?
+18:59
+18:59
+9299191455785@lid
+【IMAGE】
+18:59
+18:59
++99360125808664
+Boa! Pode deixar, e desculpa o texto generico como escolha seu fluxo, isso vai ser tudo personalizado dps
+18:59
+18:59
++99360125808664
+Pode mandar mais observaçoes que ajuda muito sempre
+19:00
+19:00
+9299191455785@lid
+【IMAGE】
+19:00
+19:00
++99360125808664
+Show! Do menu via computador so tinha ficado
+
+inicio
+cartas
+consorcios
+area do usuario
+
+ai podemos fazer aspaginas sobre nos, contato, e outras q vc auiser dps
+19:01
+19:01
+9299191455785@lid
+Editei
+19:02
+19:02
+9299191455785@lid
+Sim, tranquilo 
+
+Essa parte é mais para definir estrutura
+19:02
+19:02
++99360125808664
+【IMAGE】
+19:02
+19:02
++99360125808664
+Vamos que vamos
+19:03
+19:03
+9299191455785@lid
+Sim
+19:03
+19:03
++99360125808664
+Estou tentando abrir o painel admin no celular pra te mostrar tb, mas esse acho que so pelo computador hj… ainda não configurei no mobile :( mas ai te mando amanha sem falta
+19:05
+19:05
++99360125808664
+Inclusive pode virar um App pra iOS Android e Windows se vc quiser 🚀
+19:05
+19:05
++99360125808664
+Os tipos de consorcio tinha tirado do site vc ja chegou a me mandar aqui quais vao ser ne?
+19:07
+19:07
++99360125808664
+Pra eu corrigir amanha tb
+19:07
+19:07
++99360125808664
+【IMAGE】
+19:08
+19:08
+9299191455785@lid
+【PTT】
+19:08
+19:08
+9299191455785@lid
+【PTT】
+19:08
+19:08
++99360125808664
+Perfeito ai vc ja vai ver la no menu painel admin, ta liberado acesso
+19:09
+19:09
++99360125808664
+Pode simular um consorcio e criar sua conta de usuario tb
+19:09
+19:09
+9299191455785@lid
+【PTT】
+19:09
+19:09
++99360125808664
+【IMAGE】
+19:11
+19:11
+9299191455785@lid
+Isso
+19:11
+19:11
++99360125808664
+Kkkkk to fazendo hora pra fugir do transito aqui e vou pra casa tambem. Fica a vontade pra enviar as infos todas dps no seu tempo
+19:11
+19:11
++99360125808664
+Vou nessa tambem, boa noite!
+19:12
+19:12
++99360125808664
+Checklist e status das proximas alteracoes
+- integracao da simulação com criacao de conta no portal do usuario ✅
+- ⁠simulações do usuario aprecendo na dashboard do usuario apos ele logar ou criar a conta ❌ pendente
+- ⁠painel admin recebendo os usuarios e solicitacoes ❌ pendente
+- ⁠painel admin con login e senha e url escondida do site ❌ pendente
+- ⁠aviso por email quando tiver nova simulacao / usuario no sistema ❌ pendente
+- ⁠banner/pop up que vc pediu quando o usuario logar no portal ❌ pendete
+- ⁠customizacao do cadastro e exibiçãodas cartas ❌ pendente
+- ⁠personalizar os dados do lead no form de simulacao e os dados de cada simulador ❌ pendente
+- ⁠conectar todos os dados acima ao banco de dados na nuvem ❌ pendente / so foram os usuarios por enqt 
+- ⁠personalizar e melhorar layouts/identidade visual e textos de todas as paginas ❌ pendente
+- ⁠definir estrutura do banco de dados: usuarios, cartas, simulacoes, consorcios, e falta definir os outros tipos de dados a serem salvos no sistema
+- botao flutuante de contato do whatsapp dentro do portal do usuario e site ✅
+- ⁠inserir bloco e pagina de avaliacoes e depoimentos
+19:16
+19:16
++99360125808664
+[Not yet supported]
+19:25
+19:25
++99360125808664
+【IMAGE】
+19:25
+19:25
++99360125808664
+【IMAGE】
+19:25
+19:25
++99360125808664
+【IMAGE】
+19:25
+19:25
++99360125808664
++ atualizar textos e verificar se serao mantidos os blocos acima
+19:25
+19:25
+9299191455785@lid
+PAINEL ADMINISTRATIVO
+20:18
+20:18
+9299191455785@lid
+【IMAGE】
+20:18
+20:18
+9299191455785@lid
+【IMAGE】
+20:19
+20:19
+9299191455785@lid
+【IMAGE】
+20:21
+20:21
+9299191455785@lid
+【DOCUMENT / planilha (7).xls】
+20:22
+20:22
+9299191455785@lid
+【IMAGE】
+20:26
+20:26
+9299191455785@lid
+[Not yet supported]
+21:22
+21:22
+9299191455785@lid
+【PTT】
+20:29
+20:29
+9299191455785@lid
+【IMAGE】
+20:46
+20:46
+9299191455785@lid
+【DOCUMENT / planilha (7) (1).xls】
+20:46
+20:46
+9299191455785@lid
+【PTT】
+20:49
+20:49
+9299191455785@lid
+SE O QUE COLOCAR NA PLANILHA CAIR AQUI, NEM SEI O QUE DIZER
+20:49
+20:49
+9299191455785@lid
+DESCULPE A LETRA CAIXA ALTA
+20:49
+20:49
+9299191455785@lid
+Tem um detalhe bem importante, existem algumas cotas que vou precisar cadastrar manual, pois chega para mim assim:
+20:56
+20:56
+9299191455785@lid
+【IMAGE】
+20:57
+20:57
+9299191455785@lid
+tem variação na parcela, por se tratar de uma junção de duas cotas ou mais
+exemplo desta cota são 148 parcelas de R$ 4.112,52 uma das cotas e a outra 116  parcelas de R$ 3.041,03
+21:00
+21:00
+9299191455785@lid
+cadastro de usuários
+Nome completo:
+e-mail: 
+celular:
+CPF:
+
+"após  confirmação por e-mail, enviaremos seu login e senha pelo seu WhatsApp, mantenha estes dados atualizados"
+
+após isso quando o cliente conseguir acessar, convidar a preencher outros dados como profissão, renda, endereço, interesses (veículo, imóvel, capital de giro), não obrigatório essas informações, mas colocar uma mensagem que talvez faça ele preencher, com estas informações tenho o perfil traçado deste cliente e assim consigo mandar campanhas que vão fechar com a busca dele
+21:10
+21:10
+9299191455785@lid
+ainda no meu painel administrativo gostaria que tivesse...
+
+uma caixinha, visível somente para mim para fazer anotações sobre conversas que tivemos em caso de interação no whats com opção de data,
+ e também para agendamentos, contatei cliente, pediu para chama-lo em 05/04/2026 com agendamento, assim também consigo fazer um resumo da nossa conversa e deixar agendado para o dia,
+
+E-mail marketing enviado tal dia, campanha tal, se for automatizado junto com a campanha de e-mails, maravilha (vou mandar áudio)
+21:13
+21:13
+9299191455785@lid
+【PTT】
+21:20
+21:20
+9299191455785@lid
+【PTT】
+21:22
+21:22
+9299191455785@lid
+【PTT】
+21:23
+21:23
+9299191455785@lid
+Crédito: R$ 159.000,00
+Entrada: R$ 56.275,00
+
+Parcelamento:
+1 à 96: R$ 1.798,00
+97 à 116: R$ 1.024,00
+
+Saldo devedor: R$ 193.088,00
+Transferência: Consultar
+Seguro de vida: Consultar
+
+Cotas selecionadas:
+Cód: 74 - Imóvel - CNP Consórcio: R$ 61.000,00
+Cód: 85 - Imóvel - CNP Consórcio: R$ 98.000,00
+21:27
+21:27
+9299191455785@lid
+https://smartcontempladas.com/?segmento=imovel
+21:28
+21:28
+9299191455785@lid
+[File size out of limit. Max file size supported by WAPlus CRM Workspace is 16MB.]
+21:29
+21:29
+9299191455785@lid
+【PTT】
+21:29
+21:29
+9299191455785@lid
+【PTT】
+21:30
+21:30
+9299191455785@lid
+【PTT】
+21:40
+21:40
+9299191455785@lid
+【PTT】
+21:41
+21:41
+9299191455785@lid
+【IMAGE】
+21:49
+21:49
+9299191455785@lid
+【IMAGE】
+21:55
+21:55
+9299191455785@lid
+【IMAGE】
+22:02
+22:02
+9299191455785@lid
+pode ter a aba valor e parcela - no filtro , mas desde que não seja obrigatório, o ideal e mostrar a lista completa
+22:04
+22:04
+9299191455785@lid
+AREA DE CONSÓRCIO
+22:15
+22:15
+9299191455785@lid
+GRAVEI UM VÍDEO
+22:15
+22:15
+9299191455785@lid
+https://simularmeuconsorcio.com/amandasantosconsorcio/default.php
+22:15
+22:15
+9299191455785@lid
+[File size out of limit. Max file size supported by WAPlus CRM Workspace is 16MB.]
+22:15
+22:15
+9299191455785@lid
+[File size out of limit. Max file size supported by WAPlus CRM Workspace is 16MB.]
+22:18
+22:18
+9299191455785@lid
+Os planos são por assinatura:
+Mensal: R$ 47
+Trimestral: 3x R$ 35 (mais escolhido)
+Anual: 12x R$ 27 (menor custo por mês)
+A ferramenta é a mesma em todos.
+22:23
+22:23
+9299191455785@lid
+[File size out of limit. Max file size supported by WAPlus CRM Workspace is 16MB.]
+22:23
+22:23
+9299191455785@lid
+【IMAGE】
+22:23
+22:23
+9299191455785@lid
+【PTT】
+22:26
+22:26
+9299191455785@lid
+【IMAGE】
+22:28
+22:28
+9299191455785@lid
+【IMAGE】
+22:32
+22:32
+9299191455785@lid
+【IMAGE】
+22:32
+22:32
+9299191455785@lid
+【IMAGE】
+22:34
+22:34
+9299191455785@lid
+【IMAGE】
+22:34
+22:34
+9299191455785@lid
+【IMAGE】
+22:38
+22:38
+9299191455785@lid
+【IMAGE】
+22:40
+22:40
+9299191455785@lid
+MAS DAÍ NA ABA CONSÓRCIO, TER ESTAS OPÇÕES QUE ESTÃO ALI DESCRITAS SEM USAR CAPITAL DE GIRO
+
+iMÓVEIS
+VEÍCULOS
+AGRONEGÓCIO
+PESADOS(CAMINÕES)
+SERVIÇOS (ESSE SE COUBER, PODE ESTAR ESCRITO SOMENTE LÁ DENTRO DO SIMULADOR)
+22:42
+22:42
+9299191455785@lid
+【IMAGE】
+22:42
+22:42
+9299191455785@lid
+ACREDITO QUE SÓ OLHANDO O CONTEXTO GERAL APÓS ALTERAÇÕES PARA SABER SE ALTERA MAIS ALGUMA COISA
+22:43
+22:43
+9299191455785@lid
+【PTT】
+22:47
+22:47
+9299191455785@lid
+GRATIDÃO 🥰
+22:47
+22:47
+2026/3/12
++99360125808664
+Muito bommm
+18:37
+18:37
++99360125808664
+Feedback completa
+18:37
+18:37
++99360125808664
+Completo*
+18:37
+18:37
++99360125808664
+Já comecei a fazer mais alteracoes em cima dessas observacoes que estamos falando aqui, so que ainda nao subi pro link da nuvem so ta no meu pc
+18:38
+18:38
++99360125808664
+Vai dar tudo certo! Ta fluindo
+18:38
+18:38
++99360125808664
+Amanhã acabo de ouvir com calma os audios enquanto aproveitei o conteudo dasmesagens hj
+18:38
+18:38
++99360125808664
+Boa noite e bom descanso Elis! 🙏 Muito obrigado pelo excelente retorno e atencao no envio do material / informações pro portal
+18:39
+18:39
++99360125808664
+Provavelmente no fim de semana irei avançar mais no projeto e já libero no link as novas atualizações
+18:40
+18:40
++99360125808664
+E aí vamos continuando as revisões até ficar do jeito que vc precisa e quer 🙌
+18:40
+18:40
++99360125808664
+【IMAGE】
+18:44
+18:44
++99360125808664
+【IMAGE】
+18:45
+18:45
+9299191455785@lid
+Boa noite 
+
+Tá certo,  amanhã nos falamos
+18:53
+18:53
++99360125808664
+【IMAGE】
+19:00
+19:00
++99360125808664
+Como vc prefere atualizar depois? A gente sobe a tabela e vc pode exportar tudo
+19:03
+19:03
++99360125808664
+Daí ela sobe no mesmo padrão e a gente põe edição em massa p vc no painel admin
+
+Subimos a sua última versão da planilha e das próximas vc sempre que editar em massa lá já exporta a planilha de backup mais atualizada
+19:03
+19:03
++99360125808664
+Dá pra ter esses dados integrados nativos numa página dashboard
+19:06
+19:06
+9299191455785@lid
+Sério,  então pode fazer deste jeito mesmo?
+19:07
+19:07
++99360125808664
+Vou te mostrar um sistema parecido que fiz pra uma empresa que presto serviço
+19:07
+19:07
++99360125808664
+Seria parecido
+19:07
+19:07
+9299191455785@lid
+Tá bem
+19:07
+19:07
++99360125808664
+Dá sim automático o e-mail.mas talvez com custos, posso por um botão de enviar email e ele gera o e-mail prontoe vc envia pelo Gmail/outkook
+
+Vou estudar a possibilidade
+19:08
+19:08
++99360125808664
+[Not yet supported]
+19:10
+19:10
++99360125808664
+【IMAGE】
+19:10
+19:10
++99360125808664
+【IMAGE】
+19:10
+19:10
++99360125808664
+【IMAGE】
+19:10
+19:10
++99360125808664
+【IMAGE】
+19:10
+19:10
++99360125808664
+【IMAGE】
+19:10
+19:10
++99360125808664
+【IMAGE】
+19:10
+19:10
++99360125808664
+【IMAGE】
+19:10
+19:10
++99360125808664
+【IMAGE】
+19:10
+19:10
++99360125808664
+【IMAGE】
+19:10
+19:10
++99360125808664
+【IMAGE】
+19:10
+19:10
++99360125808664
+【PTT】
+19:13
+19:13
++99360125808664
+A ideia é vc ter essa gestão completa tb
+19:13
+19:13
++99360125808664
+Antes as demandas chegavam soltas pelo WhatsApp sem controle
+19:13
+19:13
++99360125808664
+【IMAGE】
+19:15
+19:15
++99360125808664
+Sem a gestão de status claro, mais um crm com gestão de infos e historico
+19:15
+19:15
++99360125808664
+O resto dos áudios e os que já ouvi rápido hj, ouço amanhã c calma e vamos falando, vou pro trânsito aqui rs bom descanso!
+19:17
+19:17
++99360125808664
+No caso o custo seria do servidor de e-mail e não aqui da agencia
+19:18
+19:18
+9299191455785@lid
+【PTT】
+19:19
+19:19
++99360125808664
+Vou gravar no Pc chegando pra ficar melhor a visualização
+19:27
+19:27
++99360125808664
+Pelo celular fica meio confuso mesmo
+19:28
+19:28
++99360125808664
+【IMAGE】
+22:28
+22:28
++99360125808664
+https://consorcio2-blush.vercel.app/admin-public
+22:29
+22:29
++99360125808664
+【IMAGE】
+22:30
+22:30
++99360125808664
+【IMAGE】
+22:32
+22:32
+9299191455785@lid
+[Not yet supported]
+22:40
+22:40
+9299191455785@lid
+【IMAGE】
+22:39
+22:39
+9299191455785@lid
+【IMAGE】
+22:41
+22:41
++99360125808664
+Pode deixar! Amanhã ele vai ler os dados da planilha e cadastrar tudo lá conforme seu padrão 🙏  ja ta ate na pasta do sistema ali no botao de exportar
+22:41
+22:41
++99360125808664
+Ai conforme ele ler os dadoa da sua planilha vao ser substituidos esses dados modelos
+22:41
+22:41
++99360125808664
+Foi so pra ver como ficaria seu painel com os dados do sistema
+22:41
+22:41
+9299191455785@lid
+【PTT】
+22:42
+22:42
++99360125808664
+Perfeito
+22:43
+22:43
++99360125808664
+Amanha ja vai ficar no padrao certinho 🚀
+22:44
+22:44
+9299191455785@lid
+【IMAGE】
+22:47
+22:47
+9299191455785@lid
+E lá em cima caminhão é giro,  não têm
+22:47
+22:47
+9299191455785@lid
+【IMAGE】
+22:54
+22:54
++99360125808664
+Combinado!
+22:54
+22:54
++99360125808664
+Kkkkkkk ignora essa parte dessa pagina nao vai chegar nem 10% disso
+22:54
+22:54
+9299191455785@lid
+Ui
+22:55
+22:55
++99360125808664
+Quero mais ali deixar um manual de usuario pra vc depois
+22:55
+22:55
+9299191455785@lid
+Quase tive um ataque
+22:55
+22:55
++99360125808664
+【IMAGE】
+22:55
+22:55
+9299191455785@lid
+Já tem ideia,  devo receber algumas comissões amanhã,  já queria organizar algum pagamento
+22:55
+22:55
++99360125808664
+Kkkkkkk pode ficar tranquila
+22:56
+22:56
++99360125808664
+Posso tentar deixar pelo menos o seu portal pronto
+22:56
+22:56
++99360125808664
+O painel de gestao
+22:56
+22:56
++99360125808664
+Amanha e sabado vou ter uma previsao melhor dependendo dos avanços, mas esse mes ainda pretendo finalizar
+22:57
+22:57
++99360125808664
+Se tudo der muito certo la pelo dia 20 no maximo tudo no ar
+22:57
+22:57
+9299191455785@lid
+Certo,  estou mais preocupada com o preço mesmo
+22:57
+22:57
++99360125808664
+700 parcelado em ate 12x pagamento unico fica bom pra vc?
+22:58
+22:58
+9299191455785@lid
+E também,  o tráfego,  qual o valor mensal
+22:58
+22:58
++99360125808664
+No caso sem custo mensal e o sistema rodando 100%
+22:58
+22:58
+9299191455785@lid
+Se receber a comissão amanhã já pago
+22:58
+22:58
++99360125808664
+Ai o trafego fica mais com a mari, nao tenho tempo infelizmente
+22:58
+22:58
++99360125808664
+Imagina, quando eu te entregar
+22:59
+22:59
+9299191455785@lid
+Entendi
+22:59
+22:59
++99360125808664
+Ate la sem pressa de pagamento
+22:59
+22:59
++99360125808664
+Jogando a planilha amanha ja tem todos os dados que vao precisar? Se tiver outras infos alem das que tao na planilha so me mandar que coloco amanha tb
+23:00
+23:00
++99360125808664
+【IMAGE】
+23:00
+23:00
++99360125808664
+Conforme a planilha conectar ira filtrar pelas colunas dela
+23:00
+23:00
++99360125808664
+E conforme eu mudar os dados dos formulários de simulacoes
+23:00
+23:00
++99360125808664
+O status configurei pra no seu painel ficar como “NAO ENVIADA” e tera um botao na cotacao pra enviar pelo whats ou email, ai qd vc clicar ele registra no cadastro da cotacao e do cliente a data/hora e daqui a 15 dias te avisa de cobrar retorno dele
+23:01
+23:01
+9299191455785@lid
+Somente categoria e status de carta
+
+
+As outras opções não se usa,  pode tirar
+23:02
+23:02
+9299191455785@lid
+【PTT】
+23:03
+23:03
++99360125808664
+【IMAGE】
+23:04
+23:04
++99360125808664
+Vc vai poder filtrar tudo na vdd
+23:04
+23:04
++99360125808664
+Pra te facilitar na busca
+23:04
+23:04
+9299191455785@lid
+【PTT】
+23:05
+23:05
++99360125808664
+Amanha subindo a planilha e os tipos de dados mudando te aviso e vc me diz oq vai faltar mudar la certinho sem esses dados modelos
+23:05
+23:05
++99360125808664
+No inicio abre manualmente uma mensagem padrão via enail ou outlook e vc envia manualmente de graca, pode testar
+23:05
+23:05
+9299191455785@lid
+Certo,
+23:06
+23:06
++99360125808664
+No futuro podemos fazer automatico e via servidor de email mas ai tem custos :( a gente ve numa 2a etapa e alternativas de envios gratuitos
+23:06
+23:06
++99360125808664
+Vale mais investir em trafego pro site agora do que em email markting automatico
+23:06
+23:06
+9299191455785@lid
+【PTT】
+23:06
+23:06
++99360125808664
+Quando tiver volume maior de cotacoes chegando ai sim recomendo investir no email automatico
+23:07
+23:07
+9299191455785@lid
+【PTT】
+23:07
+23:07
+9299191455785@lid
+【PTT】
+23:08
+23:08
++99360125808664
+Maravilha! Fica tranquila que é bom que no domingo/segunda ja devem ter novidades
+23:08
+23:08
++99360125808664
+Ai durante a semana que cem tentanos revisar e finalizar 🚀
+23:08
+23:08
++99360125808664
+🤝 combinado
+23:08
+23:08
++99360125808664
+Facilita mesmo
+23:09
+23:09
++99360125808664
+Bom descanso e bons preparstivos ai amanha e fds!
+23:09
+23:09
++99360125808664
+Boa festa tb 🙏
+23:09
+23:09
+9299191455785@lid
+Obrigada,  para você também
+23:09
+23:09
+2026/3/16
++99360125808664
+Bom dia Elis, ótima semana!
+10:53
+10:53
++99360125808664
+Tudo bem?
+10:53
+10:53
++99360125808664
+[Not yet supported]
+10:54
+10:54
++99360125808664
+【IMAGE】
+10:54
+10:54
++99360125808664
+【IMAGE】
+10:54
+10:54
++99360125808664
+【IMAGE】
+10:54
+10:54
++99360125808664
+Consegui avancar bem no portal fim de semana 🙏 depois se puder acessar e dar uma revisada e feedback
+10:54
+10:54
++99360125808664
+[Not yet supported]
+10:55
+10:55
++99360125808664
+You deleted this message
+10:55
+10:55
++99360125808664
+【IMAGE】
+10:55
+10:55
++99360125808664
+【IMAGE】
+10:55
+10:55
++99360125808664
+【IMAGE】
+10:55
+10:55
++99360125808664
+A gente fechando a parte das funcionalidades já podemos acertar o design/texto e talvez até sexta tudo no ar ✅
+10:55
+10:55
++99360125808664
+【IMAGE】
+10:57
+10:57
++99360125808664
+【IMAGE】
+10:58
+10:58
++99360125808664
+【IMAGE】
+10:58
+10:58
++99360125808664
+【IMAGE】
+10:59
+10:59
++99360125808664
+【IMAGE】
+11:00
+11:00
+9299191455785@lid
+【PTT】
+12:09
+12:09
++99360125808664
+【PTT】
+14:06
+14:06
+9299191455785@lid
+oi, boa noite
+me envia teu pix por favor
+22:32
+22:32
+9299191455785@lid
+desculpa a hora, mas fiquei o dia com muita dor na coluna e sem condições de te dar atenção, estou olhando agora
+22:33
+22:33
+9299191455785@lid
+ideia....
+22:33
+22:33
+9299191455785@lid
+【PTT】
+22:37
+22:37
+9299191455785@lid
+【PTT】
+22:38
+22:38
+9299191455785@lid
+vamos lá
+na parte de simulação de consórcios, detalhe que acredito por causa edição mas está entrano o link da tramontana consórcios
+22:38
+22:38
+9299191455785@lid
+【IMAGE】
+22:38
+22:38
+9299191455785@lid
+Aqui caiu na tramontana que falei kkkk
+22:38
+22:38
+9299191455785@lid
+*
+***********************
+22:39
+22:39
+9299191455785@lid
+【IMAGE】
+22:39
+22:39
+9299191455785@lid
+está aba superior, preciso que
+saia fora simulação - e *substituir cartas disponíveis por cartas contempladas
+motivo: o cliente é sem paciência e é preciso ser além do obvio infelizmente, se não estiver
+cartas contempladas
+ele já saiu do site
+22:39
+22:39
+9299191455785@lid
+【PTT】
+22:40
+22:40
+9299191455785@lid
+【IMAGE】
+22:40
+22:40
+9299191455785@lid
+nesta parte, preciso que o cliente sinta quase o gosto de ver as cartas, com parcelas e prazos, valor do crédito, mas acesso a entrada é restrito
+se eu não entregar esse gostinho, ele não vai se cadastrar e vai sair do site, então nesta parte, pode tirar essa tela de cadstro, o cadastro será solicitado quando ele quiser ver a entrada
+22:40
+22:40
+9299191455785@lid
+【PTT】
+22:41
+22:41
+9299191455785@lid
+*
+***************
+22:41
+22:41
+9299191455785@lid
+【IMAGE】
+22:41
+22:41
+9299191455785@lid
+achei ótimo
+22:41
+22:41
+9299191455785@lid
+*
+**********
+22:42
+22:42
+9299191455785@lid
+*
+***********************
+22:42
+22:42
+9299191455785@lid
+nesta parte colocar crédito de ...... a .........
+deixar o cliente preencher, ou ter duas caixinhas
+
+crédito mínimo à crédito máximo
+22:42
+22:42
+9299191455785@lid
+【IMAGE】
+22:42
+22:42
+9299191455785@lid
+【IMAGE】
+22:42
+22:42
+9299191455785@lid
+filtrar por parcelas, está o prazo dentro da caixinha, mostrar opção de R$................. à R$...............................
+ou parcela mínima e maxima
+22:42
+22:42
+9299191455785@lid
+igual a está opção
+22:42
+22:42
+9299191455785@lid
+【IMAGE】
+22:42
+22:42
+9299191455785@lid
+*
+**************************
+22:42
+22:42
+9299191455785@lid
+【PTT】
+22:43
+22:43
+9299191455785@lid
+*
+**********
+22:43
+22:43
+9299191455785@lid
+nesta opção VER
+22:43
+22:43
+9299191455785@lid
+【IMAGE】
+22:43
+22:43
+9299191455785@lid
+aparece esta mensagem NEWSLETTER VIP
+
+Gostaria que aparecesse: CADASTRE-SE PARA TER O ACESSO COMPLETO
+e solicitasse as seguintes informações:
+
+NOME
+EMAIL
+CELULAR
+
+pois esse cliente já vai virar um lead, não somente cliente para enviar campanha de e-mails marketing
+22:43
+22:43
+9299191455785@lid
+【IMAGE】
+22:43
+22:43
+9299191455785@lid
+【PTT】
+22:45
+22:45
+9299191455785@lid
+*
+****************************
+23:06
+23:06
+9299191455785@lid
+estava aqui pensando, aquela aba de "SIMULAÇÃO' poderíamos substituir por "CRÉDITO COM GARANTIA"
+
+É uma pagina mais informativa como funciona e as regras, processo todo online e o lead esse vai cair direto na minha plataforma da franq
+
+Vou passar o material que tenho sobre e você vê se tem viabilidade
+23:09
+23:09
+9299191455785@lid
+link da minha loja
+23:30
+23:30
+9299191455785@lid
+https://shop.franq.com.br/elisangela-inacio/produtos/emprestimo-com-garantia-de-imovel?utm_source=befranq&utm_medium=NovaVenda
+23:30
+23:30
+9299191455785@lid
+【DOCUMENT / Hub_de_marketing2_1.png】
+23:31
+23:31
+9299191455785@lid
+【DOCUMENT / feed_12.png】
+23:31
+23:31
+9299191455785@lid
+【DOCUMENT / HE (1).png】
+23:31
+23:31
+9299191455785@lid
+【DOCUMENT / HE.png】
+23:31
+23:31
+9299191455785@lid
+【DOCUMENT / A3o_PB.png】
+23:31
+23:31
+9299191455785@lid
+【DOCUMENT / 1 (1).png】
+23:31
+23:31
+9299191455785@lid
+【DOCUMENT / Tabela_HE.png】
+23:31
+23:31
+9299191455785@lid
+【IMAGE】
+23:31
+23:31
+9299191455785@lid
+O que é Empréstimo com Garantia de Imóvel?
+O Empréstimo com Garantia de Imóvel, também conhecido como Home Equity, é uma modalidade de crédito em que o proprietário utiliza um imóvel como garantia para obter recursos financeiros. Por contar com essa garantia real, as instituições financeiras oferecem taxas de juros significativamente mais baixas e prazos de pagamento mais longos em comparação a outras modalidades de crédito – o que proporciona condições mais vantajosas para quem busca crédito com planejamento e segurança..
+23:35
+23:35
+9299191455785@lid
+1
+Simulação
+Faça uma simulação informando o valor do imóvel que será usado como garantia e o valor que deseja de empréstimo
+2
+Análise
+Nosso time de especialistas avalia a sua proposta para encontrar a opção que se encaixa melhor para você
+3
+Envio de documentos
+Reúna junto ao seu Personal Banker os documentos necessários para dar continuidade a proposta
+4
+Contratação
+Finalize a sua contratação de forma simples e rápida
+23:36
+23:36
+9299191455785@lid
+Poderia colocar assim: Somos representantes da maior plataforma de crédito do mercado financeiro A Franq, trazendo taxas competitivas através das principais instituições financeiras do país como Bradesco, Santander, C6 Bank... como aparece aqui
+23:40
+23:40
+9299191455785@lid
+Empréstimo com garantia de imóvel
+a partir de 1,09% de taxa média ao mês
+23:44
+23:44
+9299191455785@lid
+【IMAGE】
+23:44
+23:44
+9299191455785@lid
+【IMAGE】
+23:46
+23:46
+2026/3/17
+9299191455785@lid
+【IMAGE】
+00:44
+00:44
+9299191455785@lid
+【IMAGE】
+00:44
+00:44
+9299191455785@lid
+【IMAGE】
+00:44
+00:44
+9299191455785@lid
+【IMAGE】
+00:44
+00:44
+9299191455785@lid
+logo novo
+esse é o nome novo
+Abravacon
+00:45
+00:45
++99360125808664
+uauu, ficou linda mesmo a logo, vou trabalhar a identiadde visual do site assim
+18:10
+18:10
++99360125808664
+muito obrigado pelo envio das infos e fico feliz que tenha gostado elis
+18:11
+18:11
++99360125808664
+amanhã vou fazer os ajustes que você enviou das fotos e textos do site, as funcionalidades que preicsam revisar e ja coloco a cara do abravacon
+18:11
+18:11
++99360125808664
+Vc ja tem dominio ou vai pegar um novo? Posso ajudar nessa parte e ja registrar pra vc
+18:11
+18:11
++99360125808664
+【IMAGE】
+18:12
+18:12
+9299191455785@lid
+isso queria falar com você
+
+Preciso de um dominio para este site e para fazer a alteração naquele outro que você havia feito anteriormente, então preciso de dois dominios e um plano de email(para usar como email marketing) o que for mais em conta
+19:31
+19:31
+9299191455785@lid
+Outra coisa,  sobre inserir o crm lá no painel adm? Você chegou a verificar se dá?
+19:42
+19:42
++99360125808664
+【IMAGE】
+21:22
+21:22
++99360125808664
+【IMAGE】
+21:22
+21:22
++99360125808664
+【IMAGE】
+21:22
+21:22
++99360125808664
+Crm incorporado aos dados e sistema do site em construção ✅
+21:23
+21:23
++99360125808664
+Vai ter ate uma funcao de “email markting” gratuito e nativa pra vc disparar emails dele se quiser
+21:23
+21:23
++99360125808664
+Combinado, vou ver algumas opcoes pagas de email mkt e te aviso. Qual o total de contatos da base atualmente? E quantos emails pretende disparar por mes?
+21:24
+21:24
++99360125808664
+Algumas plataformas cobram por contatos e outras por disparo ai entendendo sua necessidade atual busco a melhor opcao custo beneficio
+21:25
+21:25
++99360125808664
+Qual sera o outro dominio alem de abravacon.com.br?
+21:26
+21:26
++99360125808664
+Agora digitando ele novamente que vi escrito errado nas fotos do crm que enviei mas amanha ja vai constar a logo original fica tranquila
+21:26
+21:26
+9299191455785@lid
+opções gratuitas para iniciar ou menor custo
+
+mas tenho um banco de dados de email de uns 5 mil contatos, mas posso ir enviando aos poucos tambem
+21:28
+21:28
+9299191455785@lid
+【PTT】
+21:29
+21:29
+9299191455785@lid
+【PTT】
+21:29
+21:29
+9299191455785@lid
+【PTT】
+21:33
+21:33
+9299191455785@lid
+【PTT】
+21:33
+21:33
+9299191455785@lid
+【PTT】
+21:33
+21:33
++99360125808664
+Podemos configurar um dos seus dominios pra enviar pra essa base mais fria e no outro dominio lead pra base mais quente (se inscreveu recentemente em mailing)
+21:56
+21:56
++99360125808664
+Seria legal pra manter o dominio saudavel e nao cair no spam
+21:56
+21:56
++99360125808664
+Tem varias opcoes, da pra pegar varios dominios e redirecionar pro mesmo site
+21:57
+21:57
++99360125808664
+Dai se alguem digitar errado ou entao se concorrente/outra empresa quiser um dominio parecido ja esta registrado pra vc
+21:57
+21:57
++99360125808664
+Acho legal o da bio ser humanizado. A gente pode usar elis.abravacon.com.br ou pegar um dominio proprio com seu nome e sobrenome elismartins.com.br
+21:58
+21:58
++99360125808664
+De qualquer forma cruzado nao fica, se quiser otimizar custos podemos trabalhar esses 2 dominios iniciais
+
+elismartins.com.br
+Abravacon.com.br
+21:59
+21:59
+9299191455785@lid
+E se usar abravacon.com
+Por exemplo
+22:00
+22:00
++99360125808664
+Kkkkkkk pode pagar no fim eu realmente prefiro trabalhar dessa forma 🙏 em breve finalizaremos tudo aí vc me paga
+22:00
+22:00
+9299191455785@lid
+Na bio
+22:00
+22:00
++99360125808664
+Podemos também, mas geralmente no Google rankeia melhor .com.br e o site .com é focado em domínio internacional (vários países)
+22:01
+22:01
++99360125808664
+Mas nada impede de usar o .com, talvez seja um pouco mas caro mas TB gera autoridade pois .com e .com.br são bem conhecidos por todos
+22:01
+22:01
+9299191455785@lid
+.com.br
+No oficial 
+.com naquele da bio ou .org
+22:02
+22:02
++99360125808664
+Dá sim
+22:02
+22:02
++99360125808664
+.com fica melhor
+22:02
+22:02
+9299191455785@lid
+【PTT】
+22:03
+22:03
++99360125808664
+【PTT】
+22:04
+22:04
+9299191455785@lid
+Tá dois então
+22:05
+22:05
++99360125808664
+【PTT】
+22:05
+22:05
++99360125808664
+【PTT】
+22:11
+22:11
++99360125808664
+Vc tendo o domínio da pra pegarmos um provedor de e-mail (Google workspace e Outlook os mais conhecidos) e aí recebe e envia emails normalmente pela conta @dominio.com.br
+22:12
+22:12
++99360125808664
+Existem alternativas mais baratas que só tem o serviço de e-mail, no caso usando Gmail ou Outlook na versão empresarial (paga) vc tb ganha acesso ao Google drive, Google sheets, e outros recursos
+22:13
+22:13
++99360125808664
+Tudo isso posso te explicar com calma também e envio um material pra te ajudar a decidir essas questoes
+22:14
+22:14
++99360125808664
+Vou separar tudo e te mando depois com calma e melhor explicado. Bom descanso!
+22:14
+22:14
+9299191455785@lid
+Certo,  me envia a melhor opção e mais em conta para que fique profissional
+22:16
+22:16
++99360125808664
+[Not yet supported]
+22:22
+22:22
++99360125808664
+【IMAGE】
+22:22
+22:22
++99360125808664
+【IMAGE】
+22:22
+22:22
++99360125808664
+O da Microsoft está 34 reais por usuário/e-mail e oferece 1tb Onedrive enquanto o do Google 39 reais por 30gb de armazenamento de drive
+
+Vale mais a pena Microsoft em quesito preço. Recomendo um dos 2 pra ficar mais profissional e fácil no dia a dia, mas se quiser outros fornecedores de e-mail corporativo mais baratos coloco em um levantamento mais completo
+22:24
+22:24
++99360125808664
+Ambos oferecem a ferramenta de reunião online no plano. (Teams pela Microsoft e Googoe Meeting no workspace)
+22:25
+22:25
+9299191455785@lid
+【PTT】
+22:28
+22:28
+9299191455785@lid
+【PTT】
+22:28
+22:28
++99360125808664
+Perfeito. O e-mail marketing eles não tem, mas no CRM que fiz ele dispara pelo Outlook/gmail uma mala direta com todos os leads do site e vc não teria custos, só um limite de 500 contatos por envio (te mostro um vídeo depois)
+22:40
+22:40
++99360125808664
+O foco do workspace e Outlook são emails com cliente (relacio amento) e não de vendas no caso. De acordo com a política deles
+22:41
+22:41
+9299191455785@lid
+【PTT】
+22:41
+22:41
+9299191455785@lid
+【PTT】
+22:42
+22:42
+9299191455785@lid
+imagino teu semblante escutando meus áudios kkkkk
+22:42
+22:42
++99360125808664
+【PTT】
+22:42
+22:42
+9299191455785@lid
+socorro
+22:42
+22:42
++99360125808664
+【PTT】
+22:44
+22:44
++99360125808664
+【PTT】
+22:45
+22:45
++99360125808664
+Kkkkkk eu adoro esse assunto então pra mim e um prazer explicar
+22:45
+22:45
+9299191455785@lid
+ta e como ficaria esse email do CRM?
+22:45
+22:45
++99360125808664
+【IMAGE】
+22:45
+22:45
++99360125808664
+Aqui uma prévia
+22:45
+22:45
++99360125808664
+【PTT】
+22:47
+22:47
+9299191455785@lid
+Gabriel, não entendi na verdade, desculpe
+vou escutar tudo de novo, calma kkkk
+mas vou entender
+22:50
+22:50
++99360125808664
+【PTT】
+22:51
+22:51
++99360125808664
+[Not yet supported]
+22:51
+22:51
++99360125808664
+【IMAGE】
+22:51
+22:51
++99360125808664
+【IMAGE】
+22:51
+22:51
++99360125808664
+【PTT】
+22:52
+22:52
++99360125808664
+Depois explico melhor kkkk ouve com calma amanhã e se não entender fazemos ligação qualquer coisa e tiro as dúvidas tambem
+22:54
+22:54
++99360125808664
+Boa noite e bom descanso
+22:54
+22:54
+9299191455785@lid
+tá aqui, vou adquirir o e-mail profissional exemplo: vendas, meu nome, administrativo@abravacom.br
+contato com fornecedores, receber documentos de clientes, etc
+me dará acesso a reuniões online e memória
+
+o email marketing 1 para usar na base antiga
+e o email marketing 2 para usar na base atual e CRM (confirmação de cadastro, campanhas, etc)
+
+esses dois emails marketing, compro onde? qual o custo e como fica nome@empresa.com.br ???? Ou ganho este quando comprar o domínio do site. é isso que estou confusa
+22:58
+22:58
+9299191455785@lid
+então o profissional e marketing 2 - seria a mesma coisa ( 1 email)
+23:00
+23:00
+9299191455785@lid
+🤓
+23:00
+23:00
+9299191455785@lid
+está tarde, vai descansar kkkkk, vou ficar louca aqui, acho essa parte bem difícil d entender
+23:01
+23:01
++99360125808664
+tá aqui, vou adquirir o e-mail profissional exemplo: vendas, meu nome, administrativo@abravacom.br
+contato com fornecedores, receber documentos de clientes, etc
+me dará acesso a reuniões online e memória
+
+o email marketing 1 para usar na base antiga
+
+--------
+
+Certinho! Porém o nome do serviço no caso é e-mail corporativo pra vc registrar o @dominio.com.br e usar o serviço de e-mail do Google ou do Outlook. Pq na versão gratuita deles só pode usar @outlook ou @gmail, se usar o nosso @empresa.com.br tem aqueles preços ali
+23:01
+23:01
++99360125808664
+e o email marketing 2 para usar na base atual e CRM (confirmação de cadastro, campanhas, etc)
+
+exato! Essa eh a ferramenta de e-mail marketing que foi feita pra disparos em massa! O que dá pra fazer no Outlook ou gmail e aquela famosa "mala direta" mas eles não gostam muito não kkk o ideal é contratar a ferramenta de e-mail MKT pra isso. Os custos são esses em média de 100/200 mensal com aqueles limites que falei
+23:03
+23:03
+9299191455785@lid
+【PTT】
+23:03
+23:03
++99360125808664
+nome@empresa.com.br ???? Ou ganho este quando comprar o domínio do site. é isso que estou confusa
+
+No caso o registro do empresa.com.br eh 40 reais por ano , mas no outro site se não me engano dei de brinde o primeiro ano grátis
+23:04
+23:04
++99360125808664
+Através desse de 40 vc usa os outros 2 serviços. É o único obrigatorio inicialmente
+23:04
+23:04
++99360125808664
+Isso, recorrente mensal pra sempre
+23:05
+23:05
++99360125808664
+No plano anual sai mais barato
+23:05
+23:05
++99360125808664
+Por isso eu sempre bati na tecla de enxugar custo mensal ou tentar diminuir ao máximo pq no fim são muitos custos conforme crescemos
+23:05
+23:05
++99360125808664
+Pelo menos o seu site e CRM não terá custo mensal 🙌
+23:05
+23:05
+9299191455785@lid
+sim
+23:05
+23:05
++99360125808664
+Por hoje é só kkkkk entendeu bem 👏 até amanhã
+23:06
+23:06
+9299191455785@lid
+já entendi um pouco mais, graças a DEus
+23:07
+23:07
+9299191455785@lid
+muito obrigada, até amanha
+23:07
+23:07
+9299191455785@lid
+boa noite
+23:07
+23:07
++99360125808664
+Depois coloco no CRM uma pagina com os links e explicacao pra vc sempre ter la
+23:08
+23:08
++99360125808664
+🙏
+23:08
+23:08
+2026/3/18
++99360125808664
+Boa noite Elis, so passando pra avisar que sigo trabalhando no projeto site/crm e nos proximos dias ja te mando o link com mais avanços e ja com todas as infos que vc me enviou (o site está em outra URL)
+23:32
+23:32
++99360125808664
+Ai o site ficando pronto fazemos o procedimento de compra dos dominios e aquele servicos de email em seguida(configuro p vc tbm)
+23:33
+23:33
+2026/3/20
+9299191455785@lid
+boa tarde, esta bem, estou ansiosa
+13:38
+13:38
+
+--- CONTEÚDO DE WA Download Chat Export_Market Share - Confirmado.html ---
+5521998131247-1586265898@g.us
+2026/2/1
+259012448809133@lid
+【IMAGE】
+01:13
+01:13
+220808848887828@lid
+【IMAGE】
+02:13
+02:13
+245277093023876@lid
+【IMAGE】
+02:39
+02:39
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia! 
+
+31/01/2026
+🛏 UHs ocupadas: 137
+📈 Ocupação: 87,82%
+💰 Diária Média: R$ 390,50
+03:24
+03:24
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+31/01/2026
+🛏 UH ocupadas:
+66
+📈 Ocupação:
+76,74
+💰 Diária Média:
+R$301,80
+03:41
+03:41
+160855366861019@lid
+🏨 RADISSON BARRA 
+📅  31/01/2026 
+BOM DIA ☀️
+🛏 UHs ocupadas: 273
+📈 Ocupação: 72,80%
+💰 Diária Média: R$ 571,16
+03:43
+03:43
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+31/01/2026
+📈 Occ: 76,70%
+💰 D.M.: 382,07
+🛏️ UH: 237
+04:16
+04:16
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+31/01/2026
+📈 Occ: 35,72%
+💰 D.M.:  336,28
+🛏️ UH: 50
+04:31
+04:31
+54606684020750@lid
+LAGUNE BARRA HOTEL
+Bom dia!
+31/01/2026
+
+🛏 UHs ocupadas: 211
+📈 Ocupação: 68,95%
+💰 Diária Média: R$ 399,04
+06:25
+06:25
+204668227575808@lid
+Quality Barra
+Bom dia!
+31/01/26
+📈 Occ: 40,98%
+💰 D.M.: R$ 364,13
+🛏️ UH: 75
+06:30
+06:30
+2026/2/2
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+01/02/2026
+📈 Occ: 38,57%
+💰 D.M.:  414,16
+🛏️ UH: 54
+00:37
+00:37
+107958667055116@lid
+Bom dia. 
+Por favor, pode encaminhar os dados de 31/01/2026 ?
+00:40
+00:40
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+31/01/26
+📈 Occ: 24,39%
+💰 D.M.: R$ 456,78
+🛏️ UH:51
+00:46
+00:46
+255146978201828@lid
+Venit Hotéis
+01/02/26
+📈 Occ: 13,73%
+💰 D.M.: R$ 458,16
+🛏️ UH:26
+00:46
+00:46
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+01/02/2026
+🛏 UH ocupadas:
+74
+📈 Ocupação:
+86,05
+💰 Diária Média:
+R$261,12
+01:24
+01:24
+259012448809133@lid
+【IMAGE】
+01:38
+01:38
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+01/02/2026
+📈 Occ: 59,22%
+💰 D.M.: 359,54
+🛏️ UH: 183
+01:39
+01:39
+160855366861019@lid
+🏨 RADISSON BARRA 
+📅  01/02/2026 
+BOM DIA ☀️
+🛏 UHs ocupadas: 250
+📈 Ocupação: 66,67%
+💰 Diária Média: R$ 641,89
+01:45
+01:45
+54606684020750@lid
+LAGUNE BARRA HOTEL
+Bom dia!
+01/02/2026
+
+🛏 UHs ocupadas: 118
+📈 Ocupação: 38,56%
+💰 Diária Média: R$ 331,34
+04:06
+04:06
+245277093023876@lid
+This message was deleted
+04:15
+04:15
+245277093023876@lid
+【IMAGE】
+04:16
+04:16
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia! 
+
+01/02/2026
+🛏 UHs ocupadas: 113
+📈 Ocupação: 72,44%
+💰 Diária Média: R$ 344,75
+04:33
+04:33
+220808848887828@lid
+【IMAGE】
+05:01
+05:01
+53721635528878@lid
+🏨 Dom Barra Hotel
+Bom Dia! 
+31/01/26
+
+🛏 UH: 48
+📈 Occ: 55,17%
+💰 D.M.: R$ 366,48
+
+
+🏨 Dom Barra Hotel
+Bom Dia! 
+01/02/26
+
+🛏 UH: 40
+📈 Occ: 45,98%
+💰 D.M.: R$ 361,75
+06:03
+06:03
+204668227575808@lid
+Quality Barra
+Bom dia!
+01/02/26
+📈 Occ: 59,56%
+💰 D.M.: R$ 362,58
+🛏️ UH: 109
+06:41
+06:41
+101628237606999@lid
+This message was deleted
+07:57
+07:57
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+31/01/2026
+🛌🏽Uh's ocupadas: 25
+🛏Uh's total: 28
+📈Occ: 89,29%
+💰DM: R$ 215,19
+
+Samba Rio Convention e Suítes
+
+Bom dia!
+01/02/2026
+🛌🏽Uh's ocupadas: 19
+🛏Uh's total: 28
+📈Occ: 67,87%
+💰DM: R$ 249,53
+08:01
+08:01
+203809687117932@lid
+Bom dia! Tudo bem? Podem enviar a ocupação de hoje? Por gentileza
+08:02
+08:02
+9711055302792@lid
+【IMAGE】
+09:16
+09:16
+9711055302792@lid
+【IMAGE】
+09:16
+09:16
+49173181296892@lid
+【IMAGE】
+09:53
+09:53
+49173181296892@lid
+【IMAGE】
+09:53
+09:53
+49173181296892@lid
+【IMAGE】
+09:53
+09:53
+49173181296892@lid
+【IMAGE】
+09:53
+09:53
+218622559518852@lid
+CDesign Hotel
+Boa tarde!
+
+29/01/2026
+🛏 UH ocupadas: 204
+🛏 UH total: 250
+📈 Occ: 81,60%
+💰 D.M.: R$ 598,96
+
+
+30/01/2026
+🛏 UH ocupadas: 184
+🛏 UH total: 250
+📈 Occ: 73,60%
+💰 D.M.: R$ 762,66
+
+31/01/2026
+🛏 UH ocupadas: 204
+🛏 UH total: 250
+📈 Occ: 81,60%
+💰 D.M.: R$ 771,07
+
+
+01/02/2026
+🛏 UH ocupadas: 187
+🛏 UH total: 250
+📈 Occ: 74,80%
+💰 D.M.: R$ 729,04
+13:41
+13:41
+2026/2/3
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+02/02/2026
+📈 Occ: 45,57%
+💰 D.M.: 368,80
+🛏️ UH: 147
+00:32
+00:32
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+02/02/26
+📈 Occ: 39,51%
+💰 D.M.: R$ 433,46
+🛏️ UH:79
+00:52
+00:52
+259012448809133@lid
+【IMAGE】
+00:52
+00:52
+245277093023876@lid
+【IMAGE】
+01:31
+01:31
+220808848887828@lid
+【IMAGE】
+01:52
+01:52
+204668227575808@lid
+Quality Barra
+Bom dia!
+02/02/26
+📈 Occ: 53,01%
+💰 D.M.: R$ 341,75
+🛏️ UH: 97
+03:11
+03:11
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia! 
+
+02/02/2026
+🛏 UHs ocupadas: 110
+📈 Ocupação: 70,51%
+💰 Diária Média: R$ 530,66
+03:12
+03:12
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+02/02/2026
+🛏 UH ocupadas:
+84
+📈 Ocupação:
+97,67
+💰 Diária Média:
+R$309,42
+04:05
+04:05
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+02/02/2026
+📈 Occ: 55,00%
+💰 D.M.:  305,72
+🛏️ UH: 77
+05:07
+05:07
+160855366861019@lid
+🏨 RADISSON BARRA 
+📅  02/02/2026 
+BOM DIA ☀️
+🛏 UHs ocupadas: 293
+📈 Ocupação: 78,13%
+💰 Diária Média: R$ 567,89
+05:19
+05:19
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+02/02/2026
+🛌🏽Uh's ocupadas: 24
+🛏Uh's total: 28
+📈Occ: 85,71%
+💰DM: R$ 265,87
+07:16
+07:16
+9711055302792@lid
+【IMAGE】
+09:13
+09:13
+220808848887828@lid
+Bom dia, consegue enviar os dados do atlântico a partir do dia 26, por favor? Obrigada!
+09:42
+09:42
+79560125194488@lid
+【IMAGE】
+13:08
+13:08
+239547623407691@lid
+Riale Brisa Barra!
+Boa noite!
+
+
+29/01/2026
+🛏 UH ocupadas: 82
+📈 Occ: 59,42%
+💰 D.M.: R$ 828,55
+
+
+30/01/2026
+🛏 UH ocupadas: 90
+📈 Occ: 65,22%
+💰 D.M.: R$ 876,47
+
+
+31/01/2026
+🛏 UH ocupadas: 92
+📈 Occ: 66,67%
+💰 D.M.: R$ 990,97
+14:17
+14:17
+239547623407691@lid
+Boa tarde.
+O total de occ do Marapendi não veio.
+14:18
+14:18
+239547623407691@lid
+Riale Brisa Barra!
+Boa tarde!
+
+
+01/02/2026
+🛏 UH ocupadas: 78
+📈 Occ: 56,52%
+💰 D.M.: R$ 824,93
+
+
+02/02/2026
+🛏 UH ocupadas: 77
+📈 Occ: 55,80%
+💰 D.M.: R$ 858,24
+14:19
+14:19
+49173181296892@lid
+Boa tarde!
+14:23
+14:23
+49173181296892@lid
+【IMAGE】
+14:24
+14:24
+49173181296892@lid
+【IMAGE】
+14:24
+14:24
+2026/2/4
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+03/02/2026
+📈 Occ: 81,43%
+💰 D.M.:  417,36
+🛏️ UH: 114
+00:28
+00:28
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+03/02/2026
+🛏 UH ocupadas:
+85
+📈 Ocupação:
+98,84
+💰 Diária Média:
+R$296,24
+01:01
+01:01
+160855366861019@lid
+🏨 RADISSON BARRA 
+📅  03/02/2026 
+BOM DIA ☀️
+🛏 UHs ocupadas: 311
+📈 Ocupação: 82,93%
+💰 Diária Média: R$ 646,70
+01:33
+01:33
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+03/02/26
+📈 Occ: 47,80%
+💰 D.M.: R$ 423,55
+🛏️ UH:96
+01:37
+01:37
+220808848887828@lid
+【IMAGE】
+01:42
+01:42
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+03/02/2026
+📈 Occ: 55,02%
+💰 D.M.: 349,00
+🛏️ UH: 170
+02:23
+02:23
+204668227575808@lid
+Quality Barra
+Bom dia!
+03/02/26
+📈 Occ: 45,90%
+💰 D.M.: R$ 351,16
+🛏️ UH: 84
+02:44
+02:44
+259012448809133@lid
+【IMAGE】
+02:58
+02:58
+245277093023876@lid
+【IMAGE】
+03:00
+03:00
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+03/02/2026
+🛏 UHs ocupadas: 123
+📈 Ocupação: 78,85%
+💰 Diária Média: R$ 373,27
+03:30
+03:30
+54606684020750@lid
+LAGUNE BARRA HOTEL
+Bom dia!
+03/02/2026
+
+🛏 UHs ocupadas: 136
+📈 Ocupação: 44,44%
+💰 Diária Média: R$ 324,40
+04:18
+04:18
+54606684020750@lid
+LAGUNE BARRA HOTEL
+Bom dia!
+02/02/2026
+
+🛏 UHs ocupadas: 118
+📈 Ocupação: 38,56%
+💰 Diária Média: R$ 337,46
+05:22
+05:22
+53721635528878@lid
+🏨 Dom Barra Hotel
+Bom Dia! 
+02/02/26
+
+🛏 UH: 53
+📈 Occ: 60,92%
+💰 D.M.: R$374,20
+
+
+🏨 Dom Barra Hotel
+Bom Dia! 
+03/02/26
+
+🛏 UH: 66
+📈 Occ: 75,86%
+💰 D.M.: R$ 385,80
+06:00
+06:00
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+03/02/2026
+🛌🏽Uh's ocupadas: 23
+🛏Uh's total: 28
+📈Occ: 82,14%
+💰DM: R$ 245,80
+07:18
+07:18
+9711055302792@lid
+【IMAGE】
+08:46
+08:46
+2026/2/5
+259012448809133@lid
+【IMAGE】
+01:29
+01:29
+245277093023876@lid
+This message was deleted
+01:51
+01:51
+259012448809133@lid
+Bom dia! número de uhs ocupadas está certo?
+01:52
+01:52
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+04/02/2026
+🛏 UH ocupadas:
+84
+📈 Ocupação:
+97,67
+💰 Diária Média:
+R$310,40
+02:03
+02:03
+245277093023876@lid
+【IMAGE】
+02:10
+02:10
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+04/02/26
+📈 Occ: 69,42%
+💰 D.M.: R$ 425,66
+🛏️ UH:139
+02:31
+02:31
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+04/02/2026
+🛏 UHs ocupadas: 137
+📈 Ocupação: 87,82%
+💰 Diária Média: R$ 373,01
+03:24
+03:24
+160855366861019@lid
+🏨 RADISSON BARRA 
+📅  04/02/2026 
+BOM DIA ☀️
+🛏 UHs ocupadas: 333
+📈 Ocupação: 88,80
+💰 Diária Média: R$ 638,68
+03:52
+03:52
+220808848887828@lid
+【IMAGE】
+04:42
+04:42
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+04/02/2026
+📈 Occ: 58,58%
+💰 D.M.: 365,53
+🛏️ UH: 181
+04:42
+04:42
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+04/02/2026
+📈 Occ: 82,15%
+💰 D.M.:  405,45
+🛏️ UH: 115
+05:08
+05:08
+54606684020750@lid
+LAGUNE BARRA HOTEL
+Bom dia!
+04/02/2026
+
+🛏 UHs ocupadas: 151
+📈 Ocupação: 49,35%
+💰 Diária Média: R$ 380,40
+06:25
+06:25
+204668227575808@lid
+Quality Barra
+Bom dia!
+04/02/26
+📈 Occ: 74,32%
+💰 D.M.: R$ 372,66
+🛏️ UH: 136
+06:35
+06:35
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+04/02/2026
+🛌🏽Uh's ocupadas: 21
+🛏Uh's total: 28
+📈Occ: 75,00%
+💰DM: R$ 253,05
+07:26
+07:26
+9711055302792@lid
+【IMAGE】
+08:54
+08:54
+49173181296892@lid
+【IMAGE】
+09:00
+09:00
+49173181296892@lid
+【IMAGE】
+09:00
+09:00
+220808848887828@lid
+Bom dia. Tem os dados do dia 4?
+09:04
+09:04
+49173181296892@lid
+Tem sim, estou encaminhando agora
+09:37
+09:37
+49173181296892@lid
+【IMAGE】
+09:38
+09:38
+49173181296892@lid
+【IMAGE】
+09:38
+09:38
+218622559518852@lid
+CDesign Hotel
+Bom dia!
+
+02/02/2026
+🛏 UH ocupadas: 171
+🛏 UH total: 250
+📈 Occ: 68,40%
+💰 D.M.: R$ 708,34
+
+
+03/02/2026
+🛏 UH ocupadas: 191
+🛏 UH total: 250
+📈 Occ: 76,40%
+💰 D.M.: R$ 636,54
+
+04/02/2026
+🛏 UH ocupadas: 197
+🛏 UH total: 250
+📈 Occ: 78,80%
+💰 D.M.: R$ 638,89
+11:18
+11:18
+239547623407691@lid
+Riale Brisa Barra!
+Boa noite!
+
+
+03/02/2026
+🛏 UH ocupadas: 87
+📈 Occ: 63,04%
+💰 D.M.: R$ 893,81
+
+
+04/02/2026
+🛏 UH ocupadas: 92
+📈 Occ: 66,67%
+💰 D.M.: R$ 895,57
+22:02
+22:02
+2026/2/6
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+05/02/2026
+📈 Occ: 65,00%
+💰 D.M.:  375,75
+🛏️ UH: 91
+00:28
+00:28
+204668227575808@lid
+Quality Barra
+Bom dia!
+05/02/26
+📈 Occ: 51,91%
+💰 D.M.: R$ 363,01
+🛏️ UH: 95
+01:08
+01:08
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+05/02/26
+📈 Occ: 48,29%
+💰 D.M.: R$ 434,12
+🛏️ UH:98
+01:44
+01:44
+259012448809133@lid
+【IMAGE】
+01:50
+01:50
+220808848887828@lid
+【IMAGE】
+01:54
+01:54
+160855366861019@lid
+🏨 RADISSON BARRA  - 05/02/25
+🛏 UHs ocupadas: 334
+📈 Ocupação 89,07%
+💰 Diária Média: R$ 669,20
+03:01
+03:01
+245277093023876@lid
+【IMAGE】
+03:12
+03:12
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+05/02/2026
+🛏 UHs ocupadas: 137
+📈 Ocupação: 87,82%
+💰 Diária Média: R$ 371,91
+03:41
+03:41
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+05/02/2026
+🛏 UH ocupadas:
+78
+📈 Ocupação:
+90,70
+💰 Diária Média:
+R$314,83
+04:51
+04:51
+54606684020750@lid
+LAGUNE BARRA HOTEL
+Bom dia!
+05/02/2026
+
+🛏 UHs ocupadas: 158
+📈 Ocupação: 51,63%
+💰 Diária Média: R$ 309,31
+04:56
+04:56
+204668227575808@lid
+@157977923293276 bom dia, poderia encaminhar novamente as informações do dia 05/02?
+05:40
+05:40
+53721635528878@lid
+🏨 Dom Barra Hotel
+Bom Dia! 
+04/02/26
+
+🛏 UH: 75
+📈 Occ: 86,21%
+💰 D.M.: R$ 374,00
+
+
+🏨 Dom Barra Hotel
+Bom Dia! 
+05/02/26
+
+🛏 UH: 75
+📈 Occ: 86,21%
+💰 D.M.: R$ 363,60
+05:49
+05:49
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+05/02/2026
+📈 Occ: 71,20%
+💰 D.M.: 390,14
+🛏️ UH: 220
+05:49
+05:49
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+05/02/2026
+🛌🏽Uh's ocupadas: 31
+🛏Uh's total: 28
+📈Occ: 111%
+💰DM: R$ 255,56
+07:51
+07:51
+9711055302792@lid
+【IMAGE】
+08:38
+08:38
+79560125194488@lid
+【IMAGE】
+12:42
+12:42
+244998020812822@lid
+Boa tarde ! Conseguem enviar os números de ontem? Obrigado
+13:30
+13:30
+244998020812822@lid
+Oi, Roberta. Tens os dados do dia 05/02? Obrigado
+13:31
+13:31
+49173181296892@lid
+【IMAGE】
+13:45
+13:45
+49173181296892@lid
+【IMAGE】
+13:45
+13:45
+244998020812822@lid
+mto obrigado
+13:50
+13:50
+239547623407691@lid
+Riale Brisa Barra!
+Boa tarde!
+
+05/02/2026
+🛏 UH ocupadas: 100
+📈 Occ: 72,46%
+💰 D.M.: R$ 1.020,57
+17:39
+17:39
+2026/2/7
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+06/02/2026
+📈 Occ: 61,81%
+💰 D.M.: 384,92
+🛏️ UH: 191
+01:05
+01:05
+259012448809133@lid
+【IMAGE】
+01:46
+01:46
+245277093023876@lid
+【IMAGE】
+02:35
+02:35
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+06/02/2026
+🛏 UH ocupadas:
+64
+📈 Ocupação:
+974,42
+💰 Diária Média:
+R$295,05
+03:56
+03:56
+54606684020750@lid
+LAGUNE BARRA HOTEL
+Bom dia!
+06/02/2026
+
+🛏 UHs ocupadas: 174
+📈 Ocupação: 56,86%
+💰 Diária Média: R$ 334,07
+04:41
+04:41
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+06/02/2026
+🛏 UHs ocupadas: 124
+📈 Ocupação: 79,49%
+💰 Diária Média: R$ 402,60
+04:44
+04:44
+220808848887828@lid
+【IMAGE】
+05:02
+05:02
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+06/02/2026
+📈 Occ: 55,00%
+💰 D.M.:  360,96
+🛏️ UH: 77
+05:52
+05:52
+204668227575808@lid
+Quality Barra
+Bom dia!
+06/02/26
+📈 Occ: 44,26%
+💰 D.M.: R$ 376,27
+🛏️ UH: 81
+05:53
+05:53
+107958667055116@lid
+qual a ocupação correta?
+05:58
+05:58
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+06/02/2026
+🛏 UH ocupadas:
+64
+📈 Ocupação:
+74,42
+💰 Diária Média:
+R$295,05
+06:03
+06:03
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+06/02/2026
+🛌🏽Uh's ocupadas: 28
+🛏Uh's total: 28
+📈Occ: 100%
+💰DM: R$ 292,96
+08:56
+08:56
+2026/2/8
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+07/02/2026
+🛏 UH ocupadas:
+58
+📈 Ocupação:
+67,44
+💰 Diária Média:
+R$ 257,72
+00:09
+00:09
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+07/02/2026
+📈 Occ: 53,57%
+💰 D.M.:  359,83
+🛏️ UH: 75
+00:38
+00:38
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+06/02/26
+📈 Occ: 30,39%
+💰 D.M.: R$ 497,17
+🛏️ UH:62
+01:40
+01:40
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+07/02/26
+📈 Occ: 22,77%
+💰 D.M.: R$ 498,82
+🛏️ UH:45
+01:40
+01:40
+220808848887828@lid
+【IMAGE】
+01:44
+01:44
+204668227575808@lid
+Quality Barra
+Bom dia!
+07/02/26
+📈 Occ: 45,36 %
+💰 D.M.: R$ 382,30
+🛏️ UH: 83
+02:00
+02:00
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+07/02/2026
+📈 Occ: 73,14%
+💰 D.M.: 399,59
+🛏️ UH: 226
+02:26
+02:26
+160855366861019@lid
+🏨 RADISSON BARRA  - 07/02/25
+🛏 UHs ocupadas: 297
+📈 Ocupação 79,20%
+💰 Diária Média: R$ 639,26
+02:33
+02:33
+259012448809133@lid
+【IMAGE】
+02:54
+02:54
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+07/02/2026
+🛏 UHs ocupadas: 128
+📈 Ocupação: 82,05%
+💰 Diária Média: R$ 382,40
+03:01
+03:01
+245277093023876@lid
+【IMAGE】
+04:18
+04:18
+53721635528878@lid
+🏨 Dom Barra Hotel
+Bom Dia! 
+06/02/26
+
+🛏 UH: 78
+📈 Occ: 89,66%
+💰 D.M.: R$ 422,69
+
+
+🏨 Dom Barra Hotel
+Bom Dia! 
+07/02/26
+
+🛏 UH: 71
+📈 Occ: 81,61%
+💰 D.M.: R$ 395,94
+06:02
+06:02
+157977923293276@lid
+@160855366861019 poderia informar do dia 06/02?
+06:29
+06:29
+54606684020750@lid
+LAGUNE BARRA HOTEL
+Bom dia!
+07/02/2026
+
+🛏 UHs ocupadas: 193
+📈 Ocupação: 63,07%
+💰 Diária Média: R$ 355,79
+07:16
+07:16
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+07/02/2026
+🛌🏽Uh's ocupadas: 29
+🛏Uh's total: 28
+📈Occ: 104%
+💰DM: R$ 266,20
+07:38
+07:38
+2026/2/9
+220808848887828@lid
+【IMAGE】
+01:08
+01:08
+259012448809133@lid
+【IMAGE】
+01:21
+01:21
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+08/02/2026
+🛏 UH ocupadas:
+61
+📈 Ocupação:
+70,493
+💰 Diária Média: *R$ 292,92
+01:54
+01:54
+245277093023876@lid
+【IMAGE】
+03:14
+03:14
+204668227575808@lid
+Quality Barra
+Bom dia!
+08/02/26
+📈 Occ: 25,68 %
+💰 D.M.: R$ 385,71
+🛏️ UH: 47
+03:26
+03:26
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+08/02/26
+📈 Occ: 22,17%
+💰 D.M.: R$449,62
+🛏️ UH:41
+03:56
+03:56
+160855366861019@lid
+🏨 RADISSON BARRA  - 08/02/25
+🛏 UHs ocupadas: 277
+📈 Ocupação 73,87%
+💰 Diária Média: R$ 542,44
+04:05
+04:05
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+08/02/2026
+🛏 UHs ocupadas: 105
+📈 Ocupação: 67,31%
+💰 Diária Média: R$ 372,41
+04:06
+04:06
+160855366861019@lid
+Bom dia!
+04:06
+04:06
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+07/02/2026
+📈 Occ: 42,07%
+💰 D.M.: 377,25
+🛏️ UH: 130
+04:14
+04:14
+157977923293276@lid
+Poderia informar o do dia 06.02?
+04:18
+04:18
+54606684020750@lid
+LAGUNE BARRA HOTEL
+Bom dia!
+08/02/2026
+
+🛏 UHs ocupadas: 118
+📈 Ocupação: 38,56%
+💰 Diária Média: R$ 334,10
+04:41
+04:41
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+08/02/2026
+📈 Occ: 45,72%
+💰 D.M.: 372,82
+🛏️ UH: 64
+04:59
+04:59
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+08/02/2026
+🛌🏽Uh's ocupadas: 23
+🛏Uh's total: 28
+📈Occ: 82,14%
+💰DM: R$ 299,58
+07:28
+07:28
+203809687117932@lid
+Bom dia! Tudo bem? Vocês podem enviar a ocupação na data de hoje? Por gentileza
+08:16
+08:16
+203809687117932@lid
+This message was deleted
+08:19
+08:19
+49173181296892@lid
+【IMAGE】
+09:12
+09:12
+49173181296892@lid
+【IMAGE】
+09:12
+09:12
+220808848887828@lid
+Bom dia! 
+
+Conseguem mandar os dados do dia 6 prfv?
+09:49
+09:49
+9711055302792@lid
+【IMAGE】
+10:39
+10:39
+218622559518852@lid
+CDesign Hotel
+Bom dia!
+
+05/02/2026
+🛏 UH ocupadas: 186
+🛏 UH total: 250
+📈 Occ: 74,40%
+💰 D.M.: R$ 716,57
+
+
+06/02/2026
+🛏 UH ocupadas: 219
+🛏 UH total: 250
+📈 Occ: 87,60%
+💰 D.M.: R$ 680,27
+
+07/02/2026
+🛏 UH ocupadas: 190
+🛏 UH total: 250
+📈 Occ: 76%
+💰 D.M.: R$ 748,02
+
+08/02/2026
+🛏 UH ocupadas: 134
+🛏 UH total: 250
+📈 Occ: 53,60%
+💰 D.M.: R$ 700,38
+11:39
+11:39
+79560125194488@lid
+【IMAGE】
+12:34
+12:34
+2026/2/10
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+09/02/26
+📈 Occ: 50,75%
+💰 D.M.: R$421,69
+🛏️ UH:100
+00:24
+00:24
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+09/02/2026
+🛏 UH ocupadas:
+72
+📈 Ocupação:
+83,72%
+💰 Diária Média:
+R$ 314,64
+00:25
+00:25
+259012448809133@lid
+【IMAGE】
+01:03
+01:03
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+09/02/2026
+📈 Occ: 67,86%
+💰 D.M.: 422,22
+🛏️ UH: 95
+01:09
+01:09
+220808848887828@lid
+【IMAGE】
+01:11
+01:11
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+09/02/2026
+📈 Occ: 36,57%
+💰 D.M.: 373,28
+🛏️ UH: 113
+01:30
+01:30
+204668227575808@lid
+Quality Barra
+Bom dia!
+09/02/26
+📈 Occ: 34,43 %
+💰 D.M.: R$ 340,56
+🛏️ UH: 63
+02:10
+02:10
+160855366861019@lid
+🏨 RADISSON BARRA  - 09/02/25
+🛏 UHs ocupadas: 314
+📈 Ocupação 83,73%
+💰 Diária Média: R$562,42
+03:03
+03:03
+245277093023876@lid
+【IMAGE】
+03:16
+03:16
+54606684020750@lid
+LAGUNE BARRA HOTEL
+Bom dia!
+09/02/2026
+
+🛏 UHs ocupadas: 143
+📈 Ocupação: 46,73%
+💰 Diária Média: R$ 336,30
+03:28
+03:28
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+09/02/2026
+🛏 UHs ocupadas: 130
+📈 Ocupação: 83,33%
+💰 Diária Média: R$ 379,34
+04:07
+04:07
+157977923293276@lid
+@160855366861019 poderia informar dia 06/02/26
+05:44
+05:44
+160855366861019@lid
+🏨 RADISSON BARRA  - 06/02/25
+🛏 UHs ocupadas:310
+📈 Ocupação 82,67%
+💰 Diária Média: R$679,44
+05:54
+05:54
+53721635528878@lid
+🏨 Dom Barra Hotel
+Bom Dia! 
+08/02/26
+
+🛏 UH: 45
+📈 Occ: 51,72%
+💰 D.M.: R$ 405,95
+
+
+🏨 Dom Barra Hotel
+Bom Dia! 
+09/02/26
+
+🛏 UH: 51
+📈 Occ: 58,62%
+💰 D.M.: R$ 306,46
+05:56
+05:56
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+09/02/2026
+🛌🏽Uh's ocupadas: 21
+🛏Uh's total: 28
+📈Occ: 75%
+💰DM: R$ 270,23
+08:05
+08:05
+9711055302792@lid
+【IMAGE】
+08:58
+08:58
+239547623407691@lid
+Riale Brisa Barra!
+Boa tarde!
+
+06/02/2026
+🛏 UH ocupadas: 108
+📈 Occ: 78,26%
+💰 D.M.: R$ 960,03
+
+
+07/02/2026
+🛏 UH ocupadas: 110
+📈 Occ: 79,71%
+💰 D.M.: R$ 1.005,39
+
+
+08/02/2026
+🛏 UH ocupadas: 87
+📈 Occ: 63,04%
+💰 D.M.: R$ 875,96
+
+
+
+09/02/2026
+🛏 UH ocupadas: 79
+📈 Occ: 57,25%
+💰 D.M.: R$ 857,86
+11:53
+11:53
+2026/2/11
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+10/02/26
+📈 Occ: 69,50%
+💰 D.M.: R$433,62
+🛏️ UH:138
+01:58
+01:58
+259012448809133@lid
+【IMAGE】
+02:49
+02:49
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+10/02/2026
+🛏 UH ocupadas:
+78
+📈 Ocupação:
+90,70%
+💰 Diária Média:
+R$ 337,36
+02:52
+02:52
+204668227575808@lid
+Quality Barra
+Bom dia!
+10/02/26
+📈 Occ: 42,08 %
+💰 D.M.: R$ 373,91
+🛏️ UH: 77
+03:45
+03:45
+245277093023876@lid
+【IMAGE】
+03:55
+03:55
+157977923293276@lid
+This message was deleted
+04:03
+04:03
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+10/02/2026
+📈 Occ: 50,81%
+💰 D.M.: 341,45
+🛏️ UH: 157
+04:03
+04:03
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+10/02/2026
+🛏 UHs ocupadas: 130
+📈 Ocupação: 83,33%
+💰 Diária Média: R$ 353,69
+04:07
+04:07
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+10/02/2026
+📈 Occ: 85,00%
+💰 D.M.: 379,44
+🛏️ UH: 119
+05:03
+05:03
+220808848887828@lid
+【IMAGE】
+05:04
+05:04
+160855366861019@lid
+Radisson Barra Rio de Janeiro
+10/02/2025 
+🛏 UHs ocupadas:  338
+📈 Ocupação 90,13%
+💰 Diária Média: R$ 558,29
+06:10
+06:10
+54606684020750@lid
+LAGUNE BARRA HOTEL
+Bom dia!
+10/02/2026
+
+🛏 UHs ocupadas: 138
+📈 Ocupação: 45,10
+💰 Diária Média: R$ 348,19
+06:40
+06:40
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+10/02/2026
+🛌🏽Uh's ocupadas: 17
+🛏Uh's total: 28
+📈Occ: 60,71%
+💰DM: R$ 290,93
+07:57
+07:57
+49173181296892@lid
+【IMAGE】
+08:49
+08:49
+49173181296892@lid
+【IMAGE】
+08:49
+08:49
+9711055302792@lid
+【IMAGE】
+08:50
+08:50
+239547623407691@lid
+Riale Brisa Barra!
+Boa noite!
+
+10/02/2026
+🛏 UH ocupadas: 68
+📈 Occ: 49,28%
+💰 D.M.: R$ 813,34
+22:05
+22:05
+2026/2/12
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+11/02/2026
+📈 Occ: 63,57%
+💰 D.M.: 365,36
+🛏️ UH: 89
+00:19
+00:19
+204668227575808@lid
+Quality Barra
+Bom dia!
+11/02/26
+📈 Occ: 46,62 %
+💰 D.M.: R$ 372,57
+🛏️ UH: 78
+00:46
+00:46
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+11/02/26
+📈 Occ: 67,69%
+💰 D.M.: R$429,67
+🛏️ UH:128
+01:38
+01:38
+160855366861019@lid
+Radisson Barra Rio de Janeiro
+11/02/2025 
+🛏 UHs ocupadas:  339
+📈 Ocupação 90,40%
+💰 Diária Média: R$ 573,16
+01:56
+01:56
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+11/02/2026
+📈 Occ: 56,96%
+💰 D.M.: 429,68
+🛏️ UH: 176
+02:45
+02:45
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+11/02/2026
+🛏 UH ocupadas:
+74
+📈 Ocupação:
+86,05%
+💰 Diária Média:
+R$ 337,38
+02:46
+02:46
+245277093023876@lid
+【IMAGE】
+02:52
+02:52
+259012448809133@lid
+【IMAGE】
+03:10
+03:10
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+11/02/2026
+🛏 UHs ocupadas: 128
+📈 Ocupação: 82,05%
+💰 Diária Média: R$ 374,40
+04:00
+04:00
+54606684020750@lid
+LAGUNE BARRA HOTEL
+Bom dia!
+11/02/2026
+
+🛏 UHs ocupadas: 144
+📈 Ocupação: 47,06 %
+💰 Diária Média: R$ 364,80
+05:44
+05:44
+53721635528878@lid
+🏨 Dom Barra Hotel
+Bom Dia! 
+10/02/26
+
+🛏 UH: 62
+📈 Occ: 71,26%
+💰 D.M.: R$ 306,86
+
+
+🏨 Dom Barra Hotel
+Bom Dia! 
+11/02/26
+
+🛏 UH: 59
+📈 Occ: 67,82%
+💰 D.M.: R$ 308,22
+05:44
+05:44
+157977923293276@lid
+@220808848887828 ?
+06:42
+06:42
+220808848887828@lid
+Bom dia
+07:16
+07:16
+220808848887828@lid
+Tivemos um problema técnico com o sistema impossibilitando que auditoria seja rodada corretamente, devido a isso, quando for resolvido, enviaremos os dados.
+07:16
+07:16
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+10/02/2026
+🛌🏽Uh's ocupadas: 20
+🛏Uh's total: 28
+📈Occ: 71,43%
+💰DM: R$ 421,15
+07:37
+07:37
+9711055302792@lid
+【IMAGE】
+08:37
+08:37
+239547623407691@lid
+Riale Brisa Barra!
+Boa tarde!
+
+11/02/2026
+🛏 UH ocupadas: 72
+📈 Occ: 52,17%
+💰 D.M.: R$ 859,51
+17:07
+17:07
+2026/2/13
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+12/02/2026
+🛏 UH ocupadas:
+73
+📈 Ocupação:
+84,88%
+💰 Diária Média:
+R$ 297,17
+02:31
+02:31
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+12/02/2026
+🛏 UHs ocupadas: 130
+📈 Ocupação: 83,33%
+💰 Diária Média: R$ 370,42
+03:02
+03:02
+259012448809133@lid
+【IMAGE】
+03:22
+03:22
+220808848887828@lid
+【IMAGE】
+03:26
+03:26
+220808848887828@lid
+【IMAGE】
+03:26
+03:26
+245277093023876@lid
+【IMAGE】
+04:09
+04:09
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+12/02/26
+📈 Occ: 53,69
+💰 D.M.: R$456,63
+🛏️ UH:107
+04:18
+04:18
+54606684020750@lid
+LAGUNE BARRA HOTEL
+Bom dia!
+12/02/2026
+
+🛏 UHs ocupadas: 161
+📈 Ocupação: 52,61 %
+💰 Diária Média: R$ 369,49
+04:41
+04:41
+204668227575808@lid
+Quality Barra
+Bom dia!
+12/02/26
+📈 Occ: 38,80 %
+💰 D.M.: R$ 378,42
+🛏️ UH: 71
+05:17
+05:17
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+12/02/2026
+📈 Occ: 58,58%
+💰 D.M.: 393,68
+🛏️ UH: 82
+05:35
+05:35
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+12/02/2026
+📈 Occ: 68,93%
+💰 D.M.: 369,74
+🛏️ UH: 213
+06:11
+06:11
+160855366861019@lid
+RADISSO BARRA RIO DE JANEIRO
+12/02/2025
+🛏 UHs ocupadas:  321
+📈 Ocupação :  85,60%
+💰 Diária Média: R$ 574,62
+07:03
+07:03
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+12/02/2026
+🛌🏽Uh's ocupadas: 26
+🛏Uh's total: 28
+📈Occ: 92,86%
+💰DM: R$ 328,21
+07:42
+07:42
+49173181296892@lid
+【IMAGE】
+09:08
+09:08
+49173181296892@lid
+【IMAGE】
+09:08
+09:08
+9711055302792@lid
+【IMAGE】
+09:41
+09:41
+239547623407691@lid
+Riale Brisa Barra!
+Boa tarde!
+
+12/02/2026
+🛏 UH ocupadas: 86
+📈 Occ: 62,32%
+💰 D.M.: R$ 913,53
+15:10
+15:10
+2026/2/14
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+13/02/26
+📈 Occ: 69,15%
+💰 D.M.: R$549,58
+🛏️ UH:138
+00:55
+00:55
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+13/02/2026
+📈 Occ: 62,14%
+💰 D.M.: 572,13
+🛏️ UH: 87
+01:34
+01:34
+220808848887828@lid
+【IMAGE】
+01:36
+01:36
+204668227575808@lid
+Quality Barra
+Bom dia!
+13/02/26
+📈 Occ: 45,36 %
+💰 D.M.: R$ 523,79
+🛏️ UH: 83
+02:54
+02:54
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+13/02/2026
+🛏 UHs ocupadas: 136
+📈 Ocupação: 87,18%
+💰 Diária Média: R$ 643,94
+04:08
+04:08
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+13/02/2026
+📈 Occ: 92,56%
+💰 D.M.: 610,64
+🛏️ UH: 286
+04:19
+04:19
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+13/02/2026
+🛏 UH ocupadas:
+73
+📈 Ocupação:
+84,88%
+💰 Diária Média:
+R$ 407,98
+04:34
+04:34
+160855366861019@lid
+RADISSO BARRA RIO DE JANEIRO
+13/02/2025
+🛏 UHs ocupadas:  307
+📈 Ocupação :  81,87%
+💰 Diária Média: R$ 1121,99
+04:40
+04:40
+259012448809133@lid
+【IMAGE】
+04:56
+04:56
+54606684020750@lid
+LAGUNE BARRA HOTEL
+Bom dia!
+13/02/2026
+
+🛏 UHs ocupadas: 170
+📈 Ocupação: 55,56 %
+💰 Diária Média: R$ 805,28
+05:05
+05:05
+245277093023876@lid
+【IMAGE】
+05:52
+05:52
+53721635528878@lid
+🏨 Dom Barra Hotel
+Bom Dia! 
+12/02/26
+
+🛏 UH: 64
+📈 Occ: 73,56%
+💰 D.M.: R$ 338,57
+
+
+🏨 Dom Barra Hotel
+Bom Dia! 
+13/02/26
+
+🛏 UH: 75
+📈 Occ: 86,21%
+💰 D.M.: R$ 552,12
+05:59
+05:59
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+12/02/2026
+🛌🏽Uh's ocupadas: 20
+🛏Uh's total: 28
+📈Occ: 71,43%
+💰DM: R$ 500,72
+08:05
+08:05
+2026/2/15
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+14/02/26
+📈 Occ: 81,46%
+💰 D.M.: R$877,79
+🛏️ UH:165
+00:48
+00:48
+259012448809133@lid
+【IMAGE】
+02:26
+02:26
+160855366861019@lid
+RADISSO BARRA RIO DE JANEIRO
+14/02/2025
+🛏 UHs ocupadas:  345
+📈 Ocupação :  92%
+💰 Diária Média: R$ 1355,02
+02:55
+02:55
+220808848887828@lid
+【IMAGE】
+03:10
+03:10
+204668227575808@lid
+Quality Barra
+Bom dia!
+14/02/26
+📈 Occ: 95,08 %
+💰 D.M.: R$ 661,97
+🛏️ UH: 174
+03:15
+03:15
+245277093023876@lid
+【IMAGE】
+03:41
+03:41
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+14/02/2026
+🛏 UHs ocupadas: 150
+📈 Ocupação: 96,15%
+💰 Diária Média: R$ 673,72
+03:43
+03:43
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+14/02/2026
+🛏 UH ocupadas:
+72
+📈 Ocupação:
+83,72%
+💰 Diária Média:
+R$ 702,51
+04:21
+04:21
+54606684020750@lid
+LAGUNE BARRA HOTEL
+Bom dia!
+14/02/2026
+
+🛏 UHs ocupadas: 286
+📈 Ocupação: 93,46 %
+💰 Diária Média: R$ 850,04
+04:48
+04:48
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+14/02/2026
+📈 Occ: 98,38%
+💰 D.M.: 942,27
+🛏️ UH: 304
+05:56
+05:56
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+14/02/2026
+📈 Occ: 99,29%
+💰 D.M.: 765,76
+🛏️ UH: 139
+06:11
+06:11
+160855366861019@lid
+RADISSON BARRA RIO DE JANEIRO 
+14/02/2026
+UHs ocupadas:   342
+📈 Ocupação :  92%
+💰 Diária Média: R$ 1.316,32
+07:12
+07:12
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+14/02/2026
+🛌🏽Uh's ocupadas:27
+🛏Uh's total: 28
+📈Occ: 96,43%
+💰DM: R$ 437,78
+08:30
+08:30
+2026/2/16
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+15/02/2026
+🛏 UH ocupadas:
+76
+📈 Ocupação:
+88,37%
+💰 Diária Média:
+R$ 736,24
+01:25
+01:25
+220808848887828@lid
+【IMAGE】
+01:46
+01:46
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+15/02/26
+📈 Occ: 86,27%
+💰 D.M.: R$877,65
+🛏️ UH:177
+01:52
+01:52
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+15/02/2026
+🛏 UHs ocupadas: 156
+📈 Ocupação: 100,00%
+💰 Diária Média: R$ 671,85
+02:07
+02:07
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+15/02/2026
+📈 Occ: 99,29%
+💰 D.M.: 802,83
+🛏️ UH: 139
+02:10
+02:10
+204668227575808@lid
+Quality Barra
+Bom dia!
+15/02/26
+📈 Occ: 93,44 %
+💰 D.M.: R$ 764,13
+🛏️ UH: 171
+03:35
+03:35
+259012448809133@lid
+【IMAGE】
+03:41
+03:41
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+15/02/2026
+📈 Occ: 98,71%
+💰 D.M.: 1077,22
+🛏️ UH: 305
+04:18
+04:18
+245277093023876@lid
+【IMAGE】
+04:29
+04:29
+53721635528878@lid
+🏨 Dom Barra Hotel
+Bom Dia! 
+14/02/26
+
+🛏 UH: 85
+📈 Occ: 97,70%
+💰 D.M.: R$ 747,10
+
+
+🏨 Dom Barra Hotel
+Bom Dia! 
+15/02/26
+
+🛏 UH: 86
+📈 Occ: 98,85%
+💰 D.M.: R$ 756,83
+06:15
+06:15
+160855366861019@lid
+RADISSON BARRA RIO DE JANEIRO 
+15/02/2026
+UHs ocupadas:   332
+📈 Ocupação :  88,53%
+💰 Diária Média: R$ 1.365,09
+06:26
+06:26
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+15/02/2026
+🛌🏽Uh's ocupadas:34
+🛏Uh's total: 28
+📈Occ: 121%
+💰DM: R$ 494,80
+07:10
+07:10
+9711055302792@lid
+【IMAGE】
+08:55
+08:55
+239547623407691@lid
+Riale Brisa Barra!
+Boa tarde!
+
+13/02/2026
+🛏 UH ocupadas: 111
+📈 Occ: 80,43%
+💰 D.M.: R$ 1.250,36
+
+
+14/02/2026
+🛏 UH ocupadas: 128
+📈 Occ: 92,75%
+💰 D.M.: R$ 1.878,92
+
+
+15/02/2026
+🛏 UH ocupadas: 134
+📈 Occ: 97,10%
+💰 D.M.: R$ 1.892,11
+12:20
+12:20
+2026/2/17
+259012448809133@lid
+【IMAGE】
+01:36
+01:36
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+16/02/26
+📈 Occ: 87,38%
+💰 D.M.: R$786,22
+🛏️ UH:181
+01:48
+01:48
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+16/02/2026
+🛏 UH ocupadas:
+77
+📈 Ocupação:
+89,53%
+💰 Diária Média:
+R$ 696,51
+02:03
+02:03
+245277093023876@lid
+【IMAGE】
+02:26
+02:26
+220808848887828@lid
+【IMAGE】
+03:26
+03:26
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+16/02/2026
+📈 Occ: 95,79%
+💰 D.M.: 1165,15
+🛏️ UH: 296
+04:16
+04:16
+254807558324387@lid
+@204668227575808
+06:07
+06:07
+254807558324387@lid
+Por favor a ocupação????
+06:07
+06:07
+254807558324387@lid
+Bom dia
+06:07
+06:07
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+16/02/2026
+📈 Occ: 99,29%
+💰 D.M.: 764,29
+🛏️ UH: 139
+06:10
+06:10
+160855366861019@lid
+RADISSON BARRA RIO DE JANEIRO 
+16/02/2026
+UHs ocupadas:   335
+📈 Ocupação :  89,33%
+💰 Diária Média: R$ 1.377,55
+06:30
+06:30
+204668227575808@lid
+Quality Barra
+Bom dia!
+16/02/26
+📈 Occ: 97,27 %
+💰 D.M.: R$ 650,36
+🛏️ UH: 178
+06:31
+06:31
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+16/02/2026
+🛏 UHs ocupadas: 149
+📈 Ocupação: 95,91%
+💰 Diária Média: R$826,65
+06:31
+06:31
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+16/02/2026
+🛌🏽Uh's ocupadas:26
+🛏Uh's total: 28
+📈Occ: 92,86%
+💰DM: R$ 477,33
+07:43
+07:43
+2026/2/18
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+17/02/2026
+🛏 UH ocupadas:
+79
+📈 Ocupação:
+91,86%
+💰 Diária Média:
+R$ 629,99
+00:15
+00:15
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+17/02/26
+📈 Occ: 85,22%
+💰 D.M.: R$649,54
+🛏️ UH:173
+02:18
+02:18
+259012448809133@lid
+【IMAGE】
+02:36
+02:36
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+17/02/2026
+📈 Occ: 99,35%
+💰 D.M.: 730,58
+🛏️ UH: 307
+03:17
+03:17
+220808848887828@lid
+【IMAGE】
+03:31
+03:31
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+17/02/2026
+🛏 UHs ocupadas: 149
+📈 Ocupação: 95,91%
+💰 Diária Média: R$ 637,67
+03:54
+03:54
+245277093023876@lid
+【IMAGE】
+04:22
+04:22
+53721635528878@lid
+🏨 Dom Barra Hotel
+Bom Dia! 
+16/02/26
+
+🛏 UH: 87
+📈 Occ: 100,00%
+💰 D.M.: R$ 774,20
+
+
+🏨 Dom Barra Hotel
+Bom Dia! 
+17/02/26
+
+🛏 UH: 81
+📈 Occ: 93,10%
+💰 D.M.: R$ 559,22
+06:07
+06:07
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+17/02/2026
+📈 Occ: 99,29%
+💰 D.M.: 755,91
+🛏️ UH: 139
+06:07
+06:07
+204668227575808@lid
+Quality Barra
+Bom dia!
+17/02/26
+📈 Occ: 66,67 %
+💰 D.M.: R$ 667,80
+🛏️ UH: 122
+06:07
+06:07
+160855366861019@lid
+RADISSON BARRA RIO DE JANEIRO 
+17/02/2026
+UHs ocupadas:   343
+📈 Ocupação :  91,47%
+06:13
+06:13
+54606684020750@lid
+LAGUNE BARRA HOTEL
+Bom dia!
+14/02/2026
+
+🛏 UHs ocupadas: 286
+📈 Ocupação:  93,46%
+💰 Diária Média: R$ 867,01
+06:40
+06:40
+244998020812822@lid
+Bom dia ! Qual a diária média ? Obrigado.
+07:47
+07:47
+244998020812822@lid
+Bom dia ! Poderiam enviar os dados desde o dia 13/02? Obrigado.
+07:47
+07:47
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+16/02/2026
+🛌🏽Uh's ocupadas:26
+🛏Uh's total: 28
+📈Occ: 92,86%
+💰DM: R$ 523,03
+07:58
+07:58
+244998020812822@lid
+Bom dia ! Conseguem os dados dos dias 15 e 16/02?
+08:10
+08:10
+9711055302792@lid
+【IMAGE】
+08:44
+08:44
+49173181296892@lid
+【IMAGE】
+08:54
+08:54
+49173181296892@lid
+【IMAGE】
+08:54
+08:54
+160855366861019@lid
+R$ 1242,34
+09:17
+09:17
+244998020812822@lid
+Olá, Roberta. Nos atualiza os dias 16 e 17/02? Obrigado
+11:10
+11:10
+79560125194488@lid
+【IMAGE】
+13:55
+13:55
+218622559518852@lid
+CDesign Hotel
+Boa tarde!
+
+09/02/2026
+🛏 UH ocupadas: 144
+🛏 UH total: 250
+📈 Occ: 57,60%
+💰 D.M.: R$ 681,66
+
+
+10/02/2026
+🛏 UH ocupadas: 156
+🛏 UH total: 250
+📈 Occ: 62,40%
+💰 D.M.: R$ 658,36
+
+11/02/2026
+🛏 UH ocupadas: 170
+🛏 UH total: 250
+📈 Occ: 68%
+💰 D.M.: R$ 699,11
+
+12/02/2026
+🛏 UH ocupadas: 177
+🛏 UH total: 250
+📈 Occ: 70,80%
+💰 D.M.: R$ 746,29
+
+13/02/2026
+🛏 UH ocupadas: 211
+🛏 UH total: 250
+📈 Occ: 84,40%
+💰 D.M.: R$ 947,67
+
+14/02/2026
+🛏 UH ocupadas: 227
+🛏 UH total: 250
+📈 Occ: 90,80%
+💰 D.M.: R$ 1.026,07
+
+15/02/2026
+🛏 UH ocupadas: 230
+🛏 UH total: 250
+📈 Occ: 92%
+💰 D.M.: R$ 1.117,61
+
+16/02/2026
+🛏 UH ocupadas: 233
+🛏 UH total: 250
+📈 Occ: 93,20%
+💰 D.M.: R$ 1.075,50
+
+17/02/2026
+🛏 UH ocupadas: 203
+🛏 UH total: 250
+📈 Occ: 81,20%
+💰 D.M.: R$ 976,08
+16:24
+16:24
+239547623407691@lid
+Riale Brisa Barra!
+Boa tarde!
+
+16/02/2026
+🛏 UH ocupadas: 131
+📈 Occ: 94,93%
+💰 D.M.: R$ 1.861,57
+
+
+17/02/2026
+🛏 UH ocupadas: 121
+📈 Occ: 87,68%
+💰 D.M.: R$ 1.513,08
+18:18
+18:18
+2026/2/19
+259012448809133@lid
+【IMAGE】
+01:47
+01:47
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+18/02/26
+📈 Occ: 83,42%
+💰 D.M.: R$448,26
+🛏️ UH:162
+02:14
+02:14
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+18/02/2026
+🛏 UH ocupadas:
+73
+📈 Ocupação:
+84,88%
+💰 Diária Média:
+R$ 345,81
+03:10
+03:10
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+18/02/2026
+🛏 UHs ocupadas: 136
+📈 Ocupação: 87,18%
+💰 Diária Média: R$ 431,52
+03:42
+03:42
+245277093023876@lid
+【IMAGE】
+03:44
+03:44
+220808848887828@lid
+Square Desing Hotel  
+90,23%
+occ: 194
+DM: 617,30
+bom dia
+03:57
+03:57
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+18/02/2026
+📈 Occ: 96,12%
+💰 D.M.: 515,60
+🛏️ UH: 297
+04:45
+04:45
+204668227575808@lid
+Quality Barra
+Bom dia!
+18/02/26
+📈 Occ: 47,54 %
+💰 D.M.: R$ 640,48
+🛏️ UH: 87
+04:49
+04:49
+160855366861019@lid
+RADISSO BARRA RIO DE JANEIRO
+18/02/2025
+🛏 UHs ocupadas:  315
+📈 Ocupação :  84%
+💰 Diária Média: R$ 1.011,69 .
+05:20
+05:20
+157977923293276@lid
+BOM DIA PODERIA PASSAR O VALOR DA DIARIA MEDIA
+05:24
+05:24
+160855366861019@lid
+RADISSO BARRA RIO DE JANEIRO
+17/02/2025
+🛏 UHs ocupadas:  343
+📈 Ocupação :  91,47%
+💰 Diária Média: R$ 1.242,34 .
+05:29
+05:29
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+18/02/2026
+📈 Occ: 85,00%
+💰 D.M.: 498,58
+🛏️ UH: 119
+06:23
+06:23
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+18/02/2026
+🛌🏽Uh's ocupadas:23
+🛏Uh's total: 28
+📈Occ: 82,14%
+💰DM: R$ 480,65
+07:46
+07:46
+54606684020750@lid
+LAGUNE BARRA HOTEL
+Bom dia!
+18/02/2026
+
+🛏 UHs ocupadas: 286229
+📈 Ocupação:  74,84%
+💰 Diária Média: R$ 427,50
+07:54
+07:54
+220808848887828@lid
+Bom dia! Pode mandar dos dia 15/02, 16/02 e 17/02, por favor?
+08:39
+08:39
+9711055302792@lid
+【IMAGE】
+09:16
+09:16
+2026/2/20
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+19/02/2026
+🛏 UH ocupadas:
+75
+📈 Ocupação:
+87,21%
+💰 Diária Média:
+R$ 349,70
+00:28
+00:28
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+19/02/2026
+📈 Occ: 74,29%
+💰 D.M.: 451,62
+🛏️ UH: 104
+00:51
+00:51
+204668227575808@lid
+Quality Barra
+Bom dia!
+19/02/26
+📈 Occ: 55,74 %
+💰 D.M.: R$ 415,79 
+🛏️ UH: 102
+03:01
+03:01
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+19/02/2026
+🛏 UHs ocupadas: 142
+📈 Ocupação: 91,03%
+💰 Diária Média: R$ 355,99
+03:14
+03:14
+220808848887828@lid
+【IMAGE】
+03:41
+03:41
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+19/02/26
+📈 Occ: 75,76%
+💰 D.M.: R$464,24
+🛏️ UH:143
+03:49
+03:49
+245277093023876@lid
+【IMAGE】
+05:20
+05:20
+53721635528878@lid
+🏨 Dom Barra Hotel
+Bom Dia! 
+18/02/26
+
+🛏 UH: 61
+📈 Occ: 70,11%
+💰 D.M.: R$ 501,37
+
+
+🏨 Dom Barra Hotel
+Bom Dia! 
+19/02/26
+
+🛏 UH: 62
+📈 Occ: 71,26%
+💰 D.M.: R$ 333,51
+05:50
+05:50
+259012448809133@lid
+【IMAGE】
+05:50
+05:50
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+19/02/2026
+📈 Occ: 98,38%
+💰 D.M.: 426,13
+🛏️ UH: 304
+06:13
+06:13
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+19/02/2026
+🛌🏽Uh's ocupadas: 33
+🛏Uh's total: 28
+📈Occ: 118%
+💰DM: R$ 282,59
+07:29
+07:29
+244998020812822@lid
+Bom dia ! Poderiam passar o dia 19/02?
+07:42
+07:42
+244998020812822@lid
+Bom dia ! Conseguem atualizar 18 e 19/02? Obrigado.
+07:44
+07:44
+49173181296892@lid
+【IMAGE】
+08:26
+08:26
+49173181296892@lid
+【IMAGE】
+08:26
+08:26
+244998020812822@lid
+Valeu
+08:30
+08:30
+9711055302792@lid
+【IMAGE】
+08:58
+08:58
+220808848887828@lid
+Podem enviar de 15 a 17 de fevereiro, por favor?
+10:20
+10:20
+2026/2/21
+220808848887828@lid
+Bom dia 
+Square Desing
+uh 210
+dm 634,16
+96,28%
+02:05
+02:05
+259012448809133@lid
+【IMAGE】
+03:06
+03:06
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+20/02/26
+📈 Occ: 75,25%
+💰 D.M.: R$489,80
+🛏️ UH:144
+03:07
+03:07
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+20/02/2026
+🛏 UH ocupadas:
+86
+📈 Ocupação:
+100%
+💰 Diária Média:
+R$ 350,33
+03:12
+03:12
+245277093023876@lid
+【IMAGE】
+03:43
+03:43
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+20/02/2026
+🛏 UHs ocupadas: 146
+📈 Ocupação: 93,59%
+💰 Diária Média: R$ 377,67
+03:55
+03:55
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+20/02/2026
+📈 Occ: 97,41%
+💰 D.M.:437,15
+🛏️ UH: 301
+04:12
+04:12
+204668227575808@lid
+Quality Barra
+Bom dia!
+20/02/26
+📈 Occ: 85,79%
+💰 D.M.: R$ 434,03
+🛏️ UH: 157
+04:28
+04:28
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+20/02/2026
+📈 Occ: 96,43%
+💰 D.M.: 435,65
+🛏️ UH: 135
+05:25
+05:25
+160855366861019@lid
+Radisson Barra Rio de Janeiro
+20/02/2026 
+🛏 UHs ocupadas:  336
+📈 Ocupação : 89,60%
+💰 Diária Média: R$ 823,01
+06:53
+06:53
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+20/02/2026
+🛌🏽Uh's ocupadas: 27
+🛏Uh's total: 28
+📈Occ: 96,43%
+💰DM: R$ 389,63
+07:22
+07:22
+2026/2/22
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+21/02/2026
+🛏 UH ocupadas:
+70
+📈 Ocupação:
+81,40%
+💰 Diária Média:
+R$ 363,45
+00:30
+00:30
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+21/02/2026
+📈 Occ: 91,43%
+💰 D.M.: 490,00
+🛏️ UH: 128
+00:52
+00:52
+220808848887828@lid
+【IMAGE】
+01:27
+01:27
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+21/02/2026
+📈 Occ: 98,06%
+💰 D.M.: 442,34
+🛏️ UH: 303
+01:29
+01:29
+204668227575808@lid
+Quality Barra
+Bom dia!
+21/02/26
+📈 Occ: 91,80 %
+💰 D.M.: R$ 424,88
+🛏️ UH: 168
+02:25
+02:25
+259012448809133@lid
+【IMAGE】
+02:55
+02:55
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+21/02/26
+📈 Occ: 87,06%
+💰 D.M.: R$515,94
+🛏️ UH:169
+04:11
+04:11
+245277093023876@lid
+【IMAGE】
+04:55
+04:55
+160855366861019@lid
+Radisson Barra Rio de Janeiro
+21/02/2026 
+🛏 UHs ocupadas:  346
+📈 Ocupação : 92,27%
+💰 Diária Média: R$ 823,32
+05:21
+05:21
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+21/02/2026
+🛏 UHs ocupadas: 150
+📈 Ocupação: 96,15%
+💰 Diária Média: R$ 378,31
+05:30
+05:30
+54606684020750@lid
+LAGUNE BARRA HOTEL
+Bom dia!
+22/02/2026
+
+🛏 UHs ocupadas: 266
+📈 Ocupação:  86,93%
+💰 Diária Média: R$ 513,91
+07:06
+07:06
+218622559518852@lid
+CDesign Hotel
+Boa tarde!
+
+18/02/2026
+🛏 UH ocupadas: 212
+🛏 UH total: 250
+📈 Occ: 84,80%
+💰 D.M.: R$ 972,59
+
+19/02/2026
+🛏 UH ocupadas: 220
+🛏 UH total: 250
+📈 Occ: 88%
+💰 D.M.: R$ 768,24
+
+20/02/2026
+🛏 UH ocupadas: 220
+🛏 UH total: 250
+📈 Occ: 88%
+💰 D.M.: R$ 801,25
+
+21/02/2026
+🛏 UH ocupadas: 234
+🛏 UH total: 250
+📈 Occ: 93,60%
+💰 D.M.: R$ 799,50
+18:49
+18:49
+2026/2/23
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+22/02/2026
+🛏 UH ocupadas:
+64
+📈 Ocupação:
+74,42%
+💰 Diária Média:
+R$ 513,44
+00:59
+00:59
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+22/02/2026
+📈 Occ: 80,58%
+💰 D.M.: 404,55
+🛏️ UH: 249
+01:13
+01:13
+259012448809133@lid
+【IMAGE】
+02:01
+02:01
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+22/02/26
+📈 Occ: 67,17%
+💰 D.M.: R$465,21
+🛏️ UH:128
+02:04
+02:04
+245277093023876@lid
+【IMAGE】
+02:33
+02:33
+204668227575808@lid
+Quality Barra
+Bom dia!
+22/02/26
+📈 Occ: 68,85 %
+💰 D.M.: R$ 410,61
+🛏️ UH: 126
+03:57
+03:57
+220808848887828@lid
+【IMAGE】
+04:00
+04:00
+160855366861019@lid
+Radisson Barra
+Bom dia!
+22/02/26
+📈 Occ: 86,5 %
+💰 D.M.: R$ 620,46
+🛏️ UH: 327
+04:04
+04:04
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+22/02/2026
+🛏 UHs ocupadas: 141
+📈 Ocupação: 90,38%
+💰 Diária Média: R$ 378,39
+04:32
+04:32
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+22/02/2026
+📈 Occ: 60,72%
+💰 D.M.: 366,36
+🛏️ UH: 85
+04:59
+04:59
+54606684020750@lid
+LAGUNE BARRA HOTEL
+Bom dia!
+22/02/2026
+
+🛏 UHs ocupadas: 189
+📈 Ocupação:61,76  %
+💰 Diária Média: R$ 455,68
+06:56
+06:56
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+22/02/2026
+🛌🏽Uh's ocupadas: 25
+🛏Uh's total: 28
+📈Occ: 89,29%
+💰DM: R$ 246,30
+07:26
+07:26
+49173181296892@lid
+【IMAGE】
+08:58
+08:58
+49173181296892@lid
+【IMAGE】
+08:58
+08:58
+9711055302792@lid
+【IMAGE】
+09:01
+09:01
+79560125194488@lid
+【IMAGE】
+13:11
+13:11
+79560125194488@lid
+Olá, pode informar os dados do dia 19/02?
+13:12
+13:12
+79560125194488@lid
+Olá, poderia informar os dados do dia 09/02?
+13:12
+13:12
+79560125194488@lid
+ATLANTICO SUL
+Boa tarde!
+22/02/2026
+D.M.: 586,02
+UH: 73
+13:14
+13:14
+2026/2/24
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+23/02/26
+📈 Occ: 79,80%
+💰 D.M.: R$476,02
+🛏️ UH:161
+00:41
+00:41
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+23/02/2026
+📈 Occ: 71,43%
+💰 D.M.: 366,17
+🛏️ UH: 100
+00:41
+00:41
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+23/02/2026
+🛏 UH ocupadas:
+81
+📈 Ocupação:
+94,19%
+💰 Diária Média:
+R$ 301,17
+02:04
+02:04
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+23/02/2026
+📈 Occ: 96,44%
+💰 D.M.: 384,26
+🛏️ UH: 298
+02:17
+02:17
+259012448809133@lid
+【IMAGE】
+02:18
+02:18
+204668227575808@lid
+Quality Barra
+Bom dia!
+23/02/26
+📈 Occ: 79,23 %
+💰 D.M.: R$ 404,65
+🛏️ UH: 145
+02:19
+02:19
+220808848887828@lid
+【IMAGE】
+02:24
+02:24
+245277093023876@lid
+【IMAGE】
+03:33
+03:33
+54606684020750@lid
+LAGUNE BARRA HOTEL
+Bom dia!
+23/02/2026
+
+🛏 UHs ocupadas: 201
+📈 Ocupação:65,69 %
+💰 Diária Média: R$ 546,48
+04:13
+04:13
+53721635528878@lid
+🏨 Dom Barra Hotel
+Bom Dia! 
+20/02/26
+
+🛏 UH: 80
+📈 Occ: 91,95%
+💰 D.M.: R$ 362,68
+
+
+🏨 Dom Barra Hotel
+Bom Dia! 
+21/02/26
+
+🛏 UH: 81
+📈 Occ: 93,10%
+💰 D.M.: R$ 368,54
+05:57
+05:57
+53721635528878@lid
+🏨 Dom Barra Hotel
+Bom Dia! 
+22/02/26
+
+🛏 UH: 50
+📈 Occ: 57,47%
+💰 D.M.: R$ 358,25
+
+
+🏨 Dom Barra Hotel
+Bom Dia! 
+23/02/26
+
+🛏 UH: 64
+📈 Occ: 73,56%
+💰 D.M.: R$ 344,59
+05:57
+05:57
+107958667055116@lid
+@271983166128276 ?
+06:02
+06:02
+107958667055116@lid
+Bom dia
+06:02
+06:02
+157977923293276@lid
+@160855366861019 ? Bom dia
+06:04
+06:04
+160855366861019@lid
+Radisson Barra Rio de Janeiro
+23/02/2026 
+🛏 UHs ocupadas:  333
+📈 Ocupação : 88,80%
+💰 Diária Média: R$  577,71
+06:11
+06:11
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+23/02/2026
+🛏 UHs ocupadas: 146
+📈 Ocupação: 92,59%
+💰 Diária Média: R$ 373,94
+06:18
+06:18
+9711055302792@lid
+【IMAGE】
+09:02
+09:02
+220808848887828@lid
+Bom dia!
+
+Vocês conseguem mandar os dados dos dias 15, 16, 17, 19 e 20 de fevereiro?
+
+Obrigada!
+10:35
+10:35
+220808848887828@lid
+Bom dia!
+
+Conseguem enviar os dados do dia 19/02, por favor?
+
+Obrigada!
+10:38
+10:38
+218622559518852@lid
+CDesign Hotel
+Bom dia!
+
+22/02/2026
+🛏 UH ocupadas: 217
+🛏 UH total: 250
+📈 Occ: 86,80%
+💰 D.M.: R$ 721,78
+
+23/02/2026
+🛏 UH ocupadas: 224
+🛏 UH total: 250
+📈 Occ: 89,60%
+💰 D.M.: R$ 744,06
+10:39
+10:39
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+23/02/2026
+🛌🏽Uh's ocupadas: 24
+🛏Uh's total: 28
+📈Occ: 85,71%
+💰DM: R$ 276,46
+10:51
+10:51
+2026/2/25
+239547623407691@lid
+Riale Brisa Barra!
+Boa noite!
+
+18/02/2026
+🛏 UH ocupadas: 117
+📈 Occ: 84,78%
+💰 D.M.: R$ 865,86
+
+
+19/02/2026
+🛏 UH ocupadas: 124
+📈 Occ: 89,86%
+💰 D.M.: R$ 904,27
+
+
+20/02/2026
+🛏 UH ocupadas: 133
+📈 Occ: 96,38%
+💰 D.M.: R$ 975,37
+
+
+21/02/2026
+🛏 UH ocupadas: 131
+📈 Occ: 94,93%
+💰 D.M.: R$ 1.067,30
+
+
+22/02/2026
+🛏 UH ocupadas: 101
+📈 Occ: 73,19%
+💰 D.M.: R$ 873,20
+
+
+23/02/2026
+🛏 UH ocupadas: 94
+📈 Occ: 68,12%
+💰 D.M.: R$ 829,97
+00:12
+00:12
+259012448809133@lid
+【IMAGE】
+01:08
+01:08
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+24/02/26
+📈 Occ: 94,58%
+💰 D.M.: R$525,77
+🛏️ UH:192
+01:27
+01:27
+220808848887828@lid
+【IMAGE】
+02:17
+02:17
+245277093023876@lid
+【IMAGE】
+02:46
+02:46
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+24/02/2026
+🛏 UHs ocupadas: 156
+📈 Ocupação: 100,00%
+💰 Diária Média: R$ 371,90
+03:37
+03:37
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+24/02/2026
+📈 Occ: 95,00%
+💰 D.M.: 374,31
+🛏️ UH: 133
+03:53
+03:53
+54606684020750@lid
+LAGUNE BARRA HOTEL
+Bom dia!
+24/02/2026
+
+🛏 UHs ocupadas: 303
+📈 Ocupação:99,02 %
+💰 Diária Média: R$ 622,62
+04:19
+04:19
+160855366861019@lid
+Radisson Barra Rio de Janeiro
+24/02/2026 
+🛏 UHs ocupadas:  347
+📈 Ocupação : 92,53%
+💰 Diária Média: R$  589,59
+04:45
+04:45
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+24/02/2026
+📈 Occ: 98,71%
+💰 D.M.: 379,62
+🛏️ UH: 305
+05:01
+05:01
+160855366861019@lid
+Radisson Barra Rio de Janeiro
+19/02/2026 
+🛏 UHs ocupadas:  331
+📈 Ocupação : 88,27%
+💰 Diária Média: R$  639,05
+05:02
+05:02
+160855366861019@lid
+@157977923293276  
+Bom dia, poderia mandar dos dias 17/02 e 19/02 ?
+05:04
+05:04
+157977923293276@lid
+👆🏻
+05:06
+05:06
+157977923293276@lid
+👆🏻
+05:07
+05:07
+204668227575808@lid
+Quality Barra
+Bom dia!
+24/02/26
+📈 Occ: 97,81 %
+💰 D.M.: R$ 399,02
+🛏️ UH: 179
+05:19
+05:19
+101628237606999@lid
+amba Rio Convention e Suítes
+
+Bom dia!
+24/02/2026
+🛌🏽Uh's ocupadas: 28
+🛏Uh's total: 28
+📈Occ: 100,00%
+💰DM: R$ 282,10
+07:29
+07:29
+9711055302792@lid
+【IMAGE】
+08:53
+08:53
+49173181296892@lid
+【IMAGE】
+08:59
+08:59
+49173181296892@lid
+【IMAGE】
+08:59
+08:59
+2026/2/26
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+25/02/2026
+📈 Occ: 98,57%
+💰 D.M.: 399,07
+🛏️ UH: 138
+00:36
+00:36
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+25/02/26
+📈 Occ: 91,18%
+💰 D.M.: R$511,35
+🛏️ UH:187
+01:06
+01:06
+204668227575808@lid
+Quality Barra
+Bom dia!
+25/02/26
+📈 Occ: 97,81 %
+💰 D.M.: R$ 398,44
+🛏️ UH: 179
+01:36
+01:36
+220808848887828@lid
+【IMAGE】
+01:43
+01:43
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+25/02/2026
+📈 Occ: 97,73%
+💰 D.M.: 386,50
+🛏️ UH: 302
+02:18
+02:18
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+25/02/2026
+🛏 UHs ocupadas: 153
+📈 Ocupação: 98,08%
+💰 Diária Média: R$ 360,60
+03:17
+03:17
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+25/02/2026
+🛏 UH ocupadas:
+80
+📈 Ocupação:
+93,02%
+💰 Diária Média:
+R$ 577,72
+03:20
+03:20
+245277093023876@lid
+【IMAGE】
+03:43
+03:43
+271983166128276@lid
+Bom dia!
+Pode passar os dados do dia 24, por favor
+04:09
+04:09
+259012448809133@lid
+【IMAGE】
+04:34
+04:34
+53721635528878@lid
+🏨 Dom Barra Hotel
+Bom Dia! 
+24/02/26
+
+🛏 UH: 85
+📈 Occ: 97,70%
+💰 D.M.: R$ 377,68
+
+
+🏨 Dom Barra Hotel
+Bom Dia! 
+25/02/26
+
+🛏 UH: 87
+📈 Occ: 100,00%
+💰 D.M.: R$ 343,45
+05:30
+05:30
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+24/02/2026
+🛏 UH ocupadas:
+82
+📈 Ocupação:
+95,35%
+💰 Diária Média:
+R$ 318,90
+05:51
+05:51
+54606684020750@lid
+LAGUNE BARRA HOTEL
+Bom dia!
+25/02/2026
+
+🛏 UHs ocupadas: 303
+📈 Ocupação:99,02 %
+💰 Diária Média: R$ 599,35
+06:11
+06:11
+160855366861019@lid
+Radisson Barra Rio de Janeiro
+25/02/2026 
+🛏 UHs ocupadas:  330
+📈 Ocupação : 88%
+💰 Diária Média: R$  605,00
+06:19
+06:19
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+25/02/2026
+🛌🏽Uh's ocupadas: 32 
+🛏Uh's total: 28
+📈Occ: 114%
+💰DM: R$ 272,56
+07:24
+07:24
+9711055302792@lid
+【IMAGE】
+08:43
+08:43
+2026/2/27
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+26/02/26
+📈 Occ: 70,94%
+💰 D.M.: R$471,44
+🛏️ UH:143
+00:45
+00:45
+259012448809133@lid
+【IMAGE】
+01:49
+01:49
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+26/02/2026
+🛏 UH ocupadas:
+86
+📈 Ocupação:
+96,51%
+💰 Diária Média:
+R$ 292,96
+02:08
+02:08
+245277093023876@lid
+【IMAGE】
+02:25
+02:25
+220808848887828@lid
+【IMAGE】
+02:55
+02:55
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+26/02/2026
+📈 Occ: 82,86%
+💰 D.M.: 352,01
+🛏️ UH: 116
+03:15
+03:15
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+26/02/2026
+📈 Occ: 86,41%
+💰 D.M.: 374,62
+🛏️ UH: 267
+04:21
+04:21
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+26/02/2026
+🛏 UHs ocupadas: 143
+📈 Ocupação: 91,67%
+💰 Diária Média: R$ 323,39
+05:10
+05:10
+204668227575808@lid
+Quality Barra
+Bom dia!
+26/02/26
+📈 Occ: 38,25 %
+💰 D.M.: R$ 422,95
+🛏️ UH: 70
+06:08
+06:08
+160855366861019@lid
+Olá, bom dia!
+RADISSON BARRA
+26/02
+
+OCC: 64,24 %
+DM: 437,93
+UHs: 241
+06:36
+06:36
+54606684020750@lid
+LAGUNE BARRA HOTEL
+Bom dia!
+26/02/2026
+
+🛏 UHs ocupadas: 142
+📈 Ocupação: 46,41 %
+💰 Diária Média: R$ 401,34
+06:54
+06:54
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+26/02/2026
+🛌🏽Uh's ocupadas: 27
+🛏Uh's total: 28
+📈Occ: 96,43%
+💰DM: R$ 422,03
+07:14
+07:14
+49173181296892@lid
+【IMAGE】
+09:05
+09:05
+49173181296892@lid
+【IMAGE】
+09:05
+09:05
+9711055302792@lid
+【IMAGE】
+09:08
+09:08
+79560125194488@lid
+【IMAGE】
+14:20
+14:20
+239547623407691@lid
+Riale Brisa Barra!
+Boa tarde!
+
+24/02/2026
+🛏 UH ocupadas: 98
+📈 Occ: 71,01%
+💰 D.M.: R$ 927,97
+
+
+25/02/2026
+🛏 UH ocupadas: 102
+📈 Occ: 73,91%
+💰 D.M.: R$ 829,86
+
+
+26/02/2026
+🛏 UH ocupadas: 94
+📈 Occ: 68,12%
+💰 D.M.: R$ 822,44
+15:14
+15:14
+2026/2/28
+255146978201828@lid
+Venit Hotéis
+Bom dia!
+27/02/26
+📈 Occ: 77,61%
+💰 D.M.: R$457,14
+🛏️ UH:154
+00:38
+00:38
+107958667055116@lid
+Promenade Link STAY
+Bom dia!
+27/02/2026
+📈 Occ: 55,00%
+💰 D.M.: 357,62
+🛏️ UH: 77
+00:42
+00:42
+220808848887828@lid
+【IMAGE】
+01:04
+01:04
+204668227575808@lid
+Quality Barra
+Bom dia!
+27/02/26
+📈 Occ: 19,13 %
+💰 D.M.: R$ 415,15
+🛏️ UH: 35
+01:08
+01:08
+259012448809133@lid
+【IMAGE】
+02:52
+02:52
+120061801025545@lid
+Plaza Barra First
+Bom dia!  
+27/02/2026
+🛏 UH ocupadas:
+59
+📈 Ocupação:
+68,60%
+💰 Diária Média:
+R$ 261,70
+03:01
+03:01
+157977923293276@lid
+Américas Barra Hotel e Eventos
+Bom dia!
+27/02/2026
+📈 Occ: 77,99%
+💰 D.M.: 391,09
+🛏️ UH: 241
+03:18
+03:18
+271983166128276@lid
+Bourbon Barra Premium
+Bom dia!
+27/02/2026
+🛏 UHs ocupadas: 125
+📈 Ocupação: 80,13%
+💰 Diária Média: R$  R$ 509,69
+04:00
+04:00
+245277093023876@lid
+【IMAGE】
+04:54
+04:54
+53721635528878@lid
+🏨 Dom Barra Hotel
+Bom Dia! 
+26/02/26
+
+🛏 UH: 83
+📈 Occ: 95,40%
+💰 D.M.: R$ 359,78
+
+
+🏨 Dom Barra Hotel
+Bom Dia! 
+27/02/26
+
+🛏 UH: 69
+📈 Occ: 79,31%
+💰 D.M.: R$ 393,25
+05:47
+05:47
+160855366861019@lid
+Olá, bom dia!
+RADISSON BARRA
+26/02
+
+OCC: 64,53 %
+DM: 550,78
+UHs: 242
+06:22
+06:22
+54606684020750@lid
+LAGUNE BARRA HOTEL
+Bom dia!
+27/02/2026
+
+🛏 UHs ocupadas: 151
+📈 Ocupação: 49,35 %
+💰 Diária Média: R$ 311,21
+06:47
+06:47
+101628237606999@lid
+Samba Rio Convention e Suítes
+
+Bom dia!
+27/02/2026
+🛌🏽Uh's ocupadas: 22
+🛏Uh's total: 28
+📈Occ: 78,57%
+💰DM: R$ 301,20
+11:59
+11:59

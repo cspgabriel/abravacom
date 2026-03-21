@@ -23,8 +23,10 @@ const ContemplatedLetters: React.FC = () => {
   const [pendingReserveId, setPendingReserveId] = useState<string | null>(null);
   const [adminSearch, setAdminSearch] = useState('');
   const [situationFilter, setSituationFilter] = useState<'all' | 'available' | 'reserved' | 'sold'>('all');
-  const [creditRange, setCreditRange] = useState<string>('all');
-  const [parcelRange, setParcelRange] = useState<string>('all');
+  const [minCredit, setMinCredit] = useState<string>('');
+  const [maxCredit, setMaxCredit] = useState<string>('');
+  const [minParcel, setMinParcel] = useState<string>('');
+  const [maxParcel, setMaxParcel] = useState<string>('');
   const [fundoRange, setFundoRange] = useState<string>('all');
   const [refRange, setRefRange] = useState<string>('all');
   const [showFilters, setShowFilters] = useState(true);
@@ -87,28 +89,22 @@ const ContemplatedLetters: React.FC = () => {
 
     const matchesAdminSearch = adminSearch.trim() === '' || (letter.administrator || '').toLowerCase().includes(adminSearch.toLowerCase());
     const matchesSituation = situationFilter === 'all' || letter.status === situationFilter;
-    const checkRange = (val: number, rangeLabel: string) => {
+    const checkRange = (val: number, minStr: string, maxStr: string) => {
+      const min = minStr ? Number(minStr) : 0;
+      const max = maxStr ? Number(maxStr) : Infinity;
+      return val >= min && val <= max;
+    };
+    const checkFundoRef = (val: number, rangeLabel: string) => {
       if (rangeLabel === 'all') return true;
-      if (rangeLabel === '0-100k') return val <= 100000;
-      if (rangeLabel === '100k-300k') return val > 100000 && val <= 300000;
-      if (rangeLabel === '300k-500k') return val > 300000 && val <= 500000;
-      if (rangeLabel === '500k+') return val > 500000;
-
-      if (rangeLabel === '0-100') return val <= 100;
-      if (rangeLabel === '100-150') return val > 100 && val <= 150;
-      if (rangeLabel === '150-200') return val > 150 && val <= 200;
-      if (rangeLabel === '200+') return val > 200;
-
       if (rangeLabel === 'com-fundo') return val > 0;
       if (rangeLabel === 'sem-fundo') return val === 0;
-
       return true;
     };
 
-    const matchesCredit = checkRange(letter.credit, creditRange);
-    const matchesParcel = checkRange(letter.installmentsCount, parcelRange);
-    const matchesFundo = checkRange(letter.fundoComum || 0, fundoRange);
-    const matchesRef = checkRange(letter.refGarantia || 0, refRange);
+    const matchesCredit = checkRange(letter.credit, minCredit, maxCredit);
+    const matchesParcel = checkRange(letter.installmentsCount, minParcel, maxParcel);
+    const matchesFundo = checkFundoRef(letter.fundoComum || 0, fundoRange);
+    const matchesRef = checkFundoRef(letter.refGarantia || 0, refRange);
 
     return matchesCategory && matchesSearch && matchesAdminSearch && matchesSituation && matchesCredit && matchesParcel && matchesFundo && matchesRef;
   });
@@ -190,11 +186,11 @@ const ContemplatedLetters: React.FC = () => {
   };
 
   const handleOpenFicha = (letter: ContemplatedLetter) => {
-    if (isLogged || localStorage.getItem('ficha_lead_email')) {
+    if (isUnlocked) {
       setFichaLetter(letter);
     } else {
       setPendingFichaLetter(letter);
-      setShowFichaEmailGate(true);
+      setShowEmailCapture(true);
     }
   };
 
@@ -221,60 +217,9 @@ const ContemplatedLetters: React.FC = () => {
   };
 
   return (
-    <div className={`relative space-y-6 pt-20 sm:pt-24 pb-28 px-3 sm:px-6 max-w-7xl mx-auto ${!isUnlocked ? 'h-screen overflow-hidden' : ''}`}>
+    <div className="relative space-y-6 pt-20 sm:pt-24 pb-28 px-3 sm:px-6 max-w-7xl mx-auto">
 
-      {/* Email Wall Modal */}
-      <AnimatePresence>
-        {!isUnlocked && !loading && (
-          <div className="fixed inset-0 z-[999] flex items-center justify-center p-4">
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="absolute inset-0 bg-slate-900/60 backdrop-blur-md" />
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              className="relative w-full max-w-md bg-white border border-slate-100 rounded-[2rem] overflow-hidden shadow-2xl"
-            >
-              <div className="bg-gradient-to-br from-slate-900 via-emerald-900 to-teal-900 pt-10 pb-8 px-8 text-center relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500 rounded-full blur-[40px] opacity-20" />
-                <h2 className="text-3xl font-black text-white tracking-tighter uppercase italic relative z-10">Acesso Exclusivo</h2>
-                <p className="text-emerald-100/80 text-xs font-bold uppercase tracking-widest mt-2 relative z-10">
-                  Insira seu e-mail para ver as cartas contempladas
-                </p>
-              </div>
-              <form
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  if (unlockEmail.trim()) {
-                    localStorage.setItem('letters_unlocked', 'true');
-                    localStorage.setItem('last_simulation_email', unlockEmail.trim().toLowerCase());
-                    setIsUnlocked(true);
-                  }
-                }}
-                className="p-8 space-y-6"
-              >
-                <div className="relative">
-                  <Mail size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" />
-                  <input
-                    type="email"
-                    required
-                    placeholder="Seu melhor e-mail"
-                    value={unlockEmail}
-                    onChange={(e) => setUnlockEmail(e.target.value)}
-                    className="w-full bg-slate-50 border border-slate-200 rounded-2xl py-4 pl-11 pr-4 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-black py-4 rounded-2xl shadow-xl shadow-emerald-500/20 active:scale-95 transition-all uppercase tracking-widest text-sm"
-                >
-                  Ver Cartas Disponíveis
-                </button>
-              </form>
-            </motion.div>
-          </div>
-        )}
-      </AnimatePresence>
-
-      <div className={`transition-all duration-300 ${!isUnlocked ? 'filter blur-sm opacity-40 pointer-events-none select-none' : ''}`}>
+      <div className="transition-all duration-300">
       {/* Page header */}
       <div className="flex flex-col gap-4">
         <div className="space-y-1">
@@ -349,20 +294,14 @@ const ContemplatedLetters: React.FC = () => {
                   <option key={admin} value={admin}>{admin}</option>
                 ))}
               </select>
-              <select value={creditRange} onChange={(e) => setCreditRange(e.target.value)} className="px-3 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500">
-                <option value="all">Filtre por Crédito</option>
-                <option value="0-100k">Até R$ 100.000</option>
-                <option value="100k-300k">R$ 100.000 a R$ 300.000</option>
-                <option value="300k-500k">R$ 300.000 a R$ 500.000</option>
-                <option value="500k+">Acima de R$ 500.000</option>
-              </select>
-              <select value={parcelRange} onChange={(e) => setParcelRange(e.target.value)} className="px-3 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500">
-                <option value="all">Filtre por Parcelas</option>
-                <option value="0-100">Até 100x</option>
-                <option value="100-150">100x a 150x</option>
-                <option value="150-200">150x a 200x</option>
-                <option value="200+">Acima de 200x</option>
-              </select>
+              <div className="flex gap-2">
+                <input type="number" placeholder="Mín. Crédito" value={minCredit} onChange={(e) => setMinCredit(e.target.value)} className="w-1/2 px-3 py-2.5 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-emerald-500" />
+                <input type="number" placeholder="Máx. Crédito" value={maxCredit} onChange={(e) => setMaxCredit(e.target.value)} className="w-1/2 px-3 py-2.5 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-emerald-500" />
+              </div>
+              <div className="flex gap-2">
+                <input type="number" placeholder="Mín. Parc." value={minParcel} onChange={(e) => setMinParcel(e.target.value)} className="w-1/2 px-3 py-2.5 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-emerald-500" />
+                <input type="number" placeholder="Máx. Parc." value={maxParcel} onChange={(e) => setMaxParcel(e.target.value)} className="w-1/2 px-3 py-2.5 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-emerald-500" />
+              </div>
               <select value={fundoRange} onChange={(e) => setFundoRange(e.target.value)} className="px-3 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500">
                 <option value="all">Filtre por Fundo Comum</option>
                 <option value="sem-fundo">Sem Fundo Comum</option>
@@ -374,7 +313,7 @@ const ContemplatedLetters: React.FC = () => {
                 <option value="com-fundo">Com Ref. Garantia</option>
               </select>
               <div className="flex items-center gap-2 col-span-2 sm:col-span-1">
-                <button onClick={() => { setSearchTerm(''); setAdminSearch(''); setCreditRange('all'); setParcelRange('all'); setFundoRange('all'); setRefRange('all'); setSituationFilter('all'); }} className="flex-1 px-3 py-2.5 rounded-xl border border-slate-200 text-sm font-black hover:bg-slate-50">Limpar</button>
+                <button onClick={() => { setSearchTerm(''); setAdminSearch(''); setMinCredit(''); setMaxCredit(''); setMinParcel(''); setMaxParcel(''); setFundoRange('all'); setRefRange('all'); setSituationFilter('all'); }} className="flex-1 px-3 py-2.5 rounded-xl border border-slate-200 text-sm font-black hover:bg-slate-50">Limpar</button>
                 <button onClick={() => setShowFilters(false)} className="flex-1 px-3 py-2.5 rounded-xl bg-emerald-600 text-white text-sm font-black">OK</button>
               </div>
             </div>
@@ -441,51 +380,16 @@ const ContemplatedLetters: React.FC = () => {
                 <div className="flex justify-end">
                   <button onClick={() => { setShowEmailCapture(false); setPendingReserveId(null); }} className="text-slate-400">Fechar</button>
                 </div>
-                <EmailCapture />
+                <EmailCapture onSuccess={() => {
+                  localStorage.setItem('letters_unlocked', 'true');
+                  setIsUnlocked(true);
+                  setShowEmailCapture(false);
+                  if (pendingFichaLetter) {
+                    setFichaLetter(pendingFichaLetter);
+                    setPendingFichaLetter(null);
+                  }
+                }} />
               </div>
-            </motion.div>
-          </div>
-        )}
-      </AnimatePresence>
-
-      {/* Email capture modal for Ficha */}
-      <AnimatePresence>
-        {showFichaEmailGate && (
-          <div className="fixed inset-0 z-[250] flex items-center justify-center p-4">
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setShowFichaEmailGate(false)} className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm" />
-            <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.95 }} className="relative w-full max-w-sm bg-white rounded-3xl p-8 shadow-2xl text-center">
-              <button 
-                onClick={() => setShowFichaEmailGate(false)}
-                className="absolute top-4 right-4 p-2 text-slate-400 hover:text-slate-900"
-              >
-                <X size={20} />
-              </button>
-              
-              <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 text-emerald-600">
-                <Mail size={32} />
-              </div>
-              
-              <h3 className="text-xl font-black text-slate-900 uppercase italic mb-2">Ver Informações</h3>
-              <p className="text-sm text-slate-500 mb-6 font-medium">
-                Insira seu melhor e-mail para ter acesso completo a todos os detalhes desta carta.
-              </p>
-              
-              <form onSubmit={handleFichaEmailSubmit} className="space-y-4">
-                <input
-                  type="email"
-                  required
-                  placeholder="Seu melhor e-mail"
-                  value={fichaLeadEmail}
-                  onChange={(e) => setFichaLeadEmail(e.target.value)}
-                  className="w-full bg-slate-50 border border-slate-200 rounded-2xl py-4 px-4 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500 font-medium"
-                />
-                <button
-                  type="submit"
-                  className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-black py-4 rounded-2xl shadow-xl shadow-emerald-500/20 active:scale-95 transition-all text-sm uppercase tracking-widest"
-                >
-                  ACESSAR DETALHES
-                </button>
-              </form>
             </motion.div>
           </div>
         )}
@@ -528,8 +432,8 @@ const ContemplatedLetters: React.FC = () => {
                 </td>
                 <td className="px-6 py-5 text-emerald-600 font-black text-base">{formatCurrency(letter.credit)}</td>
                 <td className="px-6 py-5 text-slate-900 font-bold text-sm">
-                  {isLogged ? formatCurrency(letter.entry) : (
-                    <button onClick={() => setShowEmailCapture(true)} className="text-[10px] font-black bg-emerald-600 text-white px-3 py-1 rounded-full">Ver</button>
+                  {isUnlocked ? formatCurrency(letter.entry) : (
+                    <button onClick={(e) => { e.stopPropagation(); setShowEmailCapture(true); }} className="text-[10px] font-black bg-emerald-600 text-white px-3 py-1 rounded-full hover:bg-emerald-700 transition">VER</button>
                   )}
                 </td>
                 <td className="px-6 py-5">
@@ -546,8 +450,8 @@ const ContemplatedLetters: React.FC = () => {
                     <button onClick={(e) => { e.stopPropagation(); reserveLetter(letter.id); }} aria-label={letter.status === 'available' ? 'Reservar carta' : 'Carta reservada'} className={`px-3 py-1.5 rounded-xl text-xs font-black uppercase transition-all ${letter.status === 'available' ? 'bg-emerald-600 text-white' : 'bg-slate-100 text-slate-500'}`}>
                       {letter.status === 'available' ? 'Reservar' : 'Reservada'}
                     </button>
-                    <button onClick={(e) => { e.stopPropagation(); handleOpenFicha(letter); }} aria-label="Ver ficha da carta" className="p-2 bg-slate-50 hover:bg-emerald-600 text-slate-400 hover:text-white rounded-xl border border-slate-200 transition-all">
-                      <FileText size={16} />
+                    <button onClick={(e) => { e.stopPropagation(); handleOpenFicha(letter); }} className="px-3 py-1.5 rounded-xl text-xs font-black uppercase transition-all border border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white">
+                      VER
                     </button>
                   </div>
                 </td>
@@ -589,9 +493,11 @@ const ContemplatedLetters: React.FC = () => {
               </div>
               <div>
                 <p className="text-[10px] text-slate-400 uppercase font-black">Entrada</p>
-                <p className="font-black text-slate-900">
-                  {isLogged ? formatCurrency(letter.entry) : '—'}
-                </p>
+                <div className="font-black text-slate-900">
+                  {isUnlocked ? formatCurrency(letter.entry) : (
+                    <button onClick={(e) => { e.stopPropagation(); setShowEmailCapture(true); }} className="text-[10px] font-black bg-emerald-600 text-white px-3 py-1 rounded-full mt-1 hover:bg-emerald-700 transition">VER</button>
+                  )}
+                </div>
               </div>
               <div>
                 <p className="text-[10px] text-slate-400 uppercase font-black">Parcelas</p>
@@ -612,10 +518,9 @@ const ContemplatedLetters: React.FC = () => {
               </button>
               <button
                 onClick={(e) => { e.stopPropagation(); handleOpenFicha(letter); }}
-                aria-label="Ver ficha"
-                className="px-3 py-2.5 rounded-xl bg-slate-50 border border-slate-200 hover:bg-emerald-600 hover:text-white text-slate-500 transition-all"
+                className="px-4 py-2.5 rounded-xl text-xs font-black uppercase transition-all border border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white"
               >
-                <FileText size={16} />
+                VER
               </button>
             </div>
           </motion.div>
@@ -676,7 +581,15 @@ const ContemplatedLetters: React.FC = () => {
                 <div className="flex justify-end mb-2">
                   <button onClick={() => { setShowEmailCapture(false); setPendingReserveId(null); }} className="text-slate-400 hover:text-slate-900"><X size={20} /></button>
                 </div>
-                <EmailCapture />
+                <EmailCapture onSuccess={() => {
+                  localStorage.setItem('letters_unlocked', 'true');
+                  setIsUnlocked(true);
+                  setShowEmailCapture(false);
+                  if (pendingFichaLetter) {
+                    setFichaLetter(pendingFichaLetter);
+                    setPendingFichaLetter(null);
+                  }
+                }} />
               </div>
             </motion.div>
           </div>

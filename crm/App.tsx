@@ -1137,21 +1137,21 @@ export const App = () => {
 
   const renderDashboard = () => (
       <div className="space-y-8 animate-in fade-in zoom-in-95 duration-200">
-          <Header title="Dashboard Geral" subtitle="Vis�o panor�mica da base de dados." />
+          <Header title="Dashboard Geral" subtitle="Visão panorâmica da base de dados." />
           <div className="bg-white border border-gray-200 rounded-xl p-4 flex flex-col md:flex-row md:items-end gap-4">
               <div className="flex flex-col">
-                  <label className="text-xs font-semibold text-gray-500 uppercase">Per�odo (in�cio)</label>
+                  <label className="text-xs font-semibold text-gray-500 uppercase">Período (início)</label>
                   <input type="date" className="mt-1 border border-gray-200 rounded-lg px-3 py-2 text-sm" value={dashboardStartDate} onChange={(e) => setDashboardStartDate(e.target.value)} />
               </div>
               <div className="flex flex-col">
-                  <label className="text-xs font-semibold text-gray-500 uppercase">Per�odo (fim)</label>
+                  <label className="text-xs font-semibold text-gray-500 uppercase">Período (fim)</label>
                   <input type="date" className="mt-1 border border-gray-200 rounded-lg px-3 py-2 text-sm" value={dashboardEndDate} onChange={(e) => setDashboardEndDate(e.target.value)} />
               </div>
               <button onClick={() => { setDashboardStartDate(''); setDashboardEndDate(''); }} className="md:ml-auto text-xs text-blue-600 hover:underline">Limpar filtro</button>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <StatCard label="Total de Simula��es" value={dashboardCompanies.length} icon={Building2} color="bg-blue-600" onClick={() => setCurrentPath('companies')} />
-              <StatCard label="Total de Contatos (Emails �nicos)" value={uniqueEmailCount} icon={Users} color="bg-indigo-600" onClick={() => setCurrentPath('contacts')} />
+              <StatCard label="Total de Simulações" value={dashboardCompanies.length} icon={Building2} color="bg-blue-600" onClick={() => setCurrentPath('companies')} />
+              <StatCard label="Total de Contatos (Emails únicos)" value={uniqueEmailCount} icon={Users} color="bg-indigo-600" onClick={() => setCurrentPath('contacts')} />
               <StatCard label="Campanhas Enviadas" value={dashboardCampaigns.length} icon={Send} color="bg-purple-600" onClick={() => setCurrentPath('campaigns')} />
               <StatCard label="Total Simulado" value={formatCurrencyBR(totalSimulatedValue)} icon={TrendingUp} color="bg-amber-600" />
           </div>
@@ -1180,7 +1180,7 @@ export const App = () => {
         <MappingModal isOpen={importModalOpen} onClose={() => setImportModalOpen(false)} fileHeaders={fileHeaders} fields={importType === 'companies' ? COMPANY_FIELDS : CONTACT_FIELDS} onConfirm={executeImport} type={importType} />
         <Header title="Importação de Dados" subtitle="Carregue planilhas Excel (.xlsx) ou CSV para alimentar o sistema." />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200 hover:border-blue-400 transition-all group text-center"><div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform"><Building2 className="h-8 w-8 text-blue-600" /></div><h3 className="text-lg font-bold text-gray-900 mb-2">Importar Simulaçãos</h3><p className="text-sm text-gray-500 mb-6">Planilha contendo dados cadastrais de hotéis e simulações.</p><label className="inline-flex items-center justify-center px-4 py-2 bg-blue-600 text-white rounded-lg cursor-pointer hover:bg-blue-700 transition-colors w-full"><Upload className="h-4 w-4 mr-2" /> Selecionar Arquivo<input type="file" className="hidden" accept=".xlsx,.csv" onChange={(e) => e.target.files && handleFileRead(e.target.files[0], 'companies')} /></label></div>
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200 hover:border-blue-400 transition-all group text-center"><div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform"><Building2 className="h-8 w-8 text-blue-600" /></div><h3 className="text-lg font-bold text-gray-900 mb-2">Importar Simulações</h3><p className="text-sm text-gray-500 mb-6">Planilha contendo dados cadastrais de hotéis e simulações.</p><label className="inline-flex items-center justify-center px-4 py-2 bg-blue-600 text-white rounded-lg cursor-pointer hover:bg-blue-700 transition-colors w-full"><Upload className="h-4 w-4 mr-2" /> Selecionar Arquivo<input type="file" className="hidden" accept=".xlsx,.csv" onChange={(e) => e.target.files && handleFileRead(e.target.files[0], 'companies')} /></label></div>
             <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200 hover:border-indigo-400 transition-all group text-center"><div className="w-16 h-16 bg-indigo-50 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform"><Users className="h-8 w-8 text-indigo-600" /></div><h3 className="text-lg font-bold text-gray-900 mb-2">Importar Contatos</h3><p className="text-sm text-gray-500 mb-6">Planilha de contatos. Use o ID da Simulação para vincular.</p><label className="inline-flex items-center justify-center px-4 py-2 bg-indigo-600 text-white rounded-lg cursor-pointer hover:bg-indigo-700 transition-colors w-full"><Upload className="h-4 w-4 mr-2" /> Selecionar Arquivo<input type="file" className="hidden" accept=".xlsx,.csv" onChange={(e) => e.target.files && handleFileRead(e.target.files[0], 'contacts')} /></label></div>
         </div>
         <div className="bg-red-50 border border-red-100 rounded-xl p-6 flex items-center justify-between"><div><h3 className="text-red-800 font-bold flex items-center gap-2"><AlertTriangle className="h-5 w-5"/> Zona de Perigo</h3><p className="text-red-600 text-sm mt-1">Ações destrutivas que não podem ser desfeitas.</p></div><button onClick={wipeDatabase} className="px-4 py-2 bg-white border border-red-200 text-red-600 hover:bg-red-100 rounded-lg text-sm font-bold shadow-sm">Limpar Banco de Dados</button></div>
@@ -1217,7 +1217,7 @@ export const App = () => {
            </div>
            <nav className="space-y-1">
                <button onClick={() => setCurrentPath('dashboard')} className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${currentPath === 'dashboard' ? 'bg-[#132a57] text-[#f3e6bf] border border-[#1c3a77]' : 'text-[#e6d9b3] hover:bg-[#132a57]/60 hover:text-[#f3e6bf]'}`}><LayoutDashboard className={`h-4 w-4 ${currentPath === 'dashboard' ? 'text-[#d4af37]' : 'text-[#d4af37]/70'}`}/> Dashboard</button>
-               <button onClick={() => setCurrentPath('companies')} className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${currentPath.includes('company') ? 'bg-[#132a57] text-[#f3e6bf] border border-[#1c3a77]' : 'text-[#e6d9b3] hover:bg-[#132a57]/60 hover:text-[#f3e6bf]'}`}><Building2 className={`h-4 w-4 ${currentPath.includes('company') ? 'text-[#d4af37]' : 'text-[#d4af37]/70'}`}/> Simulaçãos</button>
+               <button onClick={() => setCurrentPath('companies')} className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${currentPath.includes('company') ? 'bg-[#132a57] text-[#f3e6bf] border border-[#1c3a77]' : 'text-[#e6d9b3] hover:bg-[#132a57]/60 hover:text-[#f3e6bf]'}`}><Building2 className={`h-4 w-4 ${currentPath.includes('company') ? 'text-[#d4af37]' : 'text-[#d4af37]/70'}`}/> Simulações</button>
                <button onClick={() => setCurrentPath('contacts')} className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${currentPath.includes('contact') ? 'bg-[#132a57] text-[#f3e6bf] border border-[#1c3a77]' : 'text-[#e6d9b3] hover:bg-[#132a57]/60 hover:text-[#f3e6bf]'}`}><Users className={`h-4 w-4 ${currentPath.includes('contact') ? 'text-[#d4af37]' : 'text-[#d4af37]/70'}`}/> Contatos</button>
                <button onClick={() => setCurrentPath('campaigns')} className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${currentPath.includes('campaign') ? 'bg-[#132a57] text-[#f3e6bf] border border-[#1c3a77]' : 'text-[#e6d9b3] hover:bg-[#132a57]/60 hover:text-[#f3e6bf]'}`}><Send className={`h-4 w-4 ${currentPath.includes('campaign') ? 'text-[#d4af37]' : 'text-[#d4af37]/70'}`}/> Campanhas</button>
                <button onClick={() => setCurrentPath('forms')} className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${currentPath === 'forms' ? 'bg-[#132a57] text-[#f3e6bf] border border-[#1c3a77]' : 'text-[#e6d9b3] hover:bg-[#132a57]/60 hover:text-[#f3e6bf]'}`}><Clipboard className={`h-4 w-4 ${currentPath === 'forms' ? 'text-[#d4af37]' : 'text-[#d4af37]/70'}`}/> Formulários</button>
@@ -1282,7 +1282,7 @@ export const App = () => {
                       />
                       <label className="flex items-center gap-2 mb-5 cursor-pointer select-none">
                         <input type="checkbox" checked={saveViewDefault} onChange={e => setSaveViewDefault(e.target.checked)} className="rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
-                        <span className="text-sm text-gray-700">Definir como <strong>padrão</strong> ao abrir {saveViewModal.entityType === 'companies' ? 'Simulaçãos' : 'Contatos'}</span>
+                        <span className="text-sm text-gray-700">Definir como <strong>padrão</strong> ao abrir {saveViewModal.entityType === 'companies' ? 'Simulações' : 'Contatos'}</span>
                       </label>
                       <div className="flex gap-2 justify-end">
                         <button onClick={() => { setSaveViewModal(p => ({ ...p, open: false })); setSaveViewName(''); setSaveViewDefault(false); }} className="px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-lg font-medium">Cancelar</button>
@@ -1298,7 +1298,7 @@ export const App = () => {
                     <div className="space-y-4">
                       <SystemSettingsModal isOpen={showSystemSettings === 'companies'} onClose={() => setShowSystemSettings(null)} allFields={getAllFieldsForConfig('companies')} currentSettings={{ visible: companyColumns, filters: companyFilterColumns, details: companyDetailColumns, edit: companyEditColumns }} onSave={saveSystemSettings} mode="companies" />
                       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-                        <h1 className="text-2xl font-bold text-gray-900 flex items-center gap-2">Simulaçãos <span className="text-sm font-normal text-gray-400 bg-gray-100 px-2 py-1 rounded-full">{filteredCompanies.length} registros</span></h1>
+                        <h1 className="text-2xl font-bold text-gray-900 flex items-center gap-2">Simulações <span className="text-sm font-normal text-gray-400 bg-gray-100 px-2 py-1 rounded-full">{filteredCompanies.length} registros</span></h1>
                         <div className="flex gap-2 flex-wrap">
                             <button onClick={() => { setEditingData(null); setDataEntryModalOpen('company'); }} className="px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg text-sm font-medium hover:shadow-lg transition-all flex items-center gap-2"><PlusCircle className="h-4 w-4"/> Nova Simulação</button>
                            {isCompanyEditMode ? (
@@ -1307,7 +1307,7 @@ export const App = () => {
                                <button onClick={() => setIsCompanyEditMode(true)} className="px-4 py-2 bg-orange-50 text-orange-700 border border-orange-200 rounded-lg text-sm font-medium hover:bg-orange-100 flex items-center gap-2"><Edit2 className="h-4 w-4"/> Modo Edição em Massa</button>
                            )}
                             <button onClick={() => setShowSystemSettings('companies')} className="px-3 py-2 bg-white border border-gray-200 text-gray-600 rounded-lg text-sm font-medium hover:bg-gray-50 flex items-center gap-2" title="Configurar Colunas e Filtros"><Settings className="h-4 w-4"/></button>
-                           <button onClick={() => handleExport(filteredCompanies, 'Simulaçãos')} className="px-4 py-2 bg-white border border-gray-200 text-green-700 rounded-lg text-sm font-medium hover:bg-green-50 flex items-center gap-2"><FileSpreadsheet className="h-4 w-4"/> Exportar</button>
+                           <button onClick={() => handleExport(filteredCompanies, 'Simulações')} className="px-4 py-2 bg-white border border-gray-200 text-green-700 rounded-lg text-sm font-medium hover:bg-green-50 flex items-center gap-2"><FileSpreadsheet className="h-4 w-4"/> Exportar</button>
                            <button onClick={() => setCurrentPath('import')} className="px-4 py-2 bg-white border border-gray-200 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-50 flex items-center gap-2"><Upload className="h-4 w-4"/> Importar</button>
                         </div>
                       </div>

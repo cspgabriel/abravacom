@@ -22,12 +22,12 @@ const SimulationLanding: React.FC = () => {
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tighter italic">
-              Seu Crédito Imediato, <br />
+              Crédito com Garantia de Imóvel, <br />
               <span className="text-[var(--brand-gold)]">Sem Burocracia</span>
             </h1>
 
             <p className="text-[rgba(244,236,223,0.92)] max-w-md text-base sm:text-lg font-medium leading-relaxed">
-              Descubra o poder de compra imediato com nossas cartas contempladas. Faça uma simulação rápida e acesse as melhores oportunidades do mercado agora mesmo.
+              Somos representantes da maior plataforma de crédito do mercado financeiro A Franq, trazendo taxas competitivas através das principais instituições financeiras do país como Bradesco, Santander, C6 Bank...
             </p>
           </motion.div>
 
@@ -36,6 +36,34 @@ const SimulationLanding: React.FC = () => {
               <SimulatorForm />
             </div>
           </motion.div>
+        </div>
+      </section>
+      <section className="w-full bg-white py-16 px-4 text-center text-gray-900 shadow-sm relative z-10">
+        <div className="max-w-7xl mx-auto space-y-16">
+          <div className="text-left md:text-center space-y-4 max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold tracking-tight text-[#0b1a3a]">O que é Empréstimo com Garantia de Imóvel?</h2>
+            <p className="text-gray-600 text-[1.05rem] leading-relaxed">
+              O Empréstimo com Garantia de Imóvel, também conhecido como Home Equity, é uma modalidade de crédito em que o proprietário utiliza um imóvel como garantia para obter recursos financeiros. Por contar com essa garantia real, as instituições financeiras oferecem taxas de juros significativamente mais baixas e prazos de pagamento mais longos em comparação a outras modalidades de crédito – o que proporciona condições mais vantajosas para quem busca crédito com planejamento e segurança.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left mt-8">
+            {[
+              { step: '1', title: 'Simulação', desc: 'Faça uma simulação informando o valor do imóvel que será usado como garantia e o valor que deseja de empréstimo' },
+              { step: '2', title: 'Análise', desc: 'Nosso time de especialistas avalia a sua proposta para encontrar a opção que se encaixa melhor para você' },
+              { step: '3', title: 'Envio de documentos', desc: 'Reúna junto ao seu Personal Banker os documentos necessários para dar continuidade a proposta' },
+              { step: '4', title: 'Contratação', desc: 'Finalize a sua contratação de forma simples e rápida' }
+            ].map(s => (
+              <div key={s.step} className="bg-gray-50 border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-16 h-16 bg-[#d8ad5b]/10 rounded-bl-[100px] -mr-8 -mt-8 transition-transform group-hover:scale-150" />
+                <div className="flex flex-col mb-4">
+                  <div className="flex items-center justify-center w-10 h-10 rounded-full bg-[#d8ad5b] text-[#081728] font-black text-xl mb-3">{s.step}</div>
+                  <h3 className="text-xl font-bold text-[#0b1a3a]">{s.title}</h3>
+                </div>
+                <p className="text-gray-600 text-sm leading-relaxed relative z-10">{s.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

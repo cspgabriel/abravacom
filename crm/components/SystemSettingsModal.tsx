@@ -61,7 +61,7 @@ export const SystemSettingsModal = ({ isOpen, onClose, allFields, currentSetting
                         <h3 className="text-xl font-bold text-gray-900 flex items-center gap-2">
                             <Settings className="h-5 w-5 text-blue-600"/> Configuração do Sistema
                         </h3>
-                        <p className="text-sm text-gray-500">Gerenciar campos para {mode === 'companies' ? 'Simulaçãos' : 'Contatos'}</p>
+                        <p className="text-sm text-gray-500">Gerenciar campos para {mode === 'companies' ? 'Simulações' : 'Contatos'}</p>
                     </div>
                     <button onClick={onClose}><X className="h-5 w-5 text-gray-400 hover:text-gray-600" /></button>
                 </div>

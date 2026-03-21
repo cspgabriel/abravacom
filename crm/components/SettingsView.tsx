@@ -305,7 +305,7 @@ export const SettingsView = ({ companies, contacts, savedViews = [], onDeleteVie
                           <div className="py-20 flex flex-col items-center justify-center text-gray-400 gap-4">
                             <Bookmark className="h-14 w-14 text-gray-200" />
                             <p className="text-base font-semibold text-gray-500">Nenhuma visualização salva ainda</p>
-                            <p className="text-sm text-center max-w-sm text-gray-400">Vá para a aba <strong>Contatos</strong> ou <strong>Simulaçãos</strong>, aplique filtros e clique em <strong>&ldquo;Salvar como visualização&rdquo;</strong> para criar suas primeiras views personalizadas.</p>
+                            <p className="text-sm text-center max-w-sm text-gray-400">Vá para a aba <strong>Contatos</strong> ou <strong>Simulações</strong>, aplique filtros e clique em <strong>&ldquo;Salvar como visualização&rdquo;</strong> para criar suas primeiras views personalizadas.</p>
                           </div>
                         ) : (
                           ['contact','company'].map(type => {
@@ -313,12 +313,12 @@ export const SettingsView = ({ companies, contacts, savedViews = [], onDeleteVie
                             return (
                               <div key={type}>
                                 <h3 className="text-sm font-bold text-gray-700 uppercase tracking-wide mb-3 flex items-center gap-2">
-                                  {type==='contact' ? <><UsersIcon className="h-4 w-4 text-indigo-500" /> Contatos</> : <><Building2Icon className="h-4 w-4 text-blue-500" /> Simulaçãos</>}
+                                  {type==='contact' ? <><UsersIcon className="h-4 w-4 text-indigo-500" /> Contatos</> : <><Building2Icon className="h-4 w-4 text-blue-500" /> Simulações</>}
                                   <span className="text-xs font-normal text-gray-400 normal-case">({typeViews.length} visualiza{typeViews.length===1?'ção':'ções'})</span>
                                 </h3>
                                 {typeViews.length===0 ? (
                                   <p className="text-sm text-gray-400 italic py-6 text-center border border-dashed border-gray-200 rounded-xl bg-gray-50">
-                                    Nenhuma visualização salva para {type==='contact'?'Contatos':'Simulaçãos'}.
+                                    Nenhuma visualização salva para {type==='contact'?'Contatos':'Simulações'}.
                                   </p>
                                 ) : (
                                   <div className="space-y-2">
