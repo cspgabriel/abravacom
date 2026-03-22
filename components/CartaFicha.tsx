@@ -71,22 +71,7 @@ const CartaFicha: React.FC<CartaFichaProps> = ({ letter, onClose }) => {
 
           {/* Content */}
           <div className="flex-1 overflow-y-auto p-4 sm:p-5 space-y-3">
-<<<<<<< HEAD
-            {/* Protocol Header */}
-            <div className="flex justify-between items-start gap-3">
-              <div>
-                <p className="text-lg sm:text-xl font-black text-emerald-700 uppercase tracking-wider leading-none">
-                  FINANCE8
-                </p>
-                <p className="text-[10px] sm:text-xs font-black text-slate-700 uppercase mt-1">CARTA DISPONÍVEL</p>
-              </div>
-              <div className="text-right">
-                <p className="text-lg sm:text-xl font-black text-emerald-600 leading-none">{protocol}</p>
-              </div>
-            </div>
 
-=======
->>>>>>> sync-rescue
             {/* Info compacta (2x2) */}
             <div className="grid grid-cols-2 gap-2 sm:gap-3 border-t border-slate-100 pt-3">
               {/* Categoria / Bem */}
