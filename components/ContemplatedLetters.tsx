@@ -186,10 +186,8 @@ const ContemplatedLetters: React.FC = () => {
   };
 
   const handleOpenFicha = (letter: ContemplatedLetter) => {
-    if (isUnlocked) {
-      setFichaLetter(letter);
-    } else {
-      setPendingFichaLetter(letter);
+    setFichaLetter(letter);
+    if (!isUnlocked) {
       setShowEmailCapture(true);
     }
   };
@@ -564,20 +562,20 @@ const ContemplatedLetters: React.FC = () => {
       {/* Email capture modal */}
       <AnimatePresence>
         {showEmailCapture ? (
-          <div className="fixed inset-0 z-[250] flex items-center justify-center p-4">
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => { setShowEmailCapture(false); setPendingReserveId(null); }} className="absolute inset-0 bg-slate-900/60" />
+          <div className="fixed inset-0 z-[1000] flex items-center justify-center p-4">
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => { setShowEmailCapture(false); setPendingReserveId(null); if (!isUnlocked) setFichaLetter(null); }} className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm" />
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 20 }} className="relative w-full max-w-md p-3 sm:p-4">
               <div className="bg-white rounded-[1.5rem] p-3 sm:p-6 shadow-2xl border border-slate-100">
                 <div className="flex justify-end mb-1 sm:mb-2">
-                  <button onClick={() => { setShowEmailCapture(false); setPendingReserveId(null); }} className="text-slate-400 hover:text-slate-900"><X size={20} /></button>
+                  <button onClick={() => { setShowEmailCapture(false); setPendingReserveId(null); if (!isUnlocked) setFichaLetter(null); }} className="text-slate-400 hover:text-slate-900"><X size={20} /></button>
                 </div>
                 <EmailCapture onSuccess={() => {
                   localStorage.setItem('letters_unlocked', 'true');
                   setIsUnlocked(true);
                   setShowEmailCapture(false);
-                  if (pendingFichaLetter) {
-                    setFichaLetter(pendingFichaLetter);
-                    setPendingFichaLetter(null);
+                  if (pendingReserveId) {
+                    reserveLetter(pendingReserveId);
+                    setPendingReserveId(null);
                   }
                 }} />
               </div>
@@ -587,7 +585,10 @@ const ContemplatedLetters: React.FC = () => {
       </AnimatePresence>
 
       {/* Carta Ficha modal */}
-      {fichaLetter ? <CartaFicha letter={fichaLetter} onClose={() => setFichaLetter(null)} /> : null}
+      {fichaLetter ? <CartaFicha letter={fichaLetter} onClose={() => {
+        if (!isUnlocked && showEmailCapture) return;
+        setFichaLetter(null);
+      }} /> : null}
 
       {/* WhatsApp VIP Modal - only when unlocked */}
       {showWhatsappVipCta && isUnlocked ? (
