@@ -29,7 +29,7 @@ const ContemplatedLetters: React.FC = () => {
   const [maxParcel, setMaxParcel] = useState<string>('');
   const [fundoRange, setFundoRange] = useState<string>('all');
   const [refRange, setRefRange] = useState<string>('all');
-  const [showFilters, setShowFilters] = useState(true);
+  const [showFilters, setShowFilters] = useState(false);
   const [fichaLetter, setFichaLetter] = useState<ContemplatedLetter | null>(null);
   
   // Ficha Email Gate
@@ -460,7 +460,7 @@ const ContemplatedLetters: React.FC = () => {
       </div>
 
       {/* Mobile card grid - Dark Theme Premium */}
-      <div className="md:hidden grid grid-cols-1 gap-5">
+      <div className="md:hidden grid grid-cols-1 gap-3">
         {paginatedLetters.map((letter, i) => (
           <motion.div
             layout
@@ -469,17 +469,17 @@ const ContemplatedLetters: React.FC = () => {
             transition={{ duration: 0.4, delay: i * 0.05 }}
             key={letter.id}
             onClick={() => handleOpenFicha(letter)}
-            className={`relative overflow-hidden border rounded-[2rem] p-6 shadow-xl cursor-pointer transition-all ${selectedIds.includes(letter.id) ? 'border-[var(--brand-gold)] bg-[#0d2238]/90' : 'border-[#1b3152] bg-[rgba(13,34,56,0.65)] hover:bg-[rgba(13,34,56,0.8)]'} backdrop-blur-xl`}
+            className={`relative overflow-hidden border rounded-[1.5rem] p-4 shadow-xl cursor-pointer transition-all ${selectedIds.includes(letter.id) ? 'border-[var(--brand-gold)] bg-[#0d2238]/90' : 'border-[#1b3152] bg-[rgba(13,34,56,0.65)] hover:bg-[rgba(13,34,56,0.8)]'} backdrop-blur-xl`}
           >
             <div className="absolute inset-0 bg-gradient-to-tr from-white/[0.02] to-transparent pointer-events-none" />
             
             <div className="relative z-10">
-              <div className="flex justify-between items-start mb-4">
+              <div className="flex justify-between items-start mb-3">
                 <div>
                   <span className="px-3 py-1 text-[var(--brand-gold-soft)] bg-[var(--brand-gold)]/10 border border-[var(--brand-gold)]/20 text-[10px] font-black uppercase tracking-widest rounded-full shadow-sm">
                     {letter.category}
                   </span>
-                  <p className="font-black text-[var(--brand-ivory)] text-xs uppercase mt-3 tracking-wide">{letter.administrator || letter.group}</p>
+                  <p className="font-black text-[var(--brand-ivory)] text-xs uppercase mt-2 tracking-wide">{letter.administrator || letter.group}</p>
                   {letter.name ? <p className="text-[10px] text-white/50 tracking-wider truncate max-w-[150px]">{letter.name}</p> : null}
                 </div>
                 <div onClick={(e) => { e.stopPropagation(); toggleSelection(letter.id); }} className={`w-6 h-6 rounded-md border-2 flex items-center justify-center transition-all ${selectedIds.includes(letter.id) ? 'bg-[var(--brand-gold)] border-[var(--brand-gold)]' : 'border-white/20'}`}>
@@ -487,33 +487,33 @@ const ContemplatedLetters: React.FC = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-y-4 gap-x-2 mb-6">
-                <div className="bg-black/20 p-3 rounded-2xl border border-white/5">
-                  <p className="text-[10px] text-white/50 uppercase font-black tracking-widest mb-1">Crédito</p>
-                  <p className="font-black text-white text-base tracking-tight">{formatCurrency(letter.credit)}</p>
+              <div className="grid grid-cols-2 gap-y-2 gap-x-2 mb-4">
+                <div className="bg-black/20 p-2 rounded-xl border border-white/5">
+                  <p className="text-[9px] text-white/50 uppercase font-black tracking-widest mb-0.5">Crédito</p>
+                  <p className="font-black text-white text-sm tracking-tight">{formatCurrency(letter.credit)}</p>
                 </div>
-                <div className="bg-black/20 p-3 rounded-2xl border border-white/5">
-                  <p className="text-[10px] text-white/50 uppercase font-black tracking-widest mb-1">Entrada</p>
-                  <div className="font-black text-[var(--brand-gold-soft)] text-sm">
+                <div className="bg-black/20 p-2 rounded-xl border border-white/5">
+                  <p className="text-[9px] text-white/50 uppercase font-black tracking-widest mb-0.5">Entrada</p>
+                  <div className="font-black text-[var(--brand-gold-soft)] text-xs">
                     {isUnlocked ? formatCurrency(letter.entry) : (
-                      <button onClick={(e) => { e.stopPropagation(); setShowEmailCapture(true); }} className="text-[9px] font-black border border-[var(--brand-gold)]/40 hover:border-[var(--brand-gold)] text-[var(--brand-gold-soft)] px-3 py-1 rounded-full transition-colors mt-0.5">VER VALOR</button>
+                      <button onClick={(e) => { e.stopPropagation(); setShowEmailCapture(true); }} className="text-[8px] font-black border border-[var(--brand-gold)]/40 hover:border-[var(--brand-gold)] text-[var(--brand-gold-soft)] px-2 py-0.5 rounded-full transition-colors mt-0.5">VER VALOR</button>
                     )}
                   </div>
                 </div>
-                <div className="bg-black/20 p-3 rounded-2xl border border-white/5">
-                  <p className="text-[10px] text-white/50 uppercase font-black tracking-widest mb-1">Parcelas</p>
-                  <p className="font-bold text-[var(--brand-ivory)] text-sm">{letter.installmentsCount}x</p>
+                <div className="bg-black/20 p-2 rounded-xl border border-white/5">
+                  <p className="text-[9px] text-white/50 uppercase font-black tracking-widest mb-0.5">Parcelas</p>
+                  <p className="font-bold text-[var(--brand-ivory)] text-xs">{letter.installmentsCount}x</p>
                 </div>
-                <div className="bg-black/20 p-3 rounded-2xl border border-white/5">
-                  <p className="text-[10px] text-white/50 uppercase font-black tracking-widest mb-1">Vlr. Parcela</p>
-                  <p className="font-bold text-[var(--brand-ivory)] text-sm">{formatCurrency(letter.installmentValue)}</p>
+                <div className="bg-black/20 p-2 rounded-xl border border-white/5">
+                  <p className="text-[9px] text-white/50 uppercase font-black tracking-widest mb-0.5">Vlr. Parcela</p>
+                  <p className="font-bold text-[var(--brand-ivory)] text-xs">{formatCurrency(letter.installmentValue)}</p>
                 </div>
               </div>
 
-              <div className="flex gap-3">
+              <div className="flex gap-2">
                 <button
                   onClick={(e) => { e.stopPropagation(); reserveLetter(letter.id); }}
-                  className={`flex-1 py-3.5 rounded-2xl text-[11px] font-black tracking-widest uppercase transition-all shadow-lg ${letter.status === 'available' ? 'bg-[linear-gradient(135deg,#d8ad5b_0%,#b98532_100%)] text-[#081728] border border-[#d8ad5b]/20 hover:scale-[1.02]' : 'bg-white/5 text-white/30 border border-white/10'}`}
+                  className={`flex-1 py-2.5 rounded-xl text-[10px] font-black tracking-widest uppercase transition-all shadow-lg ${letter.status === 'available' ? 'bg-[linear-gradient(135deg,#d8ad5b_0%,#b98532_100%)] text-[#081728] border border-[#d8ad5b]/20 hover:scale-[1.02]' : 'bg-white/5 text-white/30 border border-white/10'}`}
                 >
                   {letter.status === 'available' ? 'Reservar Oferta' : 'Indisponível'}
                 </button>
