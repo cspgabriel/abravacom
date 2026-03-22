@@ -566,9 +566,9 @@ const ContemplatedLetters: React.FC = () => {
         {showEmailCapture ? (
           <div className="fixed inset-0 z-[250] flex items-center justify-center p-4">
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => { setShowEmailCapture(false); setPendingReserveId(null); }} className="absolute inset-0 bg-slate-900/60" />
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 20 }} className="relative w-full max-w-lg p-4">
-              <div className="bg-white rounded-2xl p-6 shadow-2xl border border-slate-100">
-                <div className="flex justify-end mb-2">
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 20 }} className="relative w-full max-w-md p-3 sm:p-4">
+              <div className="bg-white rounded-[1.5rem] p-3 sm:p-6 shadow-2xl border border-slate-100">
+                <div className="flex justify-end mb-1 sm:mb-2">
                   <button onClick={() => { setShowEmailCapture(false); setPendingReserveId(null); }} className="text-slate-400 hover:text-slate-900"><X size={20} /></button>
                 </div>
                 <EmailCapture onSuccess={() => {
