@@ -19,6 +19,9 @@ export default defineConfig(({ mode }) => {
         VitePWA({
           registerType: 'autoUpdate',
           includeAssets: ['logo_abravacon_transparent.png'],
+          workbox: {
+            maximumFileSizeToCacheInBytes: 5 * 1024 * 1024 // 5 MB to prevent Vercel failure
+          },
           manifest: {
             name: 'CRM ABRACON',
             short_name: 'CRM ABRACON',
