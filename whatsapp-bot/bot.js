@@ -4,6 +4,7 @@ const { initializeApp } = require('firebase/app');
 const { getFirestore, collection, onSnapshot, query, where, updateDoc, doc } = require('firebase/firestore');
 require('dotenv').config();
 
+<<<<<<< HEAD
 // Firebase Configuration from .env
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
@@ -12,6 +13,28 @@ const firebaseConfig = {
   storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
   messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
   appId: process.env.FIREBASE_APP_ID
+=======
+// Impede que o terminal feche imediatamente ao dar erro
+process.on('uncaughtException', (err) => {
+    console.error('\n❌ ERRO FATAL: O programa encontrou um erro e não pode continuar.\n');
+    console.error(err);
+    console.log('\n⏳ Fechando em 60 segundos para você ler o erro acima...');
+    setTimeout(() => process.exit(1), 60000);
+});
+process.on('unhandledRejection', (reason, promise) => {
+    console.error('\n❌ ERRO FATAL: Promessa rejeitada inesperadamente.\n');
+    console.error(reason);
+    console.log('\n⏳ Fechando em 60 segundos para você ler o erro acima...');
+    setTimeout(() => process.exit(1), 60000);
+});// Firebase Configuration from .env
+const firebaseConfig = {
+  apiKey: process.env.FIREBASE_API_KEY || process.env.VITE_FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN || process.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.FIREBASE_PROJECT_ID || process.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET || process.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID || process.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.FIREBASE_APP_ID || process.env.VITE_FIREBASE_APP_ID
+>>>>>>> sync-rescue
 };
 
 const app = initializeApp(firebaseConfig);
@@ -23,7 +46,17 @@ const client = new Client({
     puppeteer: {
         // Look for typical Chrome installation paths to avoid bundling 200MB Chromium in pkg
         executablePath: process.env.CHROME_PATH || "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", 
+<<<<<<< HEAD
         args: ['--no-sandbox', '--disable-setuid-sandbox']
+=======
+        args: [
+            '--no-sandbox', 
+            '--disable-setuid-sandbox', 
+            '--disable-dev-shm-usage',
+            '--js-flags=--expose-gc'
+        ],
+        headless: true
+>>>>>>> sync-rescue
     }
 });
 
@@ -66,6 +99,7 @@ function listenForLeads() {
 async function sendWhatsAppAlert(lead, docId) {
     try {
         // The agency number to receive alerts (or the user's phone if configured differently)
+<<<<<<< HEAD
         // If they want to message the lead directly, we would use lead.phone instead.
         // Assuming we notify the AGENCY about the lead:
         const agencyNumber = process.env.AGENCY_WHATSAPP_NUMBER; 
@@ -74,6 +108,9 @@ async function sendWhatsAppAlert(lead, docId) {
             return;
         }
 
+=======
+        const agencyNumber = process.env.AGENCY_WHATSAPP_NUMBER || "5521993165605"; 
+>>>>>>> sync-rescue
         const formattedNumber = `${agencyNumber.replace(/\D/g, '')}@c.us`;
 
         const message = `*🔔 NOVO LEAD GERADO (FINANCE8)!*\n\n` +
