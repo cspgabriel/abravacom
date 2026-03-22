@@ -11,8 +11,10 @@ interface CartaFichaProps {
   onClose: () => void;
 }
 
-const fmtBRL = (val: number) =>
-  new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(val);
+const fmtBRL = (val: number) => {
+  if (typeof val !== 'number' || isNaN(val)) return 'R$ 0,00';
+  return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(val);
+};
 
 const STATUS_LABEL: Record<ContemplatedLetter['status'], string> = {
   available: 'Disponível',
@@ -47,10 +49,10 @@ const CartaFicha: React.FC<CartaFichaProps> = ({ letter, onClose }) => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 50 }}
-          className="relative w-full max-w-lg max-h-[95vh] bg-white shadow-2xl md:rounded-3xl print:shadow-none overflow-hidden"
+          className="relative w-full max-w-lg max-h-[88vh] bg-white shadow-2xl md:rounded-[2rem] print:shadow-none flex flex-col overflow-hidden"
         >
           {/* Header */}
-          <div className="sticky top-0 bg-white border-b border-slate-100 px-4 py-3 flex items-center justify-between print:hidden z-10 md:rounded-t-3xl">
+          <div className="flex-none sticky top-0 bg-white border-b border-slate-100 px-4 py-3 flex items-center justify-between print:hidden z-20">
             <button
               onClick={onClose}
               className="p-2 rounded-full hover:bg-slate-100 transition-colors"
@@ -68,17 +70,17 @@ const CartaFicha: React.FC<CartaFichaProps> = ({ letter, onClose }) => {
           </div>
 
           {/* Content */}
-          <div className="p-4 sm:p-5 space-y-4">
+          <div className="flex-1 overflow-y-auto p-4 sm:p-5 space-y-3">
             {/* Protocol Header */}
-            <div className="flex justify-between items-start gap-4">
+            <div className="flex justify-between items-start gap-3">
               <div>
-                <p className="text-lg sm:text-2xl font-black text-emerald-700 uppercase tracking-wider leading-none">
+                <p className="text-lg sm:text-xl font-black text-emerald-700 uppercase tracking-wider leading-none">
                   FINANCE8
                 </p>
-                <p className="text-xs font-black text-slate-700 uppercase mt-1">CARTA DISPONÍVEL</p>
+                <p className="text-[10px] sm:text-xs font-black text-slate-700 uppercase mt-1">CARTA DISPONÍVEL</p>
               </div>
               <div className="text-right">
-                <p className="text-xl sm:text-2xl font-black text-emerald-600 leading-none">{protocol}</p>
+                <p className="text-lg sm:text-xl font-black text-emerald-600 leading-none">{protocol}</p>
               </div>
             </div>
 
@@ -109,10 +111,10 @@ const CartaFicha: React.FC<CartaFichaProps> = ({ letter, onClose }) => {
             </div>
 
             {/* Financial details */}
-            <div className="bg-slate-50 rounded-xl p-3 sm:p-4 border border-slate-100">
-              <div className="flex items-start gap-3">
+            <div className="bg-slate-50 rounded-xl p-3 border border-slate-100">
+              <div className="flex items-start gap-2.5">
                 <FileText size={18} className="text-slate-400 flex-shrink-0" />
-                <div className="space-y-1 w-full text-xs sm:text-sm">
+                <div className="space-y-0.5 w-full text-xs sm:text-sm">
                   <div className="flex justify-between items-center py-1">
                     <span className="text-slate-500">Crédito</span>
                     <span className="font-black text-emerald-600 text-base">{fmtBRL(letter.credit)}</span>
@@ -167,11 +169,11 @@ const CartaFicha: React.FC<CartaFichaProps> = ({ letter, onClose }) => {
 
             {/* Contact */}
             {(letter.contactPhone || letter.contactEmail) && (
-              <div>
-                <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-3">
+              <div className="pt-1">
+                <p className="text-[9px] font-black uppercase tracking-widest text-slate-400 mb-2">
                   CONTATO DIRETO
                 </p>
-                <div className="bg-slate-50 rounded-2xl p-4 border border-slate-100 space-y-2">
+                <div className="bg-slate-50 rounded-xl p-3 border border-slate-100 space-y-2">
                   {letter.contactPhone && (
                     <div className="flex items-center gap-3">
                       <Phone size={16} className="text-emerald-600" />

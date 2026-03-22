@@ -57,11 +57,8 @@ export const CoreUILayout: React.FC<CoreUILayoutProps> = ({ children, currentPat
         }
       `}</style>
       
-      <CSidebar 
-        position="fixed"
-        visible={sidebarShow}
-        onVisibleChange={(visible: boolean) => setSidebarShow(visible)}
-        className="bg-gradient-to-b from-[#0b1a3a] to-[#071226] border-r border-[#10224a] shadow-xl z-40 flex flex-col"
+      <aside 
+        className={`fixed inset-y-0 left-0 w-64 bg-gradient-to-b from-[#0b1a3a] to-[#071226] border-r border-[#10224a] shadow-2xl z-[100] flex flex-col transition-transform duration-300 ease-in-out ${sidebarShow ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}`}
       >
         <div className="p-6 flex flex-col items-center border-b border-[#10224a] text-center shrink-0">
              <img src="/logo_abravacon_transparent.png" alt="ABRACON" className="h-[90px] w-auto object-contain mb-1" />
@@ -97,11 +94,12 @@ export const CoreUILayout: React.FC<CoreUILayoutProps> = ({ children, currentPat
                Sair do Sistema
             </button>
         </div>
-      </CSidebar>
+      </aside>
 
       <div className="flex-1 flex flex-col w-full h-full overflow-hidden bg-slate-50 relative lg:ml-64">
         {/* Overlay do CoreUI Mobile pode precisar de ajuda se z-index falhar */}
-        {sidebarShow && <div className="fixed inset-0 bg-black/50 z-30 lg:hidden" onClick={() => setSidebarShow(false)}></div>}
+        {/* Overlay Black Backdrop for Mobile */}
+        {sidebarShow && <div className="fixed inset-0 bg-black/60 z-[90] lg:hidden transition-opacity" onClick={() => setSidebarShow(false)}></div>}
         
         <CHeader position="sticky" className="bg-white shadow-sm border-b border-slate-200 py-3 shrink-0 z-20">
           <CContainer fluid className="px-4">
