@@ -83,9 +83,7 @@ export const CoreUILayout: React.FC<CoreUILayoutProps> = ({ children, currentPat
             <CNavItem href="#" active={currentPath === 'campaigns' || currentPath === 'campaign-new' || currentPath === 'campaign-details'} onClick={(e: any) => { e.preventDefault(); onNavigate('campaigns'); }}>
               Campanhas
             </CNavItem>
-            <CNavItem href="#" active={currentPath === 'forms'} onClick={(e: any) => { e.preventDefault(); onNavigate('forms'); }}>
-              Formulários
-            </CNavItem>
+
             <CNavItem href="#" active={currentPath === 'import'} onClick={(e: any) => { e.preventDefault(); onNavigate('import'); }}>
               Importação
             </CNavItem>
