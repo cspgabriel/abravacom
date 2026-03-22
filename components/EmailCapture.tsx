@@ -23,7 +23,7 @@ const EmailCapture: React.FC<{ onSuccess?: () => void }> = ({ onSuccess }) => {
       });
       setStatus('success');
       if (onSuccess) {
-        setTimeout(onSuccess, 1500);
+        setTimeout(onSuccess, 500);
       } else {
         setEmail('');
         setPhone('');

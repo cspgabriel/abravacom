@@ -394,7 +394,7 @@ const ContemplatedLetters: React.FC = () => {
       </AnimatePresence>
 
       {/* Desktop table - Glassmorphism Premium Edition */}
-      <div className="hidden md:block overflow-hidden rounded-[2rem] border border-[#1b3152] bg-[rgba(13,34,56,0.65)] backdrop-blur-2xl shadow-[0_25px_80px_rgba(2,6,12,0.4)] relative">
+      <div className="hidden md:block overflow-hidden rounded-[2rem] border border-[#1b3152] bg-[rgba(13,34,56,0.65)] backdrop-blur-2xl shadow-[0_25px_80px_rgba(2,6,12,0.4)] relative mt-8">
         <div className="absolute inset-0 bg-gradient-to-b from-white/[0.03] to-transparent pointer-events-none" />
         <div className="overflow-x-auto relative z-10 w-full">
           <table className="w-full text-left border-collapse min-w-[900px]">
@@ -432,7 +432,7 @@ const ContemplatedLetters: React.FC = () => {
                   <td className="px-6 py-5 text-white font-black text-lg tracking-tight">{formatCurrency(letter.credit)}</td>
                   <td className="px-6 py-5 text-[var(--brand-ivory)] font-bold text-sm">
                     {isUnlocked ? formatCurrency(letter.entry) : (
-                      <button onClick={(e) => { e.stopPropagation(); setShowEmailCapture(true); }} className="text-[10px] font-black border border-[var(--brand-gold)]/40 hover:border-[var(--brand-gold)] text-[var(--brand-gold-soft)] px-3 py-1.5 rounded-full hover:bg-[var(--brand-gold)]/10 transition-colors">VER VALOR</button>
+                      <button onClick={(e) => { e.stopPropagation(); handleOpenFicha(letter); }} className="text-[10px] font-black border border-[var(--brand-gold)]/40 hover:border-[var(--brand-gold)] text-[var(--brand-gold-soft)] px-3 py-1.5 rounded-full hover:bg-[var(--brand-gold)]/10 transition-colors">VER VALOR</button>
                     )}
                   </td>
                   <td className="px-6 py-5">
@@ -458,7 +458,7 @@ const ContemplatedLetters: React.FC = () => {
       </div>
 
       {/* Mobile card grid - Dark Theme Premium */}
-      <div className="md:hidden grid grid-cols-1 gap-3">
+      <div className="md:hidden grid grid-cols-1 gap-3 mt-6">
         {paginatedLetters.map((letter, i) => (
           <motion.div
             layout
@@ -494,7 +494,7 @@ const ContemplatedLetters: React.FC = () => {
                   <p className="text-[9px] text-white/50 uppercase font-black tracking-widest mb-0.5">Entrada</p>
                   <div className="font-black text-[var(--brand-gold-soft)] text-xs">
                     {isUnlocked ? formatCurrency(letter.entry) : (
-                      <button onClick={(e) => { e.stopPropagation(); setShowEmailCapture(true); }} className="text-[8px] font-black border border-[var(--brand-gold)]/40 hover:border-[var(--brand-gold)] text-[var(--brand-gold-soft)] px-2 py-0.5 rounded-full transition-colors mt-0.5">VER VALOR</button>
+                      <button onClick={(e) => { e.stopPropagation(); handleOpenFicha(letter); }} className="text-[8px] font-black border border-[var(--brand-gold)]/40 hover:border-[var(--brand-gold)] text-[var(--brand-gold-soft)] px-2 py-0.5 rounded-full transition-colors mt-0.5">VER VALOR</button>
                     )}
                   </div>
                 </div>
