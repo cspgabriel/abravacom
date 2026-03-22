@@ -135,7 +135,7 @@ const ThankYou: React.FC = () => {
       </motion.div>
 
       <div className="space-y-4 max-w-2xl">
-        <h1 className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tighter uppercase italic">
+        <h1 className="text-4xl sm:text-5xl font-black text-slate-100 tracking-tighter uppercase italic">
           Simulação <span className="text-emerald-600">Enviada!</span>
         </h1>
         <p className="text-slate-500 text-lg leading-relaxed">

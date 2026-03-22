@@ -185,3 +185,45 @@ export const BatchSendModal = ({ isOpen, onClose, batches }: any) => {
         </div>
     )
 }
+
+export const WhatsappBatchModal = ({ isOpen, onClose, batches }: any) => {
+    if (!isOpen || !batches || batches.length === 0) return null;
+    return (
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+            <div className="bg-white rounded-xl shadow-xl w-full max-w-lg p-6 animate-in zoom-in-95 duration-200 flex flex-col max-h-[90vh]">
+                <div className="mb-4 shrink-0">
+                    <h3 className="text-lg font-bold text-gray-900 mb-1 flex items-center gap-2">
+                        <span className="p-1.5 bg-green-100 text-green-600 rounded-lg">
+                            <Send className="h-5 w-5" />
+                        </span> 
+                        Envio por WhatsApp
+                    </h3>
+                    <p className="text-sm text-gray-500">Clique em cada link para disparar mensagens individuais via Web WhatsApp.</p>
+                </div>
+                
+                <div className="space-y-2 overflow-y-auto pr-2 flex-1">
+                    {batches.map((batch: any, index: number) => (
+                        <div key={index} className="p-3 border border-gray-100 bg-gray-50 rounded-lg flex items-center justify-between hover:border-green-300 transition-colors">
+                            <div className="min-w-0 pr-4">
+                                <h4 className="font-bold text-gray-800 text-sm truncate">{batch.name || 'Contato sem nome'}</h4>
+                                <p className="text-[11px] text-gray-500 font-mono mt-0.5">{batch.phone}</p>
+                            </div>
+                            <a 
+                                href={batch.link}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="px-3 py-1.5 bg-green-600 text-white rounded-lg text-xs font-bold hover:bg-green-700 flex items-center gap-1 shrink-0"
+                            >
+                                <Send className="h-3 w-3" /> Abrir no App
+                            </a>
+                        </div>
+                    ))}
+                </div>
+                
+                <div className="mt-4 pt-4 border-t border-gray-200 flex justify-end shrink-0">
+                    <button onClick={onClose} className="px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg font-medium text-sm">Fechar Painel</button>
+                </div>
+            </div>
+        </div>
+    )
+}

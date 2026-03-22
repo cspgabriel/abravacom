@@ -8,6 +8,7 @@ type NewCampaignPayload = {
     responsible: string;
     body: string;
     recipients: any[];
+    method: 'email' | 'whatsapp';
 };
 
 export const NewCampaignPage = ({ contacts = [], onBack, onSend }: any) => {
@@ -18,6 +19,7 @@ export const NewCampaignPage = ({ contacts = [], onBack, onSend }: any) => {
     const [showFilters, setShowFilters] = useState(true);
     const [activeFilters, setActiveFilters] = useState<{[key: string]: string[]}>({});
     const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
+    const [sendMethod, setSendMethod] = useState<'email' | 'whatsapp'>('email');
 
     const filterKeys = ['department', 'mailing', 'role'];
 
@@ -60,7 +62,7 @@ export const NewCampaignPage = ({ contacts = [], onBack, onSend }: any) => {
 
     const handleSend = () => {
         const recipients = filteredContacts.filter((c: any) => selectedIds.has(c.id));
-        const payload: NewCampaignPayload = { subject, responsible, body, recipients };
+        const payload: NewCampaignPayload = { subject, responsible, body, recipients, method: sendMethod };
         onSend(payload);
     };
 
@@ -88,9 +90,23 @@ export const NewCampaignPage = ({ contacts = [], onBack, onSend }: any) => {
                         <textarea value={body} onChange={(e) => setBody(e.target.value)} rows={10} placeholder="Olá, segue nossa comunicação..." className="mt-2 w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 outline-none resize-none" />
                     </div>
 
+                    <div>
+                        <label className="text-sm font-semibold text-gray-700 block mb-2">Método de Disparo</label>
+                        <div className="flex gap-4 p-3 bg-gray-50 border border-gray-100 rounded-lg">
+                            <label className="flex items-center gap-2 cursor-pointer">
+                                <input type="radio" name="sendMethod" value="email" checked={sendMethod === 'email'} onChange={() => setSendMethod('email')} className="text-blue-600 focus:ring-blue-500 w-4 h-4" />
+                                <span className="text-sm font-medium text-gray-800">E-mail (Outlook)</span>
+                            </label>
+                            <label className="flex items-center gap-2 cursor-pointer">
+                                <input type="radio" name="sendMethod" value="whatsapp" checked={sendMethod === 'whatsapp'} onChange={() => setSendMethod('whatsapp')} className="text-green-600 focus:ring-green-500 w-4 h-4" />
+                                <span className="text-sm font-medium text-gray-800">Link de WhatsApp</span>
+                            </label>
+                        </div>
+                    </div>
+
                     <div className="flex items-center justify-between pt-2">
                         <button onClick={onBack} className="text-sm text-gray-500 hover:text-blue-600">Ir para Histórico</button>
-                        <button onClick={handleSend} disabled={!subject || !responsible || selectedIds.size === 0} className="px-4 py-2 rounded-lg bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700 disabled:opacity-50">Enviar Campanha</button>
+                        <button onClick={handleSend} disabled={!subject || !responsible || selectedIds.size === 0} className={`px-4 py-2 rounded-lg text-white text-sm font-semibold disabled:opacity-50 transition-colors ${sendMethod === 'whatsapp' ? 'bg-green-600 hover:bg-green-700' : 'bg-blue-600 hover:bg-blue-700'}`}>Gerar {sendMethod === 'whatsapp' ? 'Links' : 'Campanha'}</button>
                     </div>
                 </div>
 

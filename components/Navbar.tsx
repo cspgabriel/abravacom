@@ -15,9 +15,9 @@ import { doc, getDoc } from 'firebase/firestore';
 import BrandLogo from './BrandLogo';
 
 const primaryLinks = [
-  { name: 'Inicio', path: '/' },
+  { name: 'Início', path: '/' },
   { name: 'Crédito com Garantia', path: '/simulacao' },
-  { name: 'Consorcios', path: '/consorcio' },
+  { name: 'Consórcios', path: '/consorcio' },
   { name: 'Cartas Contempladas', path: '/cartas' },
   { name: 'Sobre', path: '/sobre' },
 ];
@@ -78,13 +78,9 @@ const Navbar: React.FC = () => {
   return (
     <>
       <nav className="fixed inset-x-0 top-0 z-[150]">
-        <div className="flex w-full items-center justify-between border-b border-[rgba(217,173,87,0.06)] bg-[#0b1a3a] px-4 py-4 shadow-[0_6px_20px_rgba(3,10,20,0.25)]">
+        <div className="flex w-full items-center justify-between border-b border-[rgba(217,173,87,0.06)] bg-[#081728] px-4 py-4 shadow-[0_6px_20px_rgba(3,10,20,0.25)]">
           <Link to="/" className="shrink-0">
-            <BrandLogo
-              wordmarkClassName="text-[2.35rem] sm:text-[2.9rem]"
-              subtitleClassName="tracking-[0.32em]"
-              iconClassName="h-11 w-11 sm:h-12 sm:w-12"
-            />
+            <BrandLogo />
           </Link>
 
           <div className="hidden items-center gap-2 xl:flex">
@@ -92,7 +88,7 @@ const Navbar: React.FC = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`rounded-full px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.28em] transition-all ${
+                className={`rounded-full whitespace-nowrap px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.28em] transition-all ${
                   isActive(link.path)
                     ? 'bg-[rgba(217,173,87,0.14)] text-[var(--brand-gold-soft)]'
                     : 'text-white/90 hover:bg-white/5 hover:text-white'
@@ -111,7 +107,7 @@ const Navbar: React.FC = () => {
                   <Link
                     key={link.path}
                     to={link.path}
-                    className={`inline-flex items-center gap-2 rounded-full px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.22em] transition-all ${
+                    className={`inline-flex items-center gap-2 whitespace-nowrap rounded-full px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.22em] transition-all ${
                       isActive(link.path)
                         ? 'bg-[rgba(217,173,87,0.14)] text-[var(--brand-gold-soft)]'
                         : 'text-white/85 hover:text-white'
@@ -128,14 +124,14 @@ const Navbar: React.FC = () => {
               <div className="flex items-center gap-2">
                 <Link
                   to={isAdmin ? '/admin' : '/portal'}
-                  className="inline-flex items-center gap-2 rounded-full border border-[rgba(217,173,87,0.18)] bg-[rgba(255,255,255,0.05)] px-5 py-3 text-[10px] font-semibold uppercase tracking-[0.28em] text-[var(--brand-ivory)] transition hover:border-[rgba(217,173,87,0.35)] hover:bg-[rgba(255,255,255,0.08)]"
+                  className="inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-[rgba(217,173,87,0.18)] bg-[rgba(255,255,255,0.05)] px-5 py-3 text-[10px] font-semibold uppercase tracking-[0.28em] text-[var(--brand-ivory)] transition hover:border-[rgba(217,173,87,0.35)] hover:bg-[rgba(255,255,255,0.08)]"
                 >
                   <User size={14} />
                   Minha Conta
                 </Link>
                 <button
                   onClick={() => auth.signOut()}
-                  className="inline-flex items-center gap-2 rounded-full bg-[linear-gradient(135deg,#d8ad5b_0%,#b98532_100%)] px-5 py-3 text-[10px] font-bold uppercase tracking-[0.28em] text-[#081728] shadow-[0_14px_30px_rgba(185,133,50,0.35)] transition hover:brightness-105"
+                  className="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-[linear-gradient(135deg,#d8ad5b_0%,#b98532_100%)] px-5 py-3 text-[10px] font-bold uppercase tracking-[0.28em] text-[#081728] shadow-[0_14px_30px_rgba(185,133,50,0.35)] transition hover:brightness-105"
                 >
                   <LogOut size={14} />
                   Sair
@@ -144,9 +140,9 @@ const Navbar: React.FC = () => {
             ) : (
               <button
                 onClick={openAuth}
-                className="rounded-full bg-[linear-gradient(135deg,#d8ad5b_0%,#b98532_100%)] px-5 py-3 text-[10px] font-bold uppercase tracking-[0.28em] text-[#081728] shadow-[0_14px_30px_rgba(185,133,50,0.35)] transition hover:brightness-105"
+                className="rounded-full whitespace-nowrap bg-[linear-gradient(135deg,#d8ad5b_0%,#b98532_100%)] px-5 py-3 text-[10px] font-bold uppercase tracking-[0.28em] text-[#081728] shadow-[0_14px_30px_rgba(185,133,50,0.35)] transition hover:brightness-105"
               >
-                Area do Parceiro
+                Área do Parceiro
               </button>
             )}
           </div>
@@ -241,7 +237,7 @@ const Navbar: React.FC = () => {
                     onClick={openAuth}
                     className="rounded-2xl bg-[linear-gradient(135deg,#d8ad5b_0%,#b98532_100%)] px-5 py-4 text-[11px] font-bold uppercase tracking-[0.28em] text-[#081728]"
                   >
-                    Area do Parceiro
+                    Área do Parceiro
                   </button>
                 )}
               </div>

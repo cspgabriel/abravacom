@@ -12,6 +12,10 @@
     "import:letters": "node scripts/import-letters.mjs --file"
   },
   "dependencies": {
+    "@coreui/coreui": "^5.6.1",
+    "@coreui/icons": "^3.0.1",
+    "@coreui/icons-react": "^2.3.0",
+    "@coreui/react": "^5.10.0",
     "@google/genai": "^1.46.0",
     "clsx": "^2.1.1",
     "exceljs": "^4.4.0",

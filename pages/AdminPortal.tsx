@@ -629,8 +629,9 @@ const AdminPortal: React.FC = () => {
   ];
 
   return (
-    <div className="pt-20 sm:pt-24 pb-20 px-3 sm:px-6 max-w-7xl mx-auto space-y-6">
-      {/* Header */}
+    <div className="relative min-h-screen w-full bg-slate-50 text-slate-900 z-10">
+      <div className="pt-40 pb-20 px-3 sm:px-6 max-w-7xl mx-auto space-y-6">
+        {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tighter uppercase italic">
@@ -1642,74 +1643,81 @@ const AdminPortal: React.FC = () => {
         {isLetterModalOpen && (
           <div className="fixed inset-0 z-[900] grid place-items-center p-4">
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setIsLetterModalOpen(false)} className="fixed inset-0 bg-black/40 backdrop-blur-sm" />
-            <motion.div initial={{ opacity: 0, scale: 0.95, y: 20 }} animate={{ opacity: 1, scale: 1, y: 0 }} exit={{ opacity: 0, scale: 0.95, y: 20 }} className="relative w-full max-w-xl bg-white rounded-2xl shadow-2xl p-5 sm:p-6 overflow-y-auto max-h-[90vh]">
-              <div className="flex justify-between items-center mb-4">
-                <h4 className="font-black text-lg">{editingLetter ? 'Editar Carta' : 'Nova Carta'}</h4>
-                <button onClick={() => setIsLetterModalOpen(false)} aria-label="Fechar"><X size={20} className="text-slate-400" /></button>
+            <motion.div initial={{ opacity: 0, scale: 0.95, y: 20 }} animate={{ opacity: 1, scale: 1, y: 0 }} exit={{ opacity: 0, scale: 0.95, y: 20 }} className="relative w-full max-w-4xl bg-white rounded-3xl shadow-2xl p-6 sm:p-8 overflow-y-auto max-h-[90vh] text-slate-900">
+              <div className="relative flex justify-center items-center mb-8">
+                <h4 className="font-black text-2xl text-center text-slate-900 tracking-tight uppercase">{editingLetter ? 'Editar Carta' : 'Nova Carta'}</h4>
+                <button onClick={() => setIsLetterModalOpen(false)} aria-label="Fechar" className="absolute right-0 text-slate-400 hover:text-slate-600 transition-colors p-2"><X size={24} /></button>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <datalist id="administradoras">
+                <option value="Santander" />
+                <option value="Itaú" />
+                <option value="Bradesco" />
+                <option value="Porto Seguro" />
+                <option value="Caixa Consórcios" />
+                <option value="BB Consórcios" />
+                <option value="Embracon" />
+                <option value="Rodobens" />
+                <option value="Ademicon" />
+              </datalist>
+              <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-x-4 gap-y-4">
                 {[
-                  { key: 'administrator', label: 'Administradora', type: 'text' },
+                  { key: 'administrator', label: 'Administradora', type: 'datalist', list: 'administradoras' },
                   { key: 'group', label: 'Grupo', type: 'text' },
                   { key: 'code', label: 'Código', type: 'text' },
                   { key: 'name', label: 'Nome / Bem', type: 'text' },
+                  { key: 'category', label: 'Categoria', type: 'select', options: ['Carro', 'Imóvel', 'Caminhão', 'Giro'] },
                   { key: 'credit', label: 'Crédito (R$)', type: 'number' },
                   { key: 'entry', label: 'Entrada (R$)', type: 'number' },
                   { key: 'installmentsCount', label: 'Parcelas', type: 'number' },
                   { key: 'installmentValue', label: 'Valor Parcela (R$)', type: 'number' },
-                  { key: 'transferFee', label: 'Taxa Transferência (R$)', type: 'number' },
                   { key: 'saldoDevedor', label: 'Saldo Devedor (R$)', type: 'number' },
+                  { key: 'transferFee', label: 'Taxa Transferência (R$)', type: 'number' },
                   { key: 'fundoComum', label: 'Fundo Comum (R$)', type: 'number' },
                   { key: 'refGarantia', label: 'Ref. Garantia (R$)', type: 'number' },
-                  { key: 'insurance', label: 'Seguro', type: 'text' },
-                  { key: 'reajusteIndex', label: 'Índice de Reajuste', type: 'text' },
+                  { key: 'insurance', label: 'Seguro', type: 'select', options: ['N/A', 'Incluso', 'Não Incluso'] },
+                  { key: 'reajusteIndex', label: 'Índice de Reajuste', type: 'select', options: ['N/A', 'INCC', 'IGPM', 'IPCA'] },
+                  { key: 'status', label: 'Status', type: 'select', options: [{val: 'available', lbl: 'Disponível'}, {val: 'reserved', lbl: 'Reservada'}, {val: 'sold', lbl: 'Vendida'}] },
                   { key: 'contactPhone', label: 'Telefone Contato', type: 'text' },
                   { key: 'contactEmail', label: 'Email Contato', type: 'email' },
-                ].map(field => (
-                  <div key={field.key}>
-                    <label className="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">{field.label}</label>
-                    <input
-                      type={field.type}
-                      value={(letterForm as any)[field.key] || ''}
-                      onChange={e => handleLetterFormChange(field.key as any, field.type === 'number' ? Number(e.target.value) : e.target.value)}
-                      className="w-full p-2.5 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                    />
+                  { key: 'observations', label: 'Observações', type: 'text', colSpan: 'full' },
+                ].map((field: any) => (
+                  <div key={field.key} className={field.colSpan === 'full' ? 'sm:col-span-3 md:col-span-4' : ''}>
+                    <label className="block text-[11px] font-black text-slate-500 uppercase tracking-widest mb-1.5">{field.label}</label>
+                    {field.type === 'select' ? (
+                      <select
+                        value={(letterForm as any)[field.key] || ''}
+                        onChange={e => handleLetterFormChange(field.key as any, e.target.value)}
+                        className="w-full p-2 border border-slate-200 rounded-lg text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white"
+                      >
+                        <option value="">Selecione...</option>
+                        {field.options?.map((opt: any) => typeof opt === 'string' 
+                          ? <option key={opt} value={opt}>{opt}</option> 
+                          : <option key={opt.val} value={opt.val}>{opt.lbl}</option>
+                        )}
+                      </select>
+                    ) : field.type === 'datalist' ? (
+                      <input
+                        list={field.list}
+                        type="text"
+                        value={(letterForm as any)[field.key] || ''}
+                        onChange={e => handleLetterFormChange(field.key as any, e.target.value)}
+                        className="w-full p-2 border border-slate-200 rounded-lg text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                        placeholder="Digite ou selecione..."
+                      />
+                    ) : (
+                      <input
+                        type={field.type}
+                        value={(letterForm as any)[field.key] || ''}
+                        onChange={e => handleLetterFormChange(field.key as any, field.type === 'number' ? Number(e.target.value) : e.target.value)}
+                        className="w-full p-2 border border-slate-200 rounded-lg text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                      />
+                    )}
                   </div>
                 ))}
-                <div>
-                  <label className="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">Categoria</label>
-                  <select
-                    value={letterForm.category || 'Carro'}
-                    onChange={e => handleLetterFormChange('category', e.target.value as any)}
-                    className="w-full p-2.5 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                  >
-                    {['Carro', 'Imóvel', 'Caminhão', 'Giro'].map(c => <option key={c}>{c}</option>)}
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">Status</label>
-                  <select
-                    value={letterForm.status || 'available'}
-                    onChange={e => handleLetterFormChange('status', e.target.value as any)}
-                    className="w-full p-2.5 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                  >
-                    <option value="available">Disponível</option>
-                    <option value="reserved">Reservada</option>
-                    <option value="sold">Vendida</option>
-                  </select>
-                </div>
-                <div className="sm:col-span-2">
-                  <label className="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">Observações</label>
-                  <input
-                    value={letterForm.observations || ''}
-                    onChange={e => handleLetterFormChange('observations', e.target.value)}
-                    className="w-full p-2.5 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                  />
-                </div>
               </div>
-              <div className="mt-5 flex justify-end gap-3">
-                <button onClick={() => setIsLetterModalOpen(false)} className="px-4 py-2 rounded-xl border border-slate-200 text-sm font-black">Cancelar</button>
-                <button onClick={saveLetter} className="px-6 py-2 rounded-xl bg-emerald-600 text-white text-sm font-black">Salvar</button>
+              <div className="mt-8 flex justify-center gap-4">
+                <button onClick={() => setIsLetterModalOpen(false)} className="px-6 py-3 rounded-2xl border-2 border-slate-200 text-sm font-black text-slate-600 hover:bg-slate-50 transition-colors">Cancelar</button>
+                <button onClick={saveLetter} className="px-10 py-3 rounded-2xl bg-emerald-600 text-white text-sm font-black hover:bg-emerald-700 shadow-lg shadow-emerald-600/20 transition-all">Salvar</button>
               </div>
             </motion.div>
           </div>
@@ -1723,6 +1731,7 @@ const AdminPortal: React.FC = () => {
       {selectedCartaFicha && (
         <CartaFicha letter={selectedCartaFicha} onClose={() => setSelectedCartaFicha(null)} />
       )}
+      </div>
     </div>
   );
 };

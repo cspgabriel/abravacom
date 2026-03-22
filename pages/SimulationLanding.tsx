@@ -38,11 +38,11 @@ const SimulationLanding: React.FC = () => {
           </motion.div>
         </div>
       </section>
-      <section className="w-full bg-white py-16 px-4 text-center text-gray-900 shadow-sm relative z-10">
+      <section className="w-full brand-shell py-16 px-4 text-center shadow-sm relative z-10">
         <div className="max-w-7xl mx-auto space-y-16">
           <div className="text-left md:text-center space-y-4 max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold tracking-tight text-[#0b1a3a]">O que é Empréstimo com Garantia de Imóvel?</h2>
-            <p className="text-gray-600 text-[1.05rem] leading-relaxed">
+            <h2 className="text-3xl font-bold tracking-tight text-white">O que é Empréstimo com Garantia de Imóvel?</h2>
+            <p className="text-[rgba(244,236,223,0.85)] text-[1.05rem] leading-relaxed">
               O Empréstimo com Garantia de Imóvel, também conhecido como Home Equity, é uma modalidade de crédito em que o proprietário utiliza um imóvel como garantia para obter recursos financeiros. Por contar com essa garantia real, as instituições financeiras oferecem taxas de juros significativamente mais baixas e prazos de pagamento mais longos em comparação a outras modalidades de crédito – o que proporciona condições mais vantajosas para quem busca crédito com planejamento e segurança.
             </p>
           </div>
@@ -54,13 +54,13 @@ const SimulationLanding: React.FC = () => {
               { step: '3', title: 'Envio de documentos', desc: 'Reúna junto ao seu Personal Banker os documentos necessários para dar continuidade a proposta' },
               { step: '4', title: 'Contratação', desc: 'Finalize a sua contratação de forma simples e rápida' }
             ].map(s => (
-              <div key={s.step} className="bg-gray-50 border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+              <div key={s.step} className="glass-panel hover-scale rounded-2xl p-6 relative overflow-hidden group border border-[#d8ad5b]/20">
                 <div className="absolute top-0 right-0 w-16 h-16 bg-[#d8ad5b]/10 rounded-bl-[100px] -mr-8 -mt-8 transition-transform group-hover:scale-150" />
                 <div className="flex flex-col mb-4">
-                  <div className="flex items-center justify-center w-10 h-10 rounded-full bg-[#d8ad5b] text-[#081728] font-black text-xl mb-3">{s.step}</div>
-                  <h3 className="text-xl font-bold text-[#0b1a3a]">{s.title}</h3>
+                  <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-tr from-[#c99c4a] to-[#ddb161] text-[#081728] font-black text-xl mb-3 shadow-lg">{s.step}</div>
+                  <h3 className="text-xl font-bold text-white">{s.title}</h3>
                 </div>
-                <p className="text-gray-600 text-sm leading-relaxed relative z-10">{s.desc}</p>
+                <p className="text-[rgba(244,236,223,0.8)] text-sm leading-relaxed relative z-10">{s.desc}</p>
               </div>
             ))}
           </div>

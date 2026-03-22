@@ -80,20 +80,20 @@ export const AISummaryModal = ({ isOpen, onClose, data, type }: any) => {
         if (contentRef.current) {
             const canvas = await html2canvas(contentRef.current, { scale: 2 });
             const link = document.createElement('a');
-            link.download = `Analise_IA_${type}_${Date.now()}.png`;
+            link.download = `Resumo_Estrategico_${type}_${Date.now()}.png`;
             link.href = canvas.toDataURL();
             link.click();
         }
     };
 
     const handleShareWhatsapp = () => {
-        const text = `*Análise de Inteligência Artificial - CRM ABRACON*\n\n*Engajamento:* ${engagementScore}/100 (${engagementLabel})\n\n${summary.replace(/\*\*/g, '*')}`;
+        const text = `*Resumo Estratégico - CRM ABRACON*\n\n*Engajamento:* ${engagementScore}/100 (${engagementLabel})\n\n${summary.replace(/\*\*/g, '*')}`;
         const url = `https://wa.me/?text=${encodeURIComponent(text)}`;
         window.open(url, '_blank');
     };
 
     const handleEmail = () => {
-        const subject = `Relatório de Análise IA - ${type === 'company' ? data.profile?.name : data.name}`;
+        const subject = `Relatório Estratégico - ${type === 'company' ? data.profile?.name : data.name}`;
         const body = `Pontuação de Engajamento: ${engagementScore}/100\n\n${summary}`;
         window.location.href = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     }
@@ -109,8 +109,8 @@ export const AISummaryModal = ({ isOpen, onClose, data, type }: any) => {
                             <div className="flex items-center gap-3">
                                 <div className="p-2 bg-white/20 rounded-lg backdrop-blur-md"><Sparkles className="h-6 w-6 text-yellow-300" /></div>
                                 <div>
-                                    <h3 className="text-xl font-bold flex items-center gap-2">Inteligência Artificial</h3>
-                                    <p className="text-purple-100 text-sm opacity-90">Relatório Estratégico & Engajamento</p>
+                                    <h3 className="text-xl font-bold flex items-center gap-2">Resumo Estratégico</h3>
+                                    <p className="text-purple-100 text-sm opacity-90">Análise de Engajamento & Ficha</p>
                                 </div>
                             </div>
                             <button onClick={onClose} className="p-2 hover:bg-white/10 rounded-lg transition-colors text-white/80 hover:text-white" data-html2canvas-ignore><X className="h-5 w-5" /></button>

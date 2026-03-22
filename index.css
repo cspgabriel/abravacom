@@ -16,6 +16,7 @@
 html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', sans-serif;
   line-height: 1.45;
   overflow-x: hidden;
   background:
@@ -166,4 +167,36 @@ table td, table th { padding: 0.9rem 1.2rem; }
 
 .focus\:ring-emerald-500:focus {
   --tw-ring-color: rgba(221, 177, 97, 0.8) !important;
+}
+
+/* Premium Glassmorphism Utilities */
+.glass-panel {
+  background: rgba(13, 34, 56, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.glass-panel:hover {
+  background: rgba(13, 34, 56, 0.6);
+  border-color: rgba(201, 156, 74, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Micro-animations */
+.hover-scale {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #f4ecdf 0%, #ddb161 50%, #c99c4a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }

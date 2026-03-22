@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import { Routes, Route, useLocation, Navigate, useNavigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -13,11 +13,12 @@ import ConsorcioLanding from './pages/ConsorcioLanding';
 import WhatsAppModal from './components/WhatsAppModal';
 import AuthModal from './components/AuthModal';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
-import SobreProjeto from './pages/SobreProjeto';
+import Sobre from './pages/Sobre';
 import { auth, db } from './firebase';
 import { onAuthStateChanged } from 'firebase/auth';
 import { doc, getDoc } from 'firebase/firestore';
-import { App as CRMApp } from './crm/App';
+
+const CRMApp = lazy(() => import('./crm/App').then(module => ({ default: module.App })));
 
 function App() {
   const [user, setUser] = useState(auth.currentUser);
@@ -73,8 +74,8 @@ function App() {
 
   return (
     <div className="min-h-screen bg-transparent text-[var(--brand-ivory)] selection:bg-[rgba(201,156,74,0.3)]">
-      {!isCrmRoute && <Background />}
-      {!isCrmRoute && <Navbar />}
+      {!isCrmRoute ? <Background /> : null}
+      {!isCrmRoute ? <Navbar /> : null}
 
       <main className="relative z-10 w-full">
         <Routes>
@@ -87,13 +88,17 @@ function App() {
           <Route path="/admin-public" element={<AdminPortal />} />
           <Route path="/portal" element={<ClientPortal />} />
           <Route path="/admin" element={isAdmin ? <AdminPortal /> : <Navigate to="/" />} />
-          <Route path="/crm/*" element={<CRMApp />} />
-          <Route path="/sobre" element={<SobreProjeto />} />
+          <Route path="/crm/*" element={
+            <Suspense fallback={<div className="flex h-screen items-center justify-center text-white">Carregando CRM...</div>}>
+              <CRMApp />
+            </Suspense>
+          } />
+          <Route path="/sobre" element={<Sobre />} />
         </Routes>
       </main>
 
-      {!isCrmRoute && <Footer />}
-      {!isCrmRoute && <FloatingWhatsApp />}
+      {!isCrmRoute ? <Footer /> : null}
+      {!isCrmRoute ? <FloatingWhatsApp /> : null}
 
       <WhatsAppModal
         isOpen={isWhatsModalOpen}

@@ -104,23 +104,25 @@ const ClientPortal: React.FC = () => {
 
   if (!user) {
     return (
-      <div className="flex items-center justify-center min-h-[80vh] pt-24 px-6">
-        <div className="bg-white border border-slate-200 rounded-[3rem] p-12 shadow-2xl shadow-slate-200/50 max-w-md w-full text-center space-y-8">
-          <div className="w-20 h-20 bg-emerald-50 rounded-3xl flex items-center justify-center mx-auto">
-            <ShieldAlert size={40} className="text-emerald-600" />
+      <div className="relative min-h-screen w-full bg-slate-50 z-10">
+        <div className="flex items-center justify-center min-h-[80vh] pt-24 px-6">
+          <div className="bg-white border border-slate-200 rounded-[3rem] p-12 shadow-2xl shadow-slate-200/50 max-w-md w-full text-center space-y-8">
+            <div className="w-20 h-20 bg-emerald-50 rounded-3xl flex items-center justify-center mx-auto">
+              <ShieldAlert size={40} className="text-emerald-600" />
+            </div>
+            <div className="space-y-3">
+              <h2 className="text-2xl font-black text-slate-900 uppercase tracking-tighter italic">Área do Parceiro</h2>
+              <p className="text-slate-500 text-sm font-medium leading-relaxed">
+                Faça login ou crie uma conta para acessar suas cotações, cartas vinculadas e acompanhar seu processo.
+              </p>
+            </div>
+            <button
+              onClick={() => window.dispatchEvent(new CustomEvent('open-auth-modal'))}
+              className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-black px-8 py-4 rounded-2xl text-sm uppercase tracking-widest transition-all shadow-xl shadow-emerald-600/20"
+            >
+              Entrar / Criar Conta
+            </button>
           </div>
-          <div className="space-y-3">
-            <h2 className="text-2xl font-black text-slate-900 uppercase tracking-tighter italic">Área do Parceiro</h2>
-            <p className="text-slate-500 text-sm font-medium leading-relaxed">
-              Faça login ou crie uma conta para acessar suas cotações, cartas vinculadas e acompanhar seu processo.
-            </p>
-          </div>
-          <button
-            onClick={() => window.dispatchEvent(new CustomEvent('open-auth-modal'))}
-            className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-black px-8 py-4 rounded-2xl text-sm uppercase tracking-widest transition-all shadow-xl shadow-emerald-600/20"
-          >
-            Entrar / Criar Conta
-          </button>
         </div>
       </div>
     );
@@ -128,14 +130,15 @@ const ClientPortal: React.FC = () => {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center min-h-[60vh]">
+      <div className="relative min-h-screen w-full bg-slate-50 z-10 flex items-center justify-center">
         <div className="w-12 h-12 border-4 border-emerald-600/20 border-t-emerald-600 rounded-full animate-spin" />
       </div>
     );
   }
 
   return (
-    <div className="space-y-12 pt-24 pb-20 px-6 max-w-7xl mx-auto">
+    <div className="relative min-h-screen w-full bg-slate-50 z-10">
+      <div className="space-y-12 pt-40 pb-20 px-6 max-w-7xl mx-auto">
       {/* Header & Advisor Section */}
       <div className="flex flex-col lg:flex-row justify-between items-start gap-8">
         <div className="space-y-4">
@@ -195,7 +198,7 @@ const ClientPortal: React.FC = () => {
             />
           </div>
           <div>
-            <div className="bg-emerald-600 text-white px-4 py-1 rounded-lg text-sm font-black uppercase tracking-tighter mb-1">
+            <div className="bg-emerald-600 text-[#081728] px-4 py-1 rounded-lg text-sm font-black uppercase tracking-tighter mb-1 shadow-sm">
               {PROFILE.name}
             </div>
             <p className="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em] ml-1">Seu Assessor de Vendas</p>
@@ -203,7 +206,7 @@ const ClientPortal: React.FC = () => {
               href={`https://wa.me/${PROFILE.whatsapp.replace(/\D/g, '')}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 flex items-center space-x-2 text-emerald-500 hover:text-emerald-400 transition-colors text-[10px] font-black uppercase tracking-widest"
+              className="mt-2 flex items-center space-x-2 text-[#25D366] hover:text-[#1fad53] transition-colors text-[10px] font-black uppercase tracking-widest"
             >
               <MessageCircle size={14} />
               <span>Chamar no Whats</span>
@@ -355,6 +358,7 @@ const ClientPortal: React.FC = () => {
             </div>
           )}
         </div>
+      </div>
       </div>
     </div>
   );

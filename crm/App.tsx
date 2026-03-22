@@ -1,5 +1,5 @@
-
 import React, { useState, useEffect, useMemo, useRef } from 'react';
+import { CoreUILayout } from './components/CoreUILayout';
 import './index.css';
 import { 
   Users, Building2, LayoutDashboard, Search, Phone, Mail, MapPin, 
@@ -29,7 +29,7 @@ import { COMPANY_FIELDS, CONTACT_FIELDS } from './config/constants';
 import { cleanText, getLinkedCompanies, safeRender, getStatusColor, getUniqueValues, getFormIdFromUrl, getUrlParam, getFilterableColumns, handleExport, sortData, cleanArrayValue, formatCurrencyBR, normalizeEmail, normalizePhone, parseCurrencyNumber } from './utils/helpers';
 
 import { Header, StatCard, FilterDropdown, LoginScreen } from './components/Common';
-import { BulkTagModal, CampaignModal, BulkCopyModal, BatchSendModal } from './components/Modals';
+import { BulkTagModal, CampaignModal, BulkCopyModal, BatchSendModal, WhatsappBatchModal } from './components/Modals';
 import { MergeModal } from './components/MergeModal';
 import { SystemSettingsModal } from './components/SystemSettingsModal';
 import { DataEntryModal } from './components/DataEntryModal';
@@ -126,6 +126,8 @@ export const App = () => {
 
   const [batchSendModalOpen, setBatchSendModalOpen] = useState(false);
   const [campaignBatches, setCampaignBatches] = useState<any[]>([]);
+  const [whatsappBatchModalOpen, setWhatsappBatchModalOpen] = useState(false);
+  const [whatsappBatches, setWhatsappBatches] = useState<any[]>([]);
 
   // Saved Views
   const [savedViews, setSavedViews] = useState<any[]>([]);
@@ -426,9 +428,14 @@ export const App = () => {
       
       const campaignData = { subject, responsible, recipientCount: emails.length, date: serverTimestamp(), status: 'Enviado', recipientEmails: emails, recipientsSample: emails.slice(0, 5) }; 
       
-      try { 
-          await addDoc(collection(db, "campaigns"), campaignData); 
-          
+      try {
+          // Attempt to save to history, but don't let rules block the actual send action
+          await addDoc(collection(db, "campaigns"), campaignData);
+      } catch (err) {
+          console.warn("Could not save to campaigns history (Firebase Rules may be blocking or missing permissions):", err);
+      }
+
+      try {
           if (emails.length > 500) {
               const batches = buildMailtoBatches(emails, subject);
               setCampaignBatches(batches);
@@ -444,35 +451,55 @@ export const App = () => {
           setLinkedContactSelection(new Set()); 
           
           if (!selectedContact && currentPath !== 'company-details' && !directoryMode) { setCurrentPath('campaigns'); } 
-      } catch(err) { console.error(err); alert("Erro ao registrar campanha."); } finally { setCreatingCampaign(false); } 
+      } catch(err) { console.error(err); alert("Erro ao agendar envio da campanha."); } finally { setCreatingCampaign(false); } 
   }
   const selectedIdsRef = useRef(new Set<string>());
   const handleDirectoryCampaign = (ids: Set<string>) => { selectedIdsRef.current = ids; setSelectedContactIds(ids); setCampaignModalOpen(true); }
   const handleReuseMailing = (campaign: any) => { const emails = new Set(campaign.recipientEmails || []); const matchingContacts = contacts.filter(c => c.email && emails.has(c.email)); const newSelection = new Set(matchingContacts.map(c => c.id)); if (newSelection.size === 0) { alert("Não foi possível encontrar os contatos originais desta campanha na base atual."); return; } setSelectedContactIds(newSelection); setCurrentPath('contacts'); setCampaignModalOpen(true); }
 
-  const handleCreateCampaignPage = async (payload: { subject: string; responsible: string; body: string; recipients: any[] }) => {
+  const handleCreateCampaignPage = async (payload: { subject: string; responsible: string; body: string; recipients: any[]; method?: 'email' | 'whatsapp' }) => {
       if (creatingCampaign) return;
-      const { subject, responsible, body, recipients } = payload;
+      const { subject, responsible, body, recipients, method = 'email' } = payload;
       if (!subject || !responsible) { alert("Preencha assunto e responsável."); return; }
-      const emails = recipients.map(c => c.email).filter(e => e && e.includes('@'));
-      if (emails.length === 0) { alert("Nenhum email válido encontrado nos contatos selecionados."); return; }
+      
+      const targets = method === 'whatsapp' ? recipients.filter(c => c.phone) : recipients.filter(c => c.email && c.email.includes('@'));
+      if (targets.length === 0) { alert(`Nenhum contato válido encontrado para o método selecionado (${method}).`); return; }
+      
       setCreatingCampaign(true);
-      const campaignData = { subject, responsible, message: body || '', recipientCount: emails.length, date: serverTimestamp(), status: 'Enviado', recipientEmails: emails, recipientsSample: emails.slice(0, 5) };
+      const targetList = method === 'whatsapp' ? targets.map(c => c.phone) : targets.map(c => c.email);
+      const campaignData = { subject, responsible, message: body || '', recipientCount: targets.length, date: serverTimestamp(), status: 'Enviado', recipientEmails: targetList, recipientsSample: targetList.slice(0, 5), method };
+      
       try {
+          // Attempt to save to history, but don't let rules block the actual send action
           await addDoc(collection(db, "campaigns"), campaignData);
-          if (emails.length > 500) {
-              const batches = buildMailtoBatches(emails, subject, body);
-              setCampaignBatches(batches);
-              setBatchSendModalOpen(true);
+      } catch (err) {
+          console.warn("Could not save to campaigns history (Firebase Rules may be blocking or missing permissions):", err);
+      }
+      
+      try {
+          if (method === 'whatsapp') {
+              const batches = targets.map(c => {
+                  const cleaned = c.phone.replace(/\D/g, '');
+                  const link = `https://wa.me/55${cleaned}?text=${encodeURIComponent(body || subject)}`;
+                  return { name: c.name, phone: c.phone, link };
+              });
+              setWhatsappBatches(batches);
+              setWhatsappBatchModalOpen(true);
           } else {
-              const bccString = emails.join(',');
-              const mailtoLink = `mailto:?bcc=${bccString}&subject=${encodeURIComponent(subject)}${body ? `&body=${encodeURIComponent(body)}` : ''}`;
-              window.location.href = mailtoLink;
+              if (targets.length > 500) {
+                  const batches = buildMailtoBatches(targetList, subject, body);
+                  setCampaignBatches(batches);
+                  setBatchSendModalOpen(true);
+              } else {
+                  const bccString = targetList.join(',');
+                  const mailtoLink = `mailto:?bcc=${bccString}&subject=${encodeURIComponent(subject)}${body ? `&body=${encodeURIComponent(body)}` : ''}`;
+                  window.location.href = mailtoLink;
+              }
+              setCurrentPath('campaigns');
           }
-          setCurrentPath('campaigns');
       } catch (err) {
           console.error(err);
-          alert("Erro ao registrar campanha.");
+          alert("Erro ao processar envio/links da campanha.");
       } finally {
           setCreatingCampaign(false);
       }
@@ -1135,19 +1162,74 @@ export const App = () => {
       return combined.filter(item => (item.primary && item.primary.toLowerCase().includes(term)) || (item.secondary && String(item.secondary).toLowerCase().includes(term))).slice(0, 10);
   }, [dashboardSearch, dashboardContacts, dashboardCompanies]);
 
+  const applyDateFilter = (preset: string) => {
+      const today = new Date();
+      let start = new Date(today);
+      let end = new Date(today);
+
+      switch (preset) {
+          case 'hoje':
+              break;
+          case 'ontem':
+              start.setDate(start.getDate() - 1);
+              end = new Date(start);
+              break;
+          case 'ultimos7':
+              start.setDate(start.getDate() - 7);
+              break;
+          case 'mesAtual':
+              start.setDate(1);
+              break;
+          case 'ultimoMes':
+              start.setMonth(start.getMonth() - 1);
+              start.setDate(1);
+              end = new Date(start);
+              end.setMonth(end.getMonth() + 1);
+              end.setDate(0);
+              break;
+          case 'ultimos3Meses':
+              start.setMonth(start.getMonth() - 3);
+              break;
+          default:
+              break;
+      }
+      const format = (d: Date) => {
+          const year = d.getFullYear();
+          const month = String(d.getMonth() + 1).padStart(2, '0');
+          const day = String(d.getDate()).padStart(2, '0');
+          return `${year}-${month}-${day}`;
+      };
+      setDashboardStartDate(format(start));
+      setDashboardEndDate(format(end));
+  };
+
   const renderDashboard = () => (
       <div className="space-y-8 animate-in fade-in zoom-in-95 duration-200">
           <Header title="Dashboard Geral" subtitle="Visão panorâmica da base de dados." />
-          <div className="bg-white border border-gray-200 rounded-xl p-4 flex flex-col md:flex-row md:items-end gap-4">
-              <div className="flex flex-col">
-                  <label className="text-xs font-semibold text-gray-500 uppercase">Período (início)</label>
-                  <input type="date" className="mt-1 border border-gray-200 rounded-lg px-3 py-2 text-sm" value={dashboardStartDate} onChange={(e) => setDashboardStartDate(e.target.value)} />
+          <div className="flex flex-col gap-4">
+              <div className="bg-white border border-gray-200 rounded-xl p-4 flex flex-col md:flex-row md:items-end gap-x-6 gap-y-4">
+                  <div className="flex gap-4">
+                      <div className="flex flex-col">
+                          <label className="text-xs font-semibold text-gray-500 uppercase">Período (início)</label>
+                          <input type="date" className="mt-1 border border-gray-200 rounded-lg px-3 py-2 text-sm" value={dashboardStartDate} onChange={(e) => setDashboardStartDate(e.target.value)} />
+                      </div>
+                      <div className="flex flex-col">
+                          <label className="text-xs font-semibold text-gray-500 uppercase">Período (fim)</label>
+                          <input type="date" className="mt-1 border border-gray-200 rounded-lg px-3 py-2 text-sm" value={dashboardEndDate} onChange={(e) => setDashboardEndDate(e.target.value)} />
+                      </div>
+                  </div>
+                  
+                  <div className="flex flex-wrap items-center gap-2 flex-1 pt-2 md:pt-0 border-t md:border-t-0 border-gray-100 md:pl-6 md:border-l">
+                      <button onClick={() => applyDateFilter('hoje')} className="px-3 py-1.5 text-xs font-medium bg-gray-50 hover:bg-blue-50 hover:text-blue-700 border border-gray-200 rounded-full text-gray-700 transition-colors">Hoje</button>
+                      <button onClick={() => applyDateFilter('ontem')} className="px-3 py-1.5 text-xs font-medium bg-gray-50 hover:bg-blue-50 hover:text-blue-700 border border-gray-200 rounded-full text-gray-700 transition-colors">Ontem</button>
+                      <button onClick={() => applyDateFilter('ultimos7')} className="px-3 py-1.5 text-xs font-medium bg-gray-50 hover:bg-blue-50 hover:text-blue-700 border border-gray-200 rounded-full text-gray-700 transition-colors">Últimos 7 dias</button>
+                      <button onClick={() => applyDateFilter('mesAtual')} className="px-3 py-1.5 text-xs font-medium bg-gray-50 hover:bg-blue-50 hover:text-blue-700 border border-gray-200 rounded-full text-gray-700 transition-colors">Mês Atual</button>
+                      <button onClick={() => applyDateFilter('ultimoMes')} className="px-3 py-1.5 text-xs font-medium bg-gray-50 hover:bg-blue-50 hover:text-blue-700 border border-gray-200 rounded-full text-gray-700 transition-colors">Último Mês</button>
+                      <button onClick={() => applyDateFilter('ultimos3Meses')} className="px-3 py-1.5 text-xs font-medium bg-gray-50 hover:bg-blue-50 hover:text-blue-700 border border-gray-200 rounded-full text-gray-700 transition-colors">Últimos 3 Meses</button>
+                  </div>
+                  
+                  <button onClick={() => { setDashboardStartDate(''); setDashboardEndDate(''); }} className="md:ml-auto text-xs font-bold text-red-500 hover:text-red-700 hover:underline px-2 py-1">Limpar filtro</button>
               </div>
-              <div className="flex flex-col">
-                  <label className="text-xs font-semibold text-gray-500 uppercase">Período (fim)</label>
-                  <input type="date" className="mt-1 border border-gray-200 rounded-lg px-3 py-2 text-sm" value={dashboardEndDate} onChange={(e) => setDashboardEndDate(e.target.value)} />
-              </div>
-              <button onClick={() => { setDashboardStartDate(''); setDashboardEndDate(''); }} className="md:ml-auto text-xs text-blue-600 hover:underline">Limpar filtro</button>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <StatCard label="Total de Simulações" value={dashboardCompanies.length} icon={Building2} color="bg-blue-600" onClick={() => setCurrentPath('companies')} />
@@ -1205,38 +1287,11 @@ export const App = () => {
   if (!isAuthenticated) { return <LoginScreen onLogin={(p: string) => { if (p === 'sind2026') { localStorage.setItem('crm_auth_token', 'sind2026_valid'); setIsAuthenticated(true); } else { alert("Senha de acesso incorreta."); } }} />; }
 
   return (
-    <div className="flex min-h-screen bg-gray-50 font-sans text-gray-900">
-      <aside className="w-64 bg-gradient-to-b from-[#0b1a3a] to-[#071226] text-[#f3e6bf] border-r border-[#10224a] flex-shrink-0 hidden md:flex flex-col shadow-xl z-20">
-        <div className="p-6">
-           <div className="flex flex-col items-center mb-8 px-2 text-center">
-             <div className="text-[#d4af37] text-2xl font-extrabold tracking-[0.25em]">ABRACON</div>
-             <div className="mt-2 text-center">
-               <h1 className="font-bold text-sm leading-tight text-[#f3e6bf]">CRM ABRACON</h1>
-               <p className="text-[11px] text-[#e6d9b3]/80">Gestão de Relacionamento</p>
-             </div>
-           </div>
-           <nav className="space-y-1">
-               <button onClick={() => setCurrentPath('dashboard')} className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${currentPath === 'dashboard' ? 'bg-[#132a57] text-[#f3e6bf] border border-[#1c3a77]' : 'text-[#e6d9b3] hover:bg-[#132a57]/60 hover:text-[#f3e6bf]'}`}><LayoutDashboard className={`h-4 w-4 ${currentPath === 'dashboard' ? 'text-[#d4af37]' : 'text-[#d4af37]/70'}`}/> Dashboard</button>
-               <button onClick={() => setCurrentPath('companies')} className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${currentPath.includes('company') ? 'bg-[#132a57] text-[#f3e6bf] border border-[#1c3a77]' : 'text-[#e6d9b3] hover:bg-[#132a57]/60 hover:text-[#f3e6bf]'}`}><Building2 className={`h-4 w-4 ${currentPath.includes('company') ? 'text-[#d4af37]' : 'text-[#d4af37]/70'}`}/> Simulações</button>
-               <button onClick={() => setCurrentPath('contacts')} className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${currentPath.includes('contact') ? 'bg-[#132a57] text-[#f3e6bf] border border-[#1c3a77]' : 'text-[#e6d9b3] hover:bg-[#132a57]/60 hover:text-[#f3e6bf]'}`}><Users className={`h-4 w-4 ${currentPath.includes('contact') ? 'text-[#d4af37]' : 'text-[#d4af37]/70'}`}/> Contatos</button>
-               <button onClick={() => setCurrentPath('campaigns')} className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${currentPath.includes('campaign') ? 'bg-[#132a57] text-[#f3e6bf] border border-[#1c3a77]' : 'text-[#e6d9b3] hover:bg-[#132a57]/60 hover:text-[#f3e6bf]'}`}><Send className={`h-4 w-4 ${currentPath.includes('campaign') ? 'text-[#d4af37]' : 'text-[#d4af37]/70'}`}/> Campanhas</button>
-               <button onClick={() => setCurrentPath('forms')} className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${currentPath === 'forms' ? 'bg-[#132a57] text-[#f3e6bf] border border-[#1c3a77]' : 'text-[#e6d9b3] hover:bg-[#132a57]/60 hover:text-[#f3e6bf]'}`}><Clipboard className={`h-4 w-4 ${currentPath === 'forms' ? 'text-[#d4af37]' : 'text-[#d4af37]/70'}`}/> Formulários</button>
-               <button onClick={() => setCurrentPath('import')} className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${currentPath === 'import' ? 'bg-[#132a57] text-[#f3e6bf] border border-[#1c3a77]' : 'text-[#e6d9b3] hover:bg-[#132a57]/60 hover:text-[#f3e6bf]'}`}><Upload className={`h-4 w-4 ${currentPath === 'import' ? 'text-[#d4af37]' : 'text-[#d4af37]/70'}`}/> Importação</button>
-               
-               <button onClick={() => setCurrentPath('settings')} className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${currentPath === 'settings' ? 'bg-[#132a57] text-[#f3e6bf] border border-[#1c3a77]' : 'text-[#e6d9b3] hover:bg-[#132a57]/60 hover:text-[#f3e6bf]'}`}><Settings className={`h-4 w-4 ${currentPath === 'settings' ? 'text-[#d4af37]' : 'text-[#d4af37]/70'}`}/> Configurações</button>
-           </nav>
-        </div>
-        <div className="mt-auto p-6 border-t border-white/10"><button onClick={() => { localStorage.removeItem('crm_auth_token'); setIsAuthenticated(false); }} className="flex items-center gap-3 text-[#e6d9b3] hover:text-[#f3e6bf] text-sm font-medium transition-colors w-full"><LogOut className="h-4 w-4 text-[#d4af37]" /> Sair do Sistema</button></div>
-      </aside>
-
-      <main className="flex-1 flex flex-col h-screen overflow-hidden">
-        <div className="md:hidden bg-[#0b1a3a] border-b border-[#10224a] text-[#f3e6bf] p-4 flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <span className="font-extrabold tracking-[0.2em] text-[#d4af37]">ABRACON</span>
-            <span className="text-xs text-[#e6d9b3]">CRM</span>
-          </div>
-          <button onClick={() => setCurrentPath('dashboard')} className="text-[#d4af37] hover:text-[#f3e6bf]"><LayoutDashboard className="h-6 w-6"/></button>
-        </div>
+    <CoreUILayout 
+      currentPath={currentPath}
+      onNavigate={setCurrentPath}
+      onLogout={() => { localStorage.removeItem('crm_auth_token'); setIsAuthenticated(false); }}
+    >
         {globalStatus && (<div className="bg-[#0b1a3a] text-[#f3e6bf] text-xs font-bold px-4 py-2 text-center animate-in slide-in-from-top border-b border-[#d4af37]/30">{globalStatus}</div>)}
         <div className="flex-1 overflow-auto p-4 md:p-8">
             <div className="max-w-7xl mx-auto h-full flex flex-col">
@@ -1260,6 +1315,7 @@ export const App = () => {
                     allTags={allTags}
                 />
                 <BatchSendModal isOpen={batchSendModalOpen} onClose={() => setBatchSendModalOpen(false)} batches={campaignBatches} />
+                <WhatsappBatchModal isOpen={whatsappBatchModalOpen} onClose={() => setWhatsappBatchModalOpen(false)} batches={whatsappBatches} />
                 <MergeModal isOpen={mergeModalOpen} onClose={() => setMergeModalOpen(false)} items={itemsToMerge} onConfirm={executeMerge} />
                 <BulkTagModal isOpen={bulkTagModalOpen} onClose={() => setBulkTagModalOpen(false)} selectedCount={currentPath === 'companies' ? selectedCompanyIds.size : selectedContactIds.size} onConfirm={handleBulkTags} />
                 <BulkCopyModal isOpen={bulkCopyModalOpen} onClose={() => setBulkCopyModalOpen(false)} selectedCount={currentPath === 'companies' ? selectedCompanyIds.size : selectedContactIds.size} onConfirm={handleBulkCopy} fields={getAllFieldsForConfig(currentPath === 'companies' ? 'companies' : 'contacts')} />
@@ -1422,7 +1478,7 @@ export const App = () => {
                                                         <span className={`inline-flex px-2 py-0.5 rounded-full text-xs font-medium border ${getStatusColor(cleanText(company.status))}`}>{cleanText(company.status)}</span>
                                                     ) : col === 'creditAmount' ? (
                                                         <span className="text-sm text-gray-700 font-medium">{formatCurrencyBR(displayValue)}</span>
-                                                    ) : (col === 'total_simulations') ? (<span className="text-sm text-gray-700 font-medium">{contact.total_simulations || 0}</span>) : (col === 'tags' || col === 'mailing') ? (
+                                                    ) : (col === 'total_simulations') ? (<span className="text-sm text-gray-700 font-medium">{company.total_simulations || 0}</span>) : (col === 'tags' || col === 'mailing') ? (
                                                         <div className="flex flex-wrap gap-1">
                                                             {cleanArrayValue(company[col]).map((t: string, i: number) => <span key={i} className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded border border-gray-200 truncate">{t}</span>)}
                                                         </div>
@@ -1572,7 +1628,7 @@ export const App = () => {
                       {renderPagination(contactsPage, filteredContacts.length, setContactsPage)}
                     </div>
                 )}
-                {currentPath === 'company-details' && ( <CompanyDetailsView company={selectedCompany} allContacts={contacts} campaigns={campaigns} onBack={() => setCurrentPath('companies')} onEdit={() => { setEditingData(selectedCompany); setDataEntryModalOpen('company'); }} onViewContact={(c: any) => { setSelectedContact(c); setCurrentPath('contact-details'); }} onDelete={handleDeleteCompany} onAddContact={() => { setEditingData({ companyId: selectedCompany.id, company_name: selectedCompany.name }); setDataEntryModalOpen('contact'); }} onEditContact={(c: any) => { setEditingData(c); setDataEntryModalOpen('contact'); }} detailFields={companyDetailColumns} onEnrich={() => startEnrichment([selectedCompany])} /> )}
+                {currentPath === 'company-details' && ( <CompanyDetailsView company={selectedCompany} allCompanies={companies} campaigns={campaigns} onBack={() => setCurrentPath('companies')} onViewCompany={(c: any) => setSelectedCompany(c)} onEdit={() => { setEditingData(selectedCompany); setDataEntryModalOpen('company'); }} onDelete={handleDeleteCompany} detailFields={companyDetailColumns} onEnrich={() => startEnrichment([selectedCompany])} /> )}
                 {currentPath === 'contact-details' && ( <ContactDetailsView contact={selectedContact} companies={companies} onViewCompany={(comp: any) => { setSelectedCompany(comp); setCurrentPath('company-details'); }} onBack={() => setCurrentPath('contacts')} onEdit={() => { setEditingData(selectedContact); setDataEntryModalOpen('contact'); }} campaigns={campaigns} onDelete={handleDeleteContact} detailFields={contactDetailColumns} /> )}
                 {currentPath === 'campaigns' && ( <div className="space-y-6 animate-in fade-in zoom-in-95 duration-200"><Header title="Histórico de Campanhas" subtitle="Emails enviados via Outlook." rightElement={<button onClick={() => setCurrentPath('campaign-new')} className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-bold hover:bg-blue-700">Nova Campanha</button>} /><div className="bg-white shadow-sm border border-gray-200 rounded-xl overflow-hidden"><table className="w-full text-left"><thead className="bg-gray-50 border-b border-gray-200"><tr><th className="px-6 py-3 text-xs font-semibold text-gray-500 uppercase">Assunto</th><th className="px-6 py-3 text-xs font-semibold text-gray-500 uppercase">Responsável</th><th className="px-6 py-3 text-xs font-semibold text-gray-500 uppercase">Destinatários</th><th className="px-6 py-3 text-xs font-semibold text-gray-500 uppercase">Data</th><th className="px-6 py-3 text-right"></th></tr></thead><tbody className="divide-y divide-gray-100">{campaigns.map(c => (<tr key={c.id} className="hover:bg-gray-50 cursor-pointer" onClick={() => { setSelectedCampaign(c); setCurrentPath('campaign-details'); }}><td className="px-6 py-4 font-medium text-gray-900">{c.subject}</td><td className="px-6 py-4 text-sm text-gray-600">{c.responsible}</td><td className="px-6 py-4 text-sm text-gray-600">{c.recipientCount}</td><td className="px-6 py-4 text-sm text-gray-600">{c.date?.seconds ? new Date(c.date.seconds * 1000).toLocaleDateString('pt-BR') : '-'}</td><td className="px-6 py-4 text-right"><ChevronRight className="h-4 w-4 text-gray-300"/></td></tr>))}</tbody></table></div></div> )}
                 {currentPath === 'campaign-new' && ( <NewCampaignPage contacts={enrichedContacts} onBack={() => setCurrentPath('campaigns')} onSend={handleCreateCampaignPage} /> )}
@@ -1583,8 +1639,7 @@ export const App = () => {
                 {currentPath === 'settings' && <SettingsView companies={companies} contacts={contacts} savedViews={savedViews} onDeleteView={handleDeleteSavedView} onSetDefaultView={handleSetDefaultView} onRenameView={handleRenameView} />}
             </div>
         </div>
-      </main>
-    </div>
+    </CoreUILayout>
   );
 };
 

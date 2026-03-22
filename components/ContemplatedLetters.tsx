@@ -112,7 +112,7 @@ const ContemplatedLetters: React.FC = () => {
   // Reset pagination when filters change
   useEffect(() => {
     setCurrentPage(1);
-  }, [filter, searchTerm, adminSearch, situationFilter, creditRange, parcelRange, fundoRange, refRange]);
+  }, [filter, searchTerm, adminSearch, situationFilter, minCredit, maxCredit, minParcel, maxParcel, fundoRange, refRange]);
 
   const totalPages = Math.ceil(filteredLetters.length / itemsPerPage);
   const paginatedLetters = filteredLetters.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
@@ -217,113 +217,113 @@ const ContemplatedLetters: React.FC = () => {
   };
 
   return (
-    <div className="relative space-y-6 pt-20 sm:pt-24 pb-28 px-3 sm:px-6 max-w-7xl mx-auto">
+    <div className="relative space-y-6 pt-32 sm:pt-36 pb-28 px-3 sm:px-6 max-w-7xl mx-auto">
 
       <div className="transition-all duration-300">
       {/* Page header */}
       <div className="flex flex-col gap-4">
-        <div className="space-y-1">
-          <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tighter uppercase italic">
+        <div className="space-y-2 mb-4">
+          <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tighter uppercase italic drop-shadow-lg">
             CARTAS DISPONÍVEIS
           </h2>
-          <p className="text-slate-500 font-medium text-sm">Oportunidades exclusivas com crédito imediato</p>
+          <p className="text-[var(--brand-ivory)]/70 font-medium text-sm sm:text-base">Oportunidades exclusivas com crédito imediato</p>
           <div className="pt-2">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-emerald-50 text-emerald-700 rounded-lg text-xs font-black uppercase tracking-widest">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-[var(--brand-gold)]/20 border border-[var(--brand-gold)]/40 text-[var(--brand-gold-soft)] rounded-xl text-xs sm:text-sm font-black uppercase tracking-widest shadow-lg">
+              <span className="w-2 h-2 rounded-full bg-[var(--brand-gold)] animate-pulse" />
               {filteredLetters.length} {filteredLetters.length === 1 ? 'Carta Disponível' : 'Cartas Disponíveis'}
             </span>
           </div>
         </div>
 
-        {/* Category filter removed as only Imóvel is available */}
-
         {/* Search + filter toggle row */}
-        <div className="flex gap-2">
-          <div className="relative flex-1">
-            <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" />
+        <div className="flex gap-3">
+          <div className="relative flex-1 group">
+            <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-[var(--brand-gold-soft)]/60 transition-colors group-focus-within:text-[var(--brand-gold)]" />
             <input
               type="text"
-              placeholder="Buscar por administradora ou grupo..."
+              placeholder="Buscar administradora ou grupo..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full bg-white border border-slate-200 rounded-2xl py-3 sm:py-4 pl-11 pr-4 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 shadow-sm text-sm"
+              className="w-full bg-[#0a1526]/80 text-white placeholder-white/40 border border-[#1b3152] rounded-2xl py-3.5 sm:py-4 pl-12 pr-4 focus:outline-none focus:ring-2 focus:ring-[var(--brand-gold)] focus:border-transparent shadow-inner transition-all sm:text-sm"
             />
           </div>
           <button
             onClick={() => setShowFilters(p => !p)}
-            className={`flex-shrink-0 flex items-center gap-2 px-3 sm:px-4 py-3 rounded-2xl border text-sm font-black transition-all ${showFilters ? 'bg-emerald-600 text-white border-emerald-600' : 'bg-white border-slate-200 text-slate-600 hover:bg-slate-50'}`}
+            className={`flex-shrink-0 flex items-center gap-2 px-4 py-3.5 sm:py-4 rounded-2xl border text-sm font-black tracking-wider uppercase transition-all shadow-lg ${showFilters ? 'bg-gradient-to-r from-[#d8ad5b] to-[#b98532] text-[#081728] border-transparent shadow-[0_4px_20px_rgba(185,133,50,0.3)]' : 'bg-[#0a1526]/80 border-[#1b3152] text-[var(--brand-gold-soft)] hover:bg-[#122442]'}`}
           >
-            <SlidersHorizontal size={16} />
+            <SlidersHorizontal size={18} />
             <span className="hidden sm:inline">Filtros</span>
           </button>
           <select
             aria-label="Filtro de situação"
             value={situationFilter}
             onChange={(e) => setSituationFilter(e.target.value as any)}
-            className="hidden sm:block flex-shrink-0 px-3 py-3 rounded-2xl border border-slate-200 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
+            className="hidden sm:block flex-shrink-0 px-4 py-3.5 sm:py-4 rounded-2xl bg-[#0a1526]/80 border border-[#1b3152] text-[var(--brand-ivory)] text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[var(--brand-gold)] cursor-pointer hover:bg-[#122442] transition-colors appearance-none"
           >
-            <option value="all">Todas</option>
-            <option value="available">Disponível</option>
-            <option value="reserved">Reservada</option>
-            <option value="sold">Vendida</option>
+            <option value="all">Ver Todas</option>
+            <option value="available">Somente Disponíveis</option>
+            <option value="reserved">Somente Reservadas</option>
+            <option value="sold">Vendidas</option>
           </select>
         </div>
 
         {/* Expanded filters */}
         {showFilters && (
-          <div className="bg-white border border-slate-100 rounded-2xl p-4 shadow-sm">
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} className="bg-[#0a1526]/60 backdrop-blur-xl border border-[#1b3152] rounded-[1.5rem] p-5 shadow-2xl mt-2 overflow-hidden">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               <select
                 aria-label="Situação"
                 value={situationFilter}
                 onChange={(e) => setSituationFilter(e.target.value as any)}
-                className="sm:hidden px-3 py-2.5 rounded-xl border border-slate-200 text-sm col-span-2 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                className="sm:hidden px-4 py-3 rounded-xl bg-[#08101a] border border-[#1f385c] text-[var(--brand-ivory)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--brand-gold)] col-span-2 appearance-none"
               >
                 <option value="all">Todas as situações</option>
                 <option value="available">Disponível</option>
                 <option value="reserved">Reservada</option>
                 <option value="sold">Vendida</option>
               </select>
-              <select
-                value={adminSearch}
-                onChange={(e) => setAdminSearch(e.target.value)}
-                className="px-3 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
-              >
-                <option value="">Todas as Administradoras</option>
-                {uniqueAdmins.map(admin => (
-                  <option key={admin} value={admin}>{admin}</option>
-                ))}
-              </select>
-              <div className="flex gap-2">
-                <input type="number" placeholder="Mín. Crédito" value={minCredit} onChange={(e) => setMinCredit(e.target.value)} className="w-1/2 px-3 py-2.5 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-emerald-500" />
-                <input type="number" placeholder="Máx. Crédito" value={maxCredit} onChange={(e) => setMaxCredit(e.target.value)} className="w-1/2 px-3 py-2.5 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-emerald-500" />
+              <div className="relative">
+                 <select
+                   value={adminSearch}
+                   onChange={(e) => setAdminSearch(e.target.value)}
+                   className="w-full px-4 py-3 rounded-xl bg-[#08101a] border border-[#1f385c] text-[var(--brand-ivory)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--brand-gold)] appearance-none"
+                 >
+                   <option value="">Consórcio/Banco (Todos)</option>
+                   {uniqueAdmins.map(admin => (
+                     <option key={admin} value={admin}>{admin}</option>
+                   ))}
+                 </select>
               </div>
-              <div className="flex gap-2">
-                <input type="number" placeholder="Mín. Parc." value={minParcel} onChange={(e) => setMinParcel(e.target.value)} className="w-1/2 px-3 py-2.5 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-emerald-500" />
-                <input type="number" placeholder="Máx. Parc." value={maxParcel} onChange={(e) => setMaxParcel(e.target.value)} className="w-1/2 px-3 py-2.5 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-emerald-500" />
+              <div className="flex gap-3">
+                <input type="number" placeholder="Mín. Crédito" value={minCredit} onChange={(e) => setMinCredit(e.target.value)} className="w-1/2 px-4 py-3 rounded-xl bg-[#08101a] border border-[#1f385c] text-[var(--brand-ivory)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--brand-gold)] placeholder-white/30" />
+                <input type="number" placeholder="Máx. Crédito" value={maxCredit} onChange={(e) => setMaxCredit(e.target.value)} className="w-1/2 px-4 py-3 rounded-xl bg-[#08101a] border border-[#1f385c] text-[var(--brand-ivory)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--brand-gold)] placeholder-white/30" />
               </div>
-              <select value={fundoRange} onChange={(e) => setFundoRange(e.target.value)} className="px-3 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500">
-                <option value="all">Filtre por Fundo Comum</option>
-                <option value="sem-fundo">Sem Fundo Comum</option>
+              <div className="flex gap-3">
+                <input type="number" placeholder="Mín. Parc" value={minParcel} onChange={(e) => setMinParcel(e.target.value)} className="w-1/2 px-4 py-3 rounded-xl bg-[#08101a] border border-[#1f385c] text-[var(--brand-ivory)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--brand-gold)] placeholder-white/30" />
+                <input type="number" placeholder="Máx. Parc" value={maxParcel} onChange={(e) => setMaxParcel(e.target.value)} className="w-1/2 px-4 py-3 rounded-xl bg-[#08101a] border border-[#1f385c] text-[var(--brand-ivory)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--brand-gold)] placeholder-white/30" />
+              </div>
+              <select value={fundoRange} onChange={(e) => setFundoRange(e.target.value)} className="px-4 py-3 rounded-xl bg-[#08101a] border border-[#1f385c] text-[var(--brand-ivory)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--brand-gold)] appearance-none">
+                <option value="all">Fundo Comum (Todos)</option>
+                <option value="sem-fundo">Somente Sem Fundo Comum</option>
                 <option value="com-fundo">Com Fundo Comum</option>
               </select>
-              <select value={refRange} onChange={(e) => setRefRange(e.target.value)} className="px-3 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500">
-                <option value="all">Filtre por Ref. Garantia</option>
-                <option value="sem-fundo">Sem Ref. Garantia</option>
+              <select value={refRange} onChange={(e) => setRefRange(e.target.value)} className="px-4 py-3 rounded-xl bg-[#08101a] border border-[#1f385c] text-[var(--brand-ivory)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--brand-gold)] appearance-none">
+                <option value="all">Ref. Garantia (Todas)</option>
+                <option value="sem-fundo">Somente Sem Ref. Garantia</option>
                 <option value="com-fundo">Com Ref. Garantia</option>
               </select>
-              <div className="flex items-center gap-2 col-span-2 sm:col-span-1">
-                <button onClick={() => { setSearchTerm(''); setAdminSearch(''); setMinCredit(''); setMaxCredit(''); setMinParcel(''); setMaxParcel(''); setFundoRange('all'); setRefRange('all'); setSituationFilter('all'); }} className="flex-1 px-3 py-2.5 rounded-xl border border-slate-200 text-sm font-black hover:bg-slate-50">Limpar</button>
-                <button onClick={() => setShowFilters(false)} className="flex-1 px-3 py-2.5 rounded-xl bg-emerald-600 text-white text-sm font-black">OK</button>
+              <div className="flex items-center gap-3 col-span-2 sm:col-span-1">
+                <button onClick={() => { setSearchTerm(''); setAdminSearch(''); setMinCredit(''); setMaxCredit(''); setMinParcel(''); setMaxParcel(''); setFundoRange('all'); setRefRange('all'); setSituationFilter('all'); }} className="flex-1 px-4 py-3 rounded-xl border border-white/10 text-[var(--brand-ivory)] text-sm font-bold hover:bg-white/5 transition-all">Limpar</button>
+                <button onClick={() => setShowFilters(false)} className="flex-1 px-4 py-3 rounded-xl bg-[linear-gradient(135deg,#d8ad5b_0%,#b98532_100%)] text-[#081728] text-sm font-black shadow-[0_4px_20px_rgba(185,133,50,0.3)] transition-transform hover:brightness-110 active:scale-95">Aplicar</button>
               </div>
             </div>
-          </div>
+          </motion.div>
         )}
       </div>
 
       {/* Selection Summary Bar */}
       <AnimatePresence>
-        {selectedIds.length > 0 && (
+        {selectedIds.length > 0 ? (
           <motion.div 
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -367,12 +367,12 @@ const ContemplatedLetters: React.FC = () => {
               </button>
             </div>
           </motion.div>
-        )}
+        ) : null}
       </AnimatePresence>
 
       {/* Email capture modal for non-logged users */}
       <AnimatePresence>
-        {showEmailCapture && (
+        {showEmailCapture ? (
           <div className="fixed inset-0 z-[250] flex items-center justify-center p-4">
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => { setShowEmailCapture(false); setPendingReserveId(null); }} className="absolute inset-0 bg-slate-900/60" />
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 20 }} className="relative w-full max-w-2xl p-8">
@@ -392,188 +392,178 @@ const ContemplatedLetters: React.FC = () => {
               </div>
             </motion.div>
           </div>
-        )}
+        ) : null}
       </AnimatePresence>
 
-      {/* Desktop table */}
-      <div className="hidden md:block overflow-x-auto rounded-3xl border border-slate-200 bg-white shadow-xl shadow-slate-200/50">
-        <table className="w-full text-left border-collapse">
-          <thead>
-            <tr className="bg-slate-50 border-b border-slate-100 text-slate-400 text-[10px] uppercase tracking-[0.2em] font-black">
-              <th className="px-6 py-5 w-12"><div className="w-5 h-5 border-2 border-slate-200 rounded" /></th>
-              <th className="px-6 py-5">Categoria</th>
-              <th className="px-6 py-5">Crédito</th>
-              <th className="px-6 py-5">Entrada</th>
-              <th className="px-6 py-5">Parcelas</th>
-              <th className="px-6 py-5">Status</th>
-              <th className="px-6 py-5 text-right">Ações</th>
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-slate-50">
-            {paginatedLetters.map((letter, i) => (
-              <motion.tr
-                layout
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: i * 0.05 }}
-                key={letter.id}
-                onClick={() => handleOpenFicha(letter)}
-                className={`cursor-pointer transition-colors group ${selectedIds.includes(letter.id) ? 'bg-emerald-50' : 'hover:bg-slate-50'}`}
-              >
-                <td className="px-6 py-5">
-                  <div className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-all ${selectedIds.includes(letter.id) ? 'bg-emerald-600 border-emerald-600' : 'border-slate-200 group-hover:border-slate-300'}`}>
-                    {selectedIds.includes(letter.id) && <CheckCircle2 size={12} className="text-white" />}
-                  </div>
-                </td>
-                <td className="px-6 py-5">
-                  <span className="text-slate-900 font-black uppercase text-sm">{letter.category}</span>
-                  <div className="text-[10px] text-slate-400 font-bold">{letter.group}</div>
-                  {letter.name && <div className="text-[10px] text-slate-400">{letter.name}</div>}
-                </td>
-                <td className="px-6 py-5 text-emerald-600 font-black text-base">{formatCurrency(letter.credit)}</td>
-                <td className="px-6 py-5 text-slate-900 font-bold text-sm">
-                  {isUnlocked ? formatCurrency(letter.entry) : (
-                    <button onClick={(e) => { e.stopPropagation(); setShowEmailCapture(true); }} className="text-[10px] font-black bg-emerald-600 text-white px-3 py-1 rounded-full hover:bg-emerald-700 transition">VER</button>
-                  )}
-                </td>
-                <td className="px-6 py-5">
-                  <div className="text-slate-900 font-black text-sm">{letter.installmentsCount}x</div>
-                  <div className="text-[10px] text-slate-500">{formatCurrency(letter.installmentValue)}</div>
-                </td>
-                <td className="px-6 py-5">
-                  <span className={`px-2 py-1 rounded-full text-[10px] font-black uppercase ${letter.status === 'available' ? 'bg-emerald-100 text-emerald-700' : letter.status === 'reserved' ? 'bg-amber-100 text-amber-700' : 'bg-slate-100 text-slate-500'}`}>
-                    {letter.status === 'available' ? 'Disponível' : letter.status === 'reserved' ? 'Reservada' : 'Vendida'}
-                  </span>
-                </td>
-                <td className="px-6 py-5 text-right">
-                  <div className="flex items-center justify-end gap-2">
-                    <button onClick={(e) => { e.stopPropagation(); reserveLetter(letter.id); }} aria-label={letter.status === 'available' ? 'Reservar carta' : 'Carta reservada'} className={`px-3 py-1.5 rounded-xl text-xs font-black uppercase transition-all ${letter.status === 'available' ? 'bg-emerald-600 text-white' : 'bg-slate-100 text-slate-500'}`}>
-                      {letter.status === 'available' ? 'Reservar' : 'Reservada'}
-                    </button>
-                    <button onClick={(e) => { e.stopPropagation(); handleOpenFicha(letter); }} className="px-3 py-1.5 rounded-xl text-xs font-black uppercase transition-all border border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white">
-                      VER
-                    </button>
-                  </div>
-                </td>
-              </motion.tr>
-            ))}
-          </tbody>
-        </table>
+      {/* Desktop table - Glassmorphism Premium Edition */}
+      <div className="hidden md:block overflow-hidden rounded-[2rem] border border-[#1b3152] bg-[rgba(13,34,56,0.65)] backdrop-blur-2xl shadow-[0_25px_80px_rgba(2,6,12,0.4)] relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-white/[0.03] to-transparent pointer-events-none" />
+        <div className="overflow-x-auto relative z-10 w-full">
+          <table className="w-full text-left border-collapse min-w-[900px]">
+            <thead>
+              <tr className="bg-[rgba(5,15,26,0.6)] border-b border-white/10 text-white/50 text-[10px] uppercase tracking-[0.25em] font-black">
+                <th className="px-6 py-5 w-14"><div className="w-5 h-5 border-2 border-white/20 rounded" /></th>
+                <th className="px-6 py-5">Tipo / Adm</th>
+                <th className="px-6 py-5">Valor Crédito</th>
+                <th className="px-6 py-5">Sinal/Entrada</th>
+                <th className="px-6 py-5">Saldo Devedor</th>
+                <th className="px-6 py-5">Status</th>
+                <th className="px-6 py-5 text-right w-36">Ações</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-white/[0.06]">
+              {paginatedLetters.map((letter, i) => (
+                <motion.tr
+                  layout
+                  initial={{ opacity: 0, y: 15 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: i * 0.04 }}
+                  key={letter.id}
+                  onClick={() => handleOpenFicha(letter)}
+                  className={`cursor-pointer transition-all duration-300 group ${selectedIds.includes(letter.id) ? 'bg-[rgba(217,173,87,0.1)] hover:bg-[rgba(217,173,87,0.15)]' : 'hover:bg-white/[0.04]'}`}
+                >
+                  <td className="px-6 py-5">
+                    <div className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-all ${selectedIds.includes(letter.id) ? 'bg-[var(--brand-gold)] border-[var(--brand-gold)]' : 'border-white/20 group-hover:border-[var(--brand-gold-soft)]'}`}>
+                      {selectedIds.includes(letter.id) ? <CheckCircle2 size={14} className="text-[#081728]" /> : null}
+                    </div>
+                  </td>
+                  <td className="px-6 py-5">
+                    <span className="text-[var(--brand-gold-soft)] font-black uppercase tracking-widest text-xs">{letter.category}</span>
+                    <div className="text-[11px] text-white/70 font-semibold mt-1 tracking-wide truncate max-w-[180px]">{letter.administrator || letter.group}</div>
+                  </td>
+                  <td className="px-6 py-5 text-white font-black text-lg tracking-tight">{formatCurrency(letter.credit)}</td>
+                  <td className="px-6 py-5 text-[var(--brand-ivory)] font-bold text-sm">
+                    {isUnlocked ? formatCurrency(letter.entry) : (
+                      <button onClick={(e) => { e.stopPropagation(); setShowEmailCapture(true); }} className="text-[10px] font-black border border-[var(--brand-gold)]/40 hover:border-[var(--brand-gold)] text-[var(--brand-gold-soft)] px-3 py-1.5 rounded-full hover:bg-[var(--brand-gold)]/10 transition-colors">VER VALOR</button>
+                    )}
+                  </td>
+                  <td className="px-6 py-5">
+                    <div className="text-[var(--brand-ivory)] font-black text-sm">{letter.installmentsCount}x <span className="font-semibold opacity-60 ml-1 text-xs">{formatCurrency(letter.installmentValue)}</span></div>
+                  </td>
+                  <td className="px-6 py-5">
+                    <span className={`px-2.5 py-1 rounded-md text-[10px] font-black uppercase tracking-widest border ${letter.status === 'available' ? 'border-emerald-500/30 text-emerald-400 bg-emerald-500/10' : letter.status === 'reserved' ? 'border-amber-500/30 text-amber-400 bg-amber-500/10' : 'border-white/20 text-white/40 bg-white/5'}`}>
+                      {letter.status === 'available' ? 'Livre' : letter.status === 'reserved' ? 'Reservada' : 'Vendida'}
+                    </span>
+                  </td>
+                  <td className="px-6 py-5 text-right">
+                    <div className="flex items-center justify-end gap-2 opacity-80 group-hover:opacity-100 transition-opacity">
+                      <button onClick={(e) => { e.stopPropagation(); reserveLetter(letter.id); }} aria-label={letter.status === 'available' ? 'Reservar carta' : 'Carta reservada'} className={`px-4 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all shadow-lg min-w-[90px] ${letter.status === 'available' ? 'bg-[linear-gradient(135deg,#d8ad5b_0%,#b98532_100%)] text-[#081728] border-none hover:scale-105' : 'bg-white/5 text-white/40 border border-white/10'}`}>
+                        {letter.status === 'available' ? 'Reservar' : 'Indisponível'}
+                      </button>
+                    </div>
+                  </td>
+                </motion.tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
 
-      {/* Mobile card grid */}
-      <div className="md:hidden grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {/* Mobile card grid - Dark Theme Premium */}
+      <div className="md:hidden grid grid-cols-1 gap-5">
         {paginatedLetters.map((letter, i) => (
           <motion.div
             layout
-            initial={{ opacity: 0, y: 10 }}
+            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: i * 0.05 }}
+            transition={{ duration: 0.4, delay: i * 0.05 }}
             key={letter.id}
             onClick={() => handleOpenFicha(letter)}
-            className={`bg-white border rounded-2xl p-4 shadow-sm cursor-pointer transition-all ${selectedIds.includes(letter.id) ? 'border-emerald-500 bg-emerald-50' : 'border-slate-200'}`}
+            className={`relative overflow-hidden border rounded-[2rem] p-6 shadow-xl cursor-pointer transition-all ${selectedIds.includes(letter.id) ? 'border-[var(--brand-gold)] bg-[#0d2238]/90' : 'border-[#1b3152] bg-[rgba(13,34,56,0.65)] hover:bg-[rgba(13,34,56,0.8)]'} backdrop-blur-xl`}
           >
-            <div className="flex justify-between items-start mb-3">
-              <div>
-                <span className="px-2 py-0.5 bg-emerald-100 text-emerald-700 text-[10px] font-black uppercase rounded-full">
-                  {letter.category}
-                </span>
-                <p className="font-black text-slate-900 text-sm uppercase mt-1">{letter.group}</p>
-                {letter.name && <p className="text-xs text-slate-500">{letter.name}</p>}
-              </div>
-              <span className={`px-2 py-1 rounded-full text-[10px] font-black uppercase ${letter.status === 'available' ? 'bg-emerald-100 text-emerald-700' : letter.status === 'reserved' ? 'bg-amber-100 text-amber-700' : 'bg-slate-100 text-slate-500'}`}>
-                {letter.status === 'available' ? 'Disponível' : letter.status === 'reserved' ? 'Reservada' : 'Vendida'}
-              </span>
-            </div>
-
-            <div className="grid grid-cols-2 gap-2 mb-3">
-              <div>
-                <p className="text-[10px] text-slate-400 uppercase font-black">Crédito</p>
-                <p className="font-black text-emerald-600">{formatCurrency(letter.credit)}</p>
-              </div>
-              <div>
-                <p className="text-[10px] text-slate-400 uppercase font-black">Entrada</p>
-                <div className="font-black text-slate-900">
-                  {isUnlocked ? formatCurrency(letter.entry) : (
-                    <button onClick={(e) => { e.stopPropagation(); setShowEmailCapture(true); }} className="text-[10px] font-black bg-emerald-600 text-white px-3 py-1 rounded-full mt-1 hover:bg-emerald-700 transition">VER</button>
-                  )}
+            <div className="absolute inset-0 bg-gradient-to-tr from-white/[0.02] to-transparent pointer-events-none" />
+            
+            <div className="relative z-10">
+              <div className="flex justify-between items-start mb-4">
+                <div>
+                  <span className="px-3 py-1 text-[var(--brand-gold-soft)] bg-[var(--brand-gold)]/10 border border-[var(--brand-gold)]/20 text-[10px] font-black uppercase tracking-widest rounded-full shadow-sm">
+                    {letter.category}
+                  </span>
+                  <p className="font-black text-[var(--brand-ivory)] text-xs uppercase mt-3 tracking-wide">{letter.administrator || letter.group}</p>
+                  {letter.name ? <p className="text-[10px] text-white/50 tracking-wider truncate max-w-[150px]">{letter.name}</p> : null}
+                </div>
+                <div onClick={(e) => { e.stopPropagation(); toggleSelection(letter.id); }} className={`w-6 h-6 rounded-md border-2 flex items-center justify-center transition-all ${selectedIds.includes(letter.id) ? 'bg-[var(--brand-gold)] border-[var(--brand-gold)]' : 'border-white/20'}`}>
+                    {selectedIds.includes(letter.id) ? <CheckCircle2 size={16} className="text-[#081728]" /> : null}
                 </div>
               </div>
-              <div>
-                <p className="text-[10px] text-slate-400 uppercase font-black">Parcelas</p>
-                <p className="font-black text-slate-700 text-sm">{letter.installmentsCount}x</p>
-              </div>
-              <div>
-                <p className="text-[10px] text-slate-400 uppercase font-black">Vlr. Parcela</p>
-                <p className="font-black text-slate-700 text-sm">{formatCurrency(letter.installmentValue)}</p>
-              </div>
-            </div>
 
-            <div className="flex gap-2">
-              <button
-                onClick={(e) => { e.stopPropagation(); reserveLetter(letter.id); }}
-                className={`flex-1 py-2.5 rounded-xl text-xs font-black uppercase transition-all ${letter.status === 'available' ? 'bg-emerald-600 text-white' : 'bg-slate-100 text-slate-500'}`}
-              >
-                {letter.status === 'available' ? 'Reservar' : 'Reservada'}
-              </button>
-              <button
-                onClick={(e) => { e.stopPropagation(); handleOpenFicha(letter); }}
-                className="px-4 py-2.5 rounded-xl text-xs font-black uppercase transition-all border border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white"
-              >
-                VER
-              </button>
+              <div className="grid grid-cols-2 gap-y-4 gap-x-2 mb-6">
+                <div className="bg-black/20 p-3 rounded-2xl border border-white/5">
+                  <p className="text-[10px] text-white/50 uppercase font-black tracking-widest mb-1">Crédito</p>
+                  <p className="font-black text-white text-base tracking-tight">{formatCurrency(letter.credit)}</p>
+                </div>
+                <div className="bg-black/20 p-3 rounded-2xl border border-white/5">
+                  <p className="text-[10px] text-white/50 uppercase font-black tracking-widest mb-1">Entrada</p>
+                  <div className="font-black text-[var(--brand-gold-soft)] text-sm">
+                    {isUnlocked ? formatCurrency(letter.entry) : (
+                      <button onClick={(e) => { e.stopPropagation(); setShowEmailCapture(true); }} className="text-[9px] font-black border border-[var(--brand-gold)]/40 hover:border-[var(--brand-gold)] text-[var(--brand-gold-soft)] px-3 py-1 rounded-full transition-colors mt-0.5">VER VALOR</button>
+                    )}
+                  </div>
+                </div>
+                <div className="bg-black/20 p-3 rounded-2xl border border-white/5">
+                  <p className="text-[10px] text-white/50 uppercase font-black tracking-widest mb-1">Parcelas</p>
+                  <p className="font-bold text-[var(--brand-ivory)] text-sm">{letter.installmentsCount}x</p>
+                </div>
+                <div className="bg-black/20 p-3 rounded-2xl border border-white/5">
+                  <p className="text-[10px] text-white/50 uppercase font-black tracking-widest mb-1">Vlr. Parcela</p>
+                  <p className="font-bold text-[var(--brand-ivory)] text-sm">{formatCurrency(letter.installmentValue)}</p>
+                </div>
+              </div>
+
+              <div className="flex gap-3">
+                <button
+                  onClick={(e) => { e.stopPropagation(); reserveLetter(letter.id); }}
+                  className={`flex-1 py-3.5 rounded-2xl text-[11px] font-black tracking-widest uppercase transition-all shadow-lg ${letter.status === 'available' ? 'bg-[linear-gradient(135deg,#d8ad5b_0%,#b98532_100%)] text-[#081728] border border-[#d8ad5b]/20 hover:scale-[1.02]' : 'bg-white/5 text-white/30 border border-white/10'}`}
+                >
+                  {letter.status === 'available' ? 'Reservar Oferta' : 'Indisponível'}
+                </button>
+              </div>
             </div>
           </motion.div>
         ))}
       </div>
 
-      {/* Pagination Controls */}
-      {totalPages > 1 && (
-        <div className="flex justify-center flex-wrap items-center mt-8 gap-2">
+      {/* Pagination Controls - Dark Premium Edition */}
+      {totalPages > 1 ? (
+        <div className="flex justify-center flex-wrap items-center mt-12 mb-6 gap-2 sm:gap-4 relative z-20">
           <button 
             onClick={() => { setCurrentPage(p => Math.max(1, p - 1)); window.scrollTo(0, 0); }}
             disabled={currentPage === 1}
-            className="px-4 py-2 rounded-xl border border-slate-200 text-slate-600 font-bold text-sm hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+            className="px-5 py-3 rounded-xl border border-white/10 text-white/70 font-bold text-xs uppercase tracking-widest hover:bg-white/5 disabled:opacity-30 disabled:hover:bg-transparent transition-all"
           >
             Anterior
           </button>
-          <div className="flex flex-wrap gap-1 justify-center max-w-[60vw]">
+          <div className="flex flex-wrap gap-2 justify-center max-w-[50vw]">
             {Array.from({ length: totalPages }).map((_, i) => {
-              // Show only a window of pages around current page to avoid huge pagination
-              if (
-                i === 0 || 
-                i === totalPages - 1 || 
-                (i >= currentPage - 2 && i <= currentPage) 
-              ) {
+              if (i === 0 || i === totalPages - 1 || (i >= currentPage - 2 && i <= currentPage)) {
                 return (
                   <button
                     key={i}
                     onClick={() => { setCurrentPage(i + 1); window.scrollTo(0, 0); }}
-                    className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl font-black text-sm transition-all ${currentPage === i + 1 ? 'bg-emerald-600 text-white shadow-md shadow-emerald-600/20' : 'bg-white border border-slate-200 text-slate-600 hover:bg-slate-50'}`}
+                    className={`min-w-[40px] h-[40px] px-2 rounded-xl font-black text-sm transition-all ${currentPage === i + 1 ? 'bg-[var(--brand-gold)] text-[#081728] shadow-[0_4px_15px_rgba(217,173,87,0.3)] border-transparent' : 'bg-transparent border border-white/10 text-white/70 hover:bg-white/5'}`}
                   >
                     {i + 1}
                   </button>
                 );
               }
-              // Show ellipsis
-              if (i === 1 && currentPage > 3) return <span key={i} className="px-1 text-slate-400">...</span>;
-              if (i === totalPages - 2 && currentPage < totalPages - 2) return <span key={i} className="px-1 text-slate-400">...</span>;
+              if (i === 1 && currentPage > 3) return <span key={i} className="px-2 text-white/30 self-center">...</span>;
+              if (i === totalPages - 2 && currentPage < totalPages - 2) return <span key={i} className="px-2 text-white/30 self-center">...</span>;
               return null;
             })}
           </div>
           <button 
             onClick={() => { setCurrentPage(p => Math.min(totalPages, p + 1)); window.scrollTo(0, 0); }}
             disabled={currentPage === totalPages}
-            className="px-4 py-2 rounded-xl border border-slate-200 text-slate-600 font-bold text-sm hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+            className="px-5 py-3 rounded-xl border border-white/10 text-white/70 font-bold text-xs uppercase tracking-widest hover:bg-white/5 disabled:opacity-30 disabled:hover:bg-transparent transition-all"
           >
             Próxima
           </button>
         </div>
-      )}
+      ) : null}
 
       {/* Email capture modal */}
       <AnimatePresence>
-        {showEmailCapture && (
+        {showEmailCapture ? (
           <div className="fixed inset-0 z-[250] flex items-center justify-center p-4">
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => { setShowEmailCapture(false); setPendingReserveId(null); }} className="absolute inset-0 bg-slate-900/60" />
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 20 }} className="relative w-full max-w-lg p-4">
@@ -593,19 +583,19 @@ const ContemplatedLetters: React.FC = () => {
               </div>
             </motion.div>
           </div>
-        )}
+        ) : null}
       </AnimatePresence>
 
       {/* Carta Ficha modal */}
-      {fichaLetter && <CartaFicha letter={fichaLetter} onClose={() => setFichaLetter(null)} />}
+      {fichaLetter ? <CartaFicha letter={fichaLetter} onClose={() => setFichaLetter(null)} /> : null}
 
       {/* WhatsApp VIP Modal - only when unlocked */}
-      {showWhatsappVipCta && isUnlocked && (
+      {showWhatsappVipCta && isUnlocked ? (
         <WhatsappVipModal 
           isOpen={showWhatsappVipCta}
           onClose={() => setShowWhatsappVipCta(false)}
         />
-      )}
+      ) : null}
       </div> {/* end blur wrapper */}
     </div>
   );
