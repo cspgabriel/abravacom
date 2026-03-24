@@ -12,18 +12,21 @@ const heroTitleWords = ['Multiplique', 'seu', 'patrimônio', 'com'];
 const featureList = [
   {
     icon: Zap,
-    title: 'Agilidade premium',
-    desc: 'Cartas certificadas imediatamente desbloqueiam seu próximo ativo.',
+    title: 'Cartas contempladas disponíveis',
+    desc: 'Acesso a cartas prontas para negociação com agilidade e segurança.',
+    path: '/cartas'
   },
   {
     icon: ShieldCheck,
-    title: 'Operação segura',
-    desc: 'Compliance das maiores administradoras e assessoramento jurídico dedicado.',
+    title: 'Consórcios estruturados para a contemplação',
+    desc: 'Planejamento inteligente para aumentar suas chances de contemplar com estratégia.',
+    path: '/consorcio'
   },
   {
     icon: DollarSign,
-    title: 'Visão patrimonial',
-    desc: 'Crédito estruturado que multiplica patrimônio sem juros abusivos.',
+    title: 'Financiamentos',
+    desc: 'Comparação entre modalidades para indicar a opção mais vantajosa para seu perfil.',
+    path: '/simulacao'
   },
 ];
 
@@ -38,13 +41,13 @@ const testimonials = [
   {
     name: 'Mariana Costa',
     role: 'Médica',
-    text: 'Os juros eram absurdos. Com a carta da Abravacon economizei mais de 40% e ganhei segurança.',
+    text: 'Estava pagando juros absurdos. Com a carta da Abravacon economizei mais de 40% e ganhei segurança.',
     rating: 5,
     date: 'Há 1 semana',
   },
   {
     name: 'Carlos Eduardo',
-    role: 'Investidor',
+    role: 'Empresário',
     text: 'Hoje só uso esse caminho para imóveis. A inteligência matemática da equipe vale cada carta.',
     rating: 5,
     date: 'Há 3 meses',
@@ -124,28 +127,21 @@ const Home: React.FC = () => {
               variants={{ hidden: { opacity: 0, y: 15 }, visible: { opacity: 1, y: 0 } }}
               className="max-w-2xl text-lg font-medium leading-relaxed text-[rgba(244,236,223,0.88)] sm:text-xl"
             >
-              Acesso exclusivo às melhores cartas contempladas do país. Estratégias sofisticadas de alavancagem de capital, 100% isentas de juros.
+              Acesso exclusivo às melhores condições de cartas contempladas do país. Sem juros, transações com agilidade e 100% seguras. Consulte as condições e já comece a negociar agora mesmo com um dos nossos consultores.
             </motion.p>
 
             <motion.div
               variants={{ hidden: { opacity: 0, y: 15 }, visible: { opacity: 1, y: 0 } }}
-              className="mt-10 flex flex-col gap-4 sm:flex-row sm:gap-6"
+              className="mt-10 flex flex-col gap-4 sm:flex-row sm:gap-6 justify-center"
             >
               <Link
                 to="/cartas"
                 className="btn-primary group relative flex items-center justify-center overflow-hidden rounded-2xl px-8 py-5 font-black uppercase tracking-[0.3em] transition-all hover:scale-105"
               >
                 <span className="relative z-10 flex items-center gap-3">
-                  Cartas Disponíveis
+                  Cartas Contempladas
                   <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
                 </span>
-              </Link>
-
-              <Link
-                to="/simulacao"
-                className="btn-secondary flex items-center justify-center rounded-2xl px-8 py-5 font-black uppercase tracking-[0.3em] transition"
-              >
-                Simular novo crédito
               </Link>
             </motion.div>
 
@@ -173,7 +169,7 @@ const Home: React.FC = () => {
 
 const HomeFeaturesSection = () => {
   return (
-    <section className="relative overflow-hidden py-20">
+    <section className="relative overflow-hidden py-20 home-features-section">
       <div className="pointer-events-none absolute inset-0 opacity-90 brand-shell" />
       <div className="relative z-10 mx-auto max-w-6xl px-6 text-white">
         <div className="text-center mb-16 space-y-4">
@@ -181,18 +177,29 @@ const HomeFeaturesSection = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-4xl font-black uppercase tracking-[0.28em] text-white"
+            className="text-3xl sm:text-4xl font-black text-white"
           >
-            Porque a <span className="text-[var(--brand-gold-soft)]">Abravacon</span> destaca seu crédito
+            Por que escolher a <span className="text-[var(--brand-gold-soft)]">Abravacon</span>?
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="max-w-3xl mx-auto text-sm font-medium uppercase tracking-[0.25em] text-[rgba(244,236,223,0.7)]"
+            className="max-w-4xl mx-auto text-base leading-relaxed text-[rgba(244,236,223,0.88)]"
           >
-            Estratégia, dados verificados e atendimento com assinatura premium.
+            Você não precisa correr riscos nem perder dinheiro tentando decidir sozinho. 
+            Nós analisamos, comparamos e indicamos a melhor solução para o seu perfil. 
+            Simples, seguro e feito para você tomar a decisão certa.
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.15 }}
+            className="max-w-3xl mx-auto text-sm font-bold uppercase tracking-[0.2em] text-[var(--brand-gold-soft)]"
+          >
+            Oferecemos soluções:
           </motion.p>
         </div>
 
@@ -204,19 +211,23 @@ const HomeFeaturesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.15 }}
-              className="space-y-6 rounded-[32px] glass-panel hover-scale p-8"
             >
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-[rgba(255,255,255,0.15)] bg-white/5 text-[var(--brand-gold-soft)]">
-                <feat.icon size={26} />
-              </div>
-              <div>
-                <p className="text-xs font-black uppercase tracking-[0.3em] text-gradient-gold">
-                  {feat.title}
-                </p>
-                <p className="mt-3 text-sm leading-relaxed text-[rgba(244,236,223,0.8)]">
-                  {feat.desc}
-                </p>
-              </div>
+              <Link
+                to={feat.path}
+                className="block h-full space-y-6 rounded-[32px] glass-panel hover-scale p-8 cursor-pointer"
+              >
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-[rgba(255,255,255,0.15)] bg-white/5 text-[var(--brand-gold-soft)]">
+                  <feat.icon size={26} />
+                </div>
+                <div>
+                  <p className="text-xs font-black uppercase tracking-[0.2em] text-gradient-gold">
+                    {feat.title}
+                  </p>
+                  <p className="mt-3 text-sm leading-relaxed text-[rgba(244,236,223,0.8)]">
+                    {feat.desc}
+                  </p>
+                </div>
+              </Link>
             </motion.div>
           ))}
         </div>
@@ -228,8 +239,8 @@ const HomeFeaturesSection = () => {
 
 const HomeTestimonialsSection = () => {
   return (
-    <section className="relative overflow-hidden bg-[linear-gradient(135deg,#c99c4a_0%,#a8782a_100%)] py-24">
-      <div className="absolute inset-0 bg-black/10" />
+    <section className="relative overflow-hidden bg-[linear-gradient(135deg,#c99c4a_0%,#a8782a_100%)] py-24 home-testimonials-section">
+      <div className="absolute inset-0 bg-black/10 home-testimonials-overlay" />
       <div className="relative z-10 mx-auto max-w-6xl px-6">
         <div className="text-center mb-16 space-y-4">
           <motion.div
@@ -246,16 +257,16 @@ const HomeTestimonialsSection = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-4xl font-black uppercase tracking-[0.2em] text-[#081728]"
+            className="text-3xl sm:text-4xl font-black uppercase tracking-[0.2em] text-white"
           >
-            O que dizem nossos <span className="text-white">clientes</span>
+            O que dizem nossos clientes
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="mx-auto max-w-2xl text-sm font-bold uppercase tracking-[0.3em] text-[#081728]/80"
+            className="mx-auto max-w-2xl text-sm font-bold uppercase tracking-[0.3em] text-[var(--brand-ivory)]"
           >
             Histórias reais de quem escolheu alavancar patrimônio com inteligência e segurança.
           </motion.p>
@@ -331,7 +342,7 @@ const HomeWhatsappCtaSection = () => {
           Receba cartas contempladas e oportunidades exclusivas antes de todo mundo.
         </motion.p>
         <motion.a
-          href="https://wa.me/YOUR_WHATSAPP_NUMBER_HERE"
+          href="https://chat.whatsapp.com/EQLOlDYRoiCArffDLK4lvE"
           target="_blank"
           rel="noopener noreferrer"
           initial={{ opacity: 0, y: 20 }}

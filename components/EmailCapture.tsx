@@ -4,18 +4,21 @@ import { db } from '../firebase';
 import { collection, addDoc } from 'firebase/firestore';
 
 const EmailCapture: React.FC<{ onSuccess?: () => void }> = ({ onSuccess }) => {
+  const [name, setName] = useState('');
+  const [cpf, setCpf] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email || !email.includes('@') || !phone) return;
+    if (!name || !cpf || !email || !email.includes('@') || !phone) return;
 
     setStatus('loading');
     try {
       await addDoc(collection(db, "simulations"), {
-        name: 'Lead Cartas Contempladas', // Default since name is hidden
+        name,
+        cpf,
         email,
         phone,
         source: 'Acesso Completo - Cartas',
@@ -25,6 +28,8 @@ const EmailCapture: React.FC<{ onSuccess?: () => void }> = ({ onSuccess }) => {
       if (onSuccess) {
         setTimeout(onSuccess, 500);
       } else {
+        setName('');
+        setCpf('');
         setEmail('');
         setPhone('');
       }
@@ -68,6 +73,33 @@ const EmailCapture: React.FC<{ onSuccess?: () => void }> = ({ onSuccess }) => {
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-3">
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Seu nome completo"
+            required
+            disabled={status === 'loading'}
+            className="w-full px-4 py-3 sm:px-5 sm:py-4 rounded-xl sm:rounded-2xl bg-slate-50 border border-slate-200 text-slate-900 placeholder:text-slate-400 focus:ring-2 focus:ring-[#d8ad5b] outline-none transition-all disabled:opacity-50 font-medium text-xs sm:text-sm"
+          />
+          <input
+            type="text"
+            value={cpf}
+            onChange={(e) => {
+              let val = e.target.value.replace(/\D/g, '');
+              if (val.length <= 11) {
+                val = val.replace(/(\d{3})(\d)/, '$1.$2');
+                val = val.replace(/(\d{3})(\d)/, '$1.$2');
+                val = val.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+              }
+              setCpf(val);
+            }}
+            maxLength={14}
+            placeholder="Seu CPF"
+            required
+            disabled={status === 'loading'}
+            className="w-full px-4 py-3 sm:px-5 sm:py-4 rounded-xl sm:rounded-2xl bg-slate-50 border border-slate-200 text-slate-900 placeholder:text-slate-400 focus:ring-2 focus:ring-[#d8ad5b] outline-none transition-all disabled:opacity-50 font-medium text-xs sm:text-sm"
+          />
           <input
             type="email"
             value={email}

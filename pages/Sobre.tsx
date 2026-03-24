@@ -133,6 +133,31 @@ const Sobre: React.FC = () => {
         </div>
       </section>
 
+      {/* Nossa Localização */}
+      <section className="relative z-10 w-full brand-shell py-16 px-4">
+        <div className="max-w-6xl mx-auto space-y-12 text-center text-white">
+          <div className="space-y-4">
+            <h2 className="text-3xl font-bold tracking-tight">Onde estamos</h2>
+            <p className="text-[rgba(244,236,223,0.85)] max-w-2xl mx-auto text-lg">
+              Venha tomar um café conosco e planejar o seu próximo grande salto financeiro com a melhor assessoria.
+            </p>
+          </div>
+          
+          <div className="w-full h-[400px] md:h-[500px] rounded-[2rem] overflow-hidden shadow-2xl glass-panel border border-[#d8ad5b]/20 relative">
+            <iframe 
+              src="https://maps.google.com/maps?q=Abravacon+Consorcios&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+              width="100%" 
+              height="100%" 
+              style={{ border: 0 }} 
+              allowFullScreen={true} 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              className="absolute inset-0 grayscale-[0.2] contrast-[1.1]"
+            />
+          </div>
+        </div>
+      </section>
+
       <div className="w-full mt-20">
         <PartnerMarquee />
       </div>

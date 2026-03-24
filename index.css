@@ -1,16 +1,15 @@
 :root {
-  /* Slightly smaller base to tone down large Tailwind rem-based sizes */
   font-size: 15px;
-  --brand-navy: #0d2238;
-  --brand-navy-deep: #071726;
-  --brand-navy-soft: #15324f;
-  --brand-gold: #c99c4a;
-  --brand-gold-soft: #ddb161;
-  --brand-ivory: #f4ecdf;
+  --brand-navy: #102a45;
+  --brand-navy-deep: #091a2b;
+  --brand-navy-soft: #1a3a5c;
+  --brand-gold: #dfb351;
+  --brand-gold-soft: #ecc675;
+  --brand-ivory: #faf5eb;
   color: var(--brand-ivory);
   background:
-    radial-gradient(circle at top, rgba(217, 173, 87, 0.16), transparent 28%),
-    linear-gradient(180deg, #0d2238 0%, #0b1c30 52%, #07131f 100%);
+    radial-gradient(circle at top, rgba(223, 179, 81, 0.15), transparent 30%),
+    linear-gradient(180deg, #102a45 0%, #0d2238 50%, #091a2b 100%);
 }
 
 html, body {
@@ -20,8 +19,8 @@ html, body {
   line-height: 1.45;
   overflow-x: hidden;
   background:
-    radial-gradient(circle at top, rgba(217, 173, 87, 0.14), transparent 26%),
-    linear-gradient(180deg, #0d2238 0%, #09192a 58%, #06111b 100%);
+    radial-gradient(circle at top, rgba(223, 179, 81, 0.15), transparent 30%),
+    linear-gradient(180deg, #102a45 0%, #0d2238 50%, #091a2b 100%);
 }
 
 body {
@@ -72,6 +71,27 @@ table td, table th { padding: 0.9rem 1.2rem; }
   .py-20 { padding-top: 2.5rem !important; padding-bottom: 2.5rem !important; }
   .p-12 { padding: 1.5rem !important; }
   .p-10 { padding: 1.25rem !important; }
+
+  /* Home sections: bright and clear on mobile to prevent 'funebre' look */
+  .home-features-section .brand-shell {
+    opacity: 1 !important;
+    background:
+      radial-gradient(circle at top, rgba(223, 179, 81, 0.25), transparent 60%),
+      linear-gradient(160deg, #102a45 0%, #091a2b 100%) !important;
+  }
+
+  .home-features-section .glass-panel {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(223, 179, 81, 0.2);
+  }
+
+  .home-testimonials-section {
+    background: linear-gradient(135deg, #e8c782 0%, #cca350 100%) !important;
+  }
+
+  .home-testimonials-overlay {
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
 }
 
 /* Custom Animations */

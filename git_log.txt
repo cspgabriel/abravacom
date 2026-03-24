@@ -1,0 +1,5 @@
+d35caba fix(ui): resolve git merge conflict markers from CartaFicha
+e994b37 fix(ui): strip header and footer from CartaFicha popup
+cc5570d fix(ui): strip header and footer from CartaFicha popup
+58cf7ea fix(ui): finalize mobile views and WhatsApp integration
+833c191 fix(ui): adjust CartaFicha height, tease overlay, plus whatsapp script

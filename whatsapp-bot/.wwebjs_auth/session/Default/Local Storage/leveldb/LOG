@@ -1,8 +1,0 @@
-<<<<<<< HEAD
-2026/03/22-19:32:13.469 8f4c Creating DB C:\Users\marke\OneDrive\Github\CONSORCIO-CRM-1\whatsapp-bot\.wwebjs_auth\session\Default\Local Storage\leveldb since it was missing.
-2026/03/22-19:32:13.515 8f4c Reusing MANIFEST C:\Users\marke\OneDrive\Github\CONSORCIO-CRM-1\whatsapp-bot\.wwebjs_auth\session\Default\Local Storage\leveldb/MANIFEST-000001
-=======
-2026/03/22-19:42:49.513 831c Reusing MANIFEST C:\Users\marke\OneDrive\Github\CONSORCIO-CRM-1\whatsapp-bot\.wwebjs_auth\session\Default\Local Storage\leveldb/MANIFEST-000001
-2026/03/22-19:42:49.522 831c Recovering log #3
-2026/03/22-19:42:49.529 831c Reusing old log C:\Users\marke\OneDrive\Github\CONSORCIO-CRM-1\whatsapp-bot\.wwebjs_auth\session\Default\Local Storage\leveldb/000003.log 
->>>>>>> sync-rescue

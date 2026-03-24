@@ -5,7 +5,7 @@ import BrandLogo from './BrandLogo';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="relative z-10 mt-32 w-full overflow-hidden border-t border-[rgba(217,173,87,0.12)] bg-[linear-gradient(180deg,#04172e_0%,#02121f_100%)] pt-20 pb-12 text-white">
+    <footer className="relative z-10 w-full overflow-hidden border-t border-[rgba(217,173,87,0.12)] bg-[linear-gradient(180deg,#04172e_0%,#02121f_100%)] pt-20 pb-12 text-white">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(217,173,87,0.5),transparent)]" />
       <div className="mx-auto max-w-6xl px-6">
         <div className="mb-20 grid grid-cols-1 gap-16 md:grid-cols-4">
@@ -52,8 +52,8 @@ const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-4">
               <li className="text-sm font-medium text-[rgba(244,236,223,0.72)]">contato@abravacon.com.br</li>
-              <li className="text-sm font-medium text-[rgba(244,236,223,0.72)]">(51) 98927-2794</li>
-              <li className="text-sm font-medium text-[rgba(244,236,223,0.72)]">Porto Alegre, RS</li>
+              <li className="text-sm font-medium text-[rgba(244,236,223,0.72)]">(51) 98683-1896 / (51) 98929-2256</li>
+              <li className="text-sm font-medium text-[rgba(244,236,223,0.72)]">Gravataí, RS</li>
             </ul>
           </div>
         </div>

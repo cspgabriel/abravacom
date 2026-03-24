@@ -16,24 +16,63 @@ const SimulationLanding: React.FC = () => {
 
         <div className="relative z-10 w-full max-w-5xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="space-y-6 text-white">
-            <div className="inline-flex items-center space-x-3 bg-white/5 backdrop-blur-xl border border-white/10 px-4 py-2 rounded-full text-xs font-black uppercase tracking-widest shadow-xl">
-              <ShieldCheck size={16} className="text-[var(--brand-gold)]" />
-              <span className="text-[var(--brand-gold-soft)]">Cartas Contempladas</span>
-            </div>
-
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tighter italic">
               Crédito com Garantia de Imóvel, <br />
               <span className="text-[var(--brand-gold)]">Sem Burocracia</span>
             </h1>
 
-            <p className="text-[rgba(244,236,223,0.92)] max-w-md text-base sm:text-lg font-medium leading-relaxed">
-              Somos representantes da maior plataforma de crédito do mercado financeiro A Franq, trazendo taxas competitivas através das principais instituições financeiras do país como Bradesco, Santander, C6 Bank...
-            </p>
+            <div className="text-[rgba(244,236,223,0.92)] max-w-xl text-base sm:text-lg font-medium leading-relaxed space-y-4">
+              <p>
+                <strong>Pare de pagar juros altos sem necessidade.</strong>
+              </p>
+              <p>
+                Trabalhamos com os principais bancos e instituições financeiras do país, como Bradesco, Santander, Cashme, Creditas, C6 Bank e Inter, para buscar as melhores condições de crédito com garantia de acordo com o seu perfil.
+              </p>
+              <p>
+                Através da nossa plataforma, com apoio da Franq, analisamos seu cenário e apresentamos as opções mais vantajosas — com um processo rápido, seguro e sem burocracia.
+              </p>
+              <p>
+                Você economiza tempo, reduz custos e toma uma decisão com muito mais segurança.
+              </p>
+            </div>
           </motion.div>
 
           <motion.div initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} className="flex justify-center lg:justify-end">
             <div className="w-full max-w-md transform sm:scale-100 scale-95">
-              <SimulatorForm />
+              <div className="bg-white rounded-3xl p-8 shadow-[0_30px_80px_rgba(0,0,0,0.3)] relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#c99c4a] opacity-[0.08] rounded-bl-[100px]" />
+                <h3 className="text-2xl font-black uppercase tracking-tighter text-[#081728] mb-1">
+                  Simule Agora
+                </h3>
+                <p className="text-[#64748b] text-[13px] font-medium mb-6 uppercase tracking-widest">
+                  Preencha os dados e receba sua proposta
+                </p>
+                <form 
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    const fb = new FormData(e.currentTarget);
+                    const msg = `Olá! Tenho interesse em simular um *Crédito com Garantia*.%0A%0A*Nome:* ${fb.get('nome')}%0A*E-mail:* ${fb.get('email')}%0A*Celular:* ${fb.get('celular')}%0A*CPF:* ${fb.get('cpf')}`;
+                    window.open(`https://api.whatsapp.com/send?phone=5521993165605&text=${msg}`, '_blank');
+                  }}
+                  className="space-y-4 relative z-10"
+                >
+                  <div>
+                    <input required name="nome" type="text" placeholder="Seu nome completo" className="w-full px-4 py-4 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:border-[var(--brand-gold)] focus:ring-1 focus:ring-[var(--brand-gold)] outline-none text-[#081728] font-medium transition" />
+                  </div>
+                  <div>
+                    <input required name="email" type="email" placeholder="Seu melhor e-mail" className="w-full px-4 py-4 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:border-[var(--brand-gold)] focus:ring-1 focus:ring-[var(--brand-gold)] outline-none text-[#081728] font-medium transition" />
+                  </div>
+                  <div>
+                    <input required name="celular" type="tel" placeholder="Seu Celular (WhatsApp)" className="w-full px-4 py-4 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:border-[var(--brand-gold)] focus:ring-1 focus:ring-[var(--brand-gold)] outline-none text-[#081728] font-medium transition" />
+                  </div>
+                  <div>
+                    <input required name="cpf" type="text" placeholder="CPF" className="w-full px-4 py-4 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:border-[var(--brand-gold)] focus:ring-1 focus:ring-[var(--brand-gold)] outline-none text-[#081728] font-medium transition" />
+                  </div>
+                  <button type="submit" className="w-full btn-primary py-5 rounded-2xl mt-4 font-black uppercase tracking-[0.2em] text-sm shadow-[0_14px_30px_rgba(185,133,50,0.35)] transition hover:brightness-105 active:scale-95 text-[#081728]">
+                    Simular Agora →
+                  </button>
+                </form>
+              </div>
             </div>
           </motion.div>
         </div>

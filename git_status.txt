@@ -1,0 +1,637 @@
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   components/Navbar.tsx
+	modified:   index.css
+	modified:   pages/Home.tsx
+	modified:   whatsapp-bot/.wwebjs_auth/session/Crashpad/settings.dat
+	deleted:    whatsapp-bot/.wwebjs_auth/session/CrashpadMetrics.pma
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/data_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/data_1
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/data_2
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/data_3
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000004
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000006
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000007
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000009
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00000a
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00000c
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00000d
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00000e
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00000f
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000010
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000011
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000012
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000013
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000016
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000017
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000018
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000019
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00001a
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00001b
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00001c
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00001d
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00001e
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00001f
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000020
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000021
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000022
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000023
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000024
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000025
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000026
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000027
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000028
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000029
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00002a
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00002b
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00002c
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00002d
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00002e
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00002f
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000030
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000031
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000032
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000033
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000034
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000035
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000036
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000037
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000039
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00003a
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00003b
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00003c
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00003d
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00003e
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00003f
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000040
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000041
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000042
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000043
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000044
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000045
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000046
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000047
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000048
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000049
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00004a
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00004b
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00004c
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00004e
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00004f
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000050
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000051
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000052
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000053
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000054
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000055
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000056
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000057
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000058
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000059
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00005a
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00005b
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00005c
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00005d
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00005e
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00005f
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000060
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000061
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000062
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000063
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000064
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000065
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000066
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000067
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000068
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000069
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00006a
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00006b
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00006c
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00006d
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00006e
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00006f
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000070
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000071
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000072
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000073
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000074
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000075
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000076
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000077
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000078
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000079
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00007b
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00007c
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00007d
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00007e
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00007f
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000080
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000081
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000082
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000083
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000084
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000085
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000086
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000087
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000088
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000089
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00008a
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00008b
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00008c
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00008d
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00008e
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00008f
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000090
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000092
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000093
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000094
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000095
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000096
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000097
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000098
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_000099
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00009a
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00009b
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00009c
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00009d
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00009e
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_00009f
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000a0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000a1
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000a2
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000a3
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000a4
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000a5
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000a6
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000a7
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000a8
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000a9
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000aa
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000ab
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000ac
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000ad
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000ae
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000af
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000b0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/index
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/026008662f280934_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/035a33720f2a44b0_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/0750fa40f96e7f1d_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/0b1eaf471fe673d7_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/0d2a521c93f5dc46_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/1728104736239399_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/196f540a1717cb55_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/1eead11db6554fe9_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/229c919d2ea4bd93_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/280333340be23c8b_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/2e6f00850401d6b9_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/35f4e343ece4ca20_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/360b1029cbd70ed2_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/3d51479ef6adae6e_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/3da94316e053a1db_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/3ef07404658582e0_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/4b51050bfdffccf7_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/4e7d0a0cb269b258_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/523a3468387bf02a_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/53a7b7323568af94_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/570374303c8e8ca5_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/5857669592675463_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/59ac84e6f59db6c0_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/667e4d3e8ba53e79_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/6a8e55a58a5b5df6_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/6d8e93e2f4230cf9_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/7060c169b5137c78_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/734061c886dde5e8_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/73fa73ee5276ec2c_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/740ffe2618bd2f47_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/7dc2a0a23ae32c28_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/7e23efcd066fa4f5_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/83e3cd1c095f805c_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/8584ce82c09fdfc7_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/8848771cf08a72e3_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/893bedbb2e793f05_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/8c00121f9755ff78_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/907f1538794bafc3_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/97115ad98e215c01_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/9a108957e923ab6c_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/a5fa5fbab31448f8_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/aa4f917e1b8590d4_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/ad0dc466807acc28_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/b0d8afcf4d9785f2_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/b0f7f442ffe829ce_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/b887aa5634610611_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/c09ce00a65aabc20_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/c3e87e379cd595ca_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/d07eb9eb6fff2edb_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/d3c7fe985a4a22c0_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/d98bde457a51e1df_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/db1373bafcf1b956_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/ddf9c2695b9edec7_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/e37d20cffb783ad9_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/e6a1e5f78954149b_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/e7a07e1eebc6e439_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/e9964546d2b2cd08_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/ef3e93800fafbe8c_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/f23419bba5819e07_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/fa13573f5221a1bf_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/facf352a1658824c_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/index-dir/the-real-index
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/wasm/index-dir/the-real-index
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/DIPS
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/DIPS-wal
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/DawnGraphiteCache/data_1
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/DawnGraphiteCache/index
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/DawnWebGPUCache/data_1
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/DawnWebGPUCache/index
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Extension Rules/CURRENT
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Extension Rules/LOG
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Extension Scripts/CURRENT
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Extension Scripts/LOG
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Extension State/CURRENT
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Extension State/LOG
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Extension State/LOG.old
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Favicons
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Favicons-journal
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/GCM Store/CURRENT
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/GCM Store/LOG
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/GPUCache/data_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/GPUCache/data_1
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/GPUCache/index
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/History
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/History-journal
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000198.ldb
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000200.ldb
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000201.ldb
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000202.ldb
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000203.ldb
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000204.ldb
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000205.ldb
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000206.ldb
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000208.ldb
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000209.ldb
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000210.ldb
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000212.ldb
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000213.ldb
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/CURRENT
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/LOG
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/LOG.old
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/LOG.old~RF1166578.TMP
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/LOG.old~RF1169070.TMP
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Local Storage/leveldb/LOG
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Local Storage/leveldb/LOG.old
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Local Storage/leveldb/MANIFEST-000001
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Network Action Predictor
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Network/Cookies
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Network/Network Persistent State
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Network/Reporting and NEL
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Preferences
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/README
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Secure Preferences
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/7edc4e23-ab0b-47e9-96e5-cdf7e4f04add/index-dir/the-real-index
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/80fc4c8e-f825-49ce-bec7-5f2b7737420d/index
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/80fc4c8e-f825-49ce-bec7-5f2b7737420d/index-dir/the-real-index
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/969499a2-13d5-4b8d-9d72-ffd8b27770ad/index
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/969499a2-13d5-4b8d-9d72-ffd8b27770ad/index-dir/the-real-index
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/ae99ac07-2dfb-4dc9-bb47-3b43cfdc9e56/index
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/ae99ac07-2dfb-4dc9-bb47-3b43cfdc9e56/index-dir/the-real-index
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/eea79fef-4f93-4b54-9836-0788dfca5d9a/92172a9e586cee2a_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/eea79fef-4f93-4b54-9836-0788dfca5d9a/index
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/eea79fef-4f93-4b54-9836-0788dfca5d9a/index-dir/the-real-index
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/index.txt
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/Database/LOG
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/Database/LOG.old
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/ScriptCache/2cc80dabc69f58b6_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/ScriptCache/2cc80dabc69f58b6_1
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/ScriptCache/4cb013792b196a35_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/ScriptCache/4cb013792b196a35_1
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/ScriptCache/67a473248953641b_0
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/ScriptCache/fa813c9ad67834ac_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/ScriptCache/index-dir/the-real-index
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Session Storage/LOG
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Session Storage/LOG.old
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Sessions/Session_13418692335852602
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Sessions/Tabs_13418692926200627
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Sessions/Tabs_13418692971971156
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Shared Dictionary/cache/index-dir/the-real-index
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Site Characteristics Database/000004.ldb
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Site Characteristics Database/LOG
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Site Characteristics Database/LOG.old
+	deleted:    whatsapp-bot/.wwebjs_auth/session/Default/Site Characteristics Database/lost/MANIFEST-000001
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Sync Data/LevelDB/CURRENT
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Sync Data/LevelDB/LOG
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Sync Data/LevelDB/LOG.old
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/Web Data
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/WebStorage/QuotaManager
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/WebStorage/QuotaManager-journal
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/shared_proto_db/CURRENT
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/shared_proto_db/LOG
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/shared_proto_db/metadata/CURRENT
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/shared_proto_db/metadata/LOG
+	modified:   whatsapp-bot/.wwebjs_auth/session/Default/shared_proto_db/metadata/LOG.old
+	modified:   whatsapp-bot/.wwebjs_auth/session/DevToolsActivePort
+	modified:   whatsapp-bot/.wwebjs_auth/session/GrShaderCache/data_0
+	modified:   whatsapp-bot/.wwebjs_auth/session/GrShaderCache/data_1
+	modified:   whatsapp-bot/.wwebjs_auth/session/GrShaderCache/data_3
+	modified:   whatsapp-bot/.wwebjs_auth/session/GrShaderCache/index
+	modified:   whatsapp-bot/.wwebjs_auth/session/GraphiteDawnCache/data_1
+	modified:   whatsapp-bot/.wwebjs_auth/session/GraphiteDawnCache/index
+	modified:   whatsapp-bot/.wwebjs_auth/session/Local State
+	deleted:    whatsapp-bot/.wwebjs_auth/session/OnDeviceHeadSuggestModel/20251029.826691377.14/_metadata/verified_contents.json
+	deleted:    whatsapp-bot/.wwebjs_auth/session/OnDeviceHeadSuggestModel/20251029.826691377.14/cr_pt-BR_500000_index.bin
+	deleted:    whatsapp-bot/.wwebjs_auth/session/OnDeviceHeadSuggestModel/20251029.826691377.14/manifest.json
+	modified:   whatsapp-bot/.wwebjs_auth/session/ShaderCache/data_1
+	modified:   whatsapp-bot/.wwebjs_auth/session/ShaderCache/index
+	modified:   whatsapp-bot/.wwebjs_auth/session/Variations
+	deleted:    whatsapp-bot/.wwebjs_auth/session/component_crx_cache/8b65d5aef83e7c84fefd19fa2b74586cc5bbd330fabbf58d3bcc5dd7655d3d6c
+	modified:   whatsapp-bot/.wwebjs_auth/session/component_crx_cache/metadata.json
+	modified:   whatsapp-bot/.wwebjs_auth/session/first_party_sets.db
+	modified:   whatsapp-bot/.wwebjs_auth/session/segmentation_platform/ukm_db
+	deleted:    whatsapp-bot/bot.js
+	modified:   whatsapp-bot/package-lock.json
+	modified:   whatsapp-bot/package.json
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git_log.txt
+	git_status.txt
+	iniciar_sistema.bat
+	whatsapp-bot/.wwebjs_auth/session/ActorSafetyLists/
+	whatsapp-bot/.wwebjs_auth/session/AmountExtractionHeuristicRegexes/
+	whatsapp-bot/.wwebjs_auth/session/BrowserMetrics/
+	whatsapp-bot/.wwebjs_auth/session/CaptchaProviders/
+	whatsapp-bot/.wwebjs_auth/session/CertificateRevocation/
+	whatsapp-bot/.wwebjs_auth/session/Crowd Deny/
+	whatsapp-bot/.wwebjs_auth/session/Default/AutofillAiModelCache/LOG.old
+	whatsapp-bot/.wwebjs_auth/session/Default/AutofillStrikeDatabase/LOG.old
+	whatsapp-bot/.wwebjs_auth/session/Default/BudgetDatabase/LOG.old
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000b2
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000b3
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000b4
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000b5
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000b6
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000b7
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000b8
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000b9
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000ba
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000bb
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000bc
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000bd
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000be
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000bf
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000c0
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000c1
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000c2
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000c3
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000c4
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000c5
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000c6
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000c7
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000c8
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000c9
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000ca
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000cb
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000cc
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000cd
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000ce
+	whatsapp-bot/.wwebjs_auth/session/Default/Cache/Cache_Data/f_0000cf
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/0017ee8479922048_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/01358bc6f5e01ff6_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/02b6eb3cca8cdc50_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/0a5adebd368fcf07_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/0ae1e0b677d2846c_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/0d99709663569821_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/0f31c259371158bf_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/0f3e563d35c0bcd3_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/1277e03843b63ba7_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/1444c7759e9ad87f_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/1466ee8154636733_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/154b621c54dfd827_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/1676c5195987ef92_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/174a5219a6eee239_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/18a876febf845020_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/1a1f4754b525af18_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/1afef4b0865c7617_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/1b214221a2b5e896_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/1fc35fb56654f2b2_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/21881df99a13aa8a_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/218c4eeb2ee8724b_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/23ac1ccb5ba2f77c_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/25c3e6aabc6a0a91_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/26c018b9a6f4ef3f_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/2ea7d3cc17730f8e_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/2efea745500caa97_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/321035a3edacd84c_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/3873421a63c22e78_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/3893d51febcf7dea_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/3b039c3c7ed07c5b_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/3d62530b757afa90_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/426831b84acb56a3_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/45e238ce9e8b3a90_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/466672ba13bc1a2e_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/46aa97847093e72f_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/483b4fb73195f710_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/4c6b780432608505_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/4c7ab9b79788e962_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/4f16117a36084a8b_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/507f8c13ac6fb30d_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/5285bb658e281539_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/52b266fcd289a2e4_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/533d9cb66d277c71_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/53490f877aa78971_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/53f721561e162b6c_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/594b487674a1dec9_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/5a06f3cc1ddd2098_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/5bdcfff07a764687_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/5c0f92a4ed45bd66_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/5e54849c57d4e952_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/608fa282771215a1_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/64073fdf05cdd206_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/659419b1e92edbbe_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/687097b5cc0026f9_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/6d8ce1b38b41a2db_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/6e94badf0dd1198f_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/6efb71433ae3a3bd_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/6fa0309d64a249cc_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/764fc45f7f527704_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/7913d5117b2362e8_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/79394af9816f846b_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/796e1a1dd61a403c_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/7a0e028765e488f4_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/7b14924a4c5de324_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/809f8ab1187a8a7f_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/84056efea5a7f140_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/8686c25c01904ca8_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/86ea474ff9a20d19_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/8bc96deac37ca0f3_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/8c635711ccf01ab8_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/8d00238a39fe69c1_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/8dcabd10297cdd17_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/8e63a5a9ade02448_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/93298647fe4fcd9f_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/93655090857bbbaf_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/94779e49d55c4ae2_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/957007894904c1f0_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/974e4827e6033cd1_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/9da9a22a23c65365_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/9e6d6a681b309ae0_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/9ee46fe282173757_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/a22a72139089cb73_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/a900f052dadadbeb_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/a9a6d5ecff221639_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/aa4aa605b40935a7_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/ac1dd21c95ff8ad6_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/ad04fbaff552027f_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/adfa04e8528a1aee_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/b04d4333cedeccc7_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/b05fae55ed0a4019_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/b32ce368679b1389_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/b34d8dce37ad0836_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/b53859c8925cf9fc_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/b8197cecdea940ea_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/b867890a95123765_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/bb9dc05440fcead0_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/c11bee4fa43d4a91_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/c15fd59fb03740ac_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/c295cb44bcaf130d_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/c42076fadd3c587f_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/c6af48431c08882a_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/c6fc14c9e2ad6873_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/cb0c300395c78075_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/cbe044e289df5f57_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/ccc8501472d49982_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/d5094678e944237f_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/d525abb7e600fee6_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/d548091affd93eab_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/d64495e56bf7e04b_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/d8d928d71103e70d_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/de9fe83f2525ca27_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/dfc16413206309c8_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/e4cb109faadaf266_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/e514bb404d3a9a50_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/e66506daf23dfbbc_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/e87ea1162b8c6b6a_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/e963c299c07d34ff_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/ec2a9b433ab160a5_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/ec55319296a1e97f_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/ec8896f715e3a08a_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/f08b753383f6fcd4_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/f09612ae91cec65b_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/f24ada89e400389a_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/f25ebd89b66c9275_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/f43d5fd8d60fa1cd_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/f7d1888826b81d53_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/fa544d50e6d11afe_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/fc8e73e17abdc13f_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/fd42ef9ebde24b8e_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/fd7d1ec57e60b66d_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/fdc4b3727d3821e0_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Code Cache/js/fe338c4cfc2c1333_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Feature Engagement Tracker/AvailabilityDB/LOG.old
+	whatsapp-bot/.wwebjs_auth/session/Default/Feature Engagement Tracker/EventDB/LOG.old
+	whatsapp-bot/.wwebjs_auth/session/Default/GCM Store/LOG.old
+	whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.blob/
+	whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000799.ldb
+	whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000800.ldb
+	whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000801.ldb
+	whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000802.ldb
+	whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000803.ldb
+	whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000804.ldb
+	whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000805.ldb
+	whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000806.ldb
+	whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000807.ldb
+	whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000808.ldb
+	whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000809.ldb
+	whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000810.ldb
+	whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000811.ldb
+	whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000812.ldb
+	whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000813.ldb
+	whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000814.ldb
+	whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000815.ldb
+	whatsapp-bot/.wwebjs_auth/session/Default/LOG.old
+	whatsapp-bot/.wwebjs_auth/session/Default/Local Storage/leveldb/000005.ldb
+	whatsapp-bot/.wwebjs_auth/session/Default/Network/TransportSecurity
+	whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/10ec6559-e0b9-4a15-8823-24f67a881598/
+	whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/81705ed6-59c3-4104-ba7a-4fabcb9b20aa/
+	whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a7b4f01b-9985-4304-b286-f025ecdda830/
+	whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/ScriptCache/08b99d499107ba17_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/ScriptCache/08b99d499107ba17_1
+	whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/ScriptCache/7b4fd8111178d5b1_0
+	whatsapp-bot/.wwebjs_auth/session/Default/Service Worker/ScriptCache/7b4fd8111178d5b1_1
+	whatsapp-bot/.wwebjs_auth/session/Default/Sessions/Session_13418710631393707
+	whatsapp-bot/.wwebjs_auth/session/Default/Sessions/Session_13418714006719676
+	whatsapp-bot/.wwebjs_auth/session/Default/Sessions/Tabs_13418713377428108
+	whatsapp-bot/.wwebjs_auth/session/Default/Sessions/Tabs_13418713893449139
+	whatsapp-bot/.wwebjs_auth/session/Default/VideoDecodeStats/
+	whatsapp-bot/.wwebjs_auth/session/Default/WebStorage/2/
+	whatsapp-bot/.wwebjs_auth/session/Default/passkey_enclave_state
+	whatsapp-bot/.wwebjs_auth/session/Default/shared_proto_db/LOG.old
+	whatsapp-bot/.wwebjs_auth/session/FileTypePolicies/
+	whatsapp-bot/.wwebjs_auth/session/FirstPartySetsPreloaded/
+	whatsapp-bot/.wwebjs_auth/session/GrShaderCache/f_000005
+	whatsapp-bot/.wwebjs_auth/session/GrShaderCache/f_000006
+	whatsapp-bot/.wwebjs_auth/session/GrShaderCache/f_000007
+	whatsapp-bot/.wwebjs_auth/session/GrShaderCache/f_000008
+	whatsapp-bot/.wwebjs_auth/session/GrShaderCache/f_000009
+	whatsapp-bot/.wwebjs_auth/session/GrShaderCache/f_00000a
+	whatsapp-bot/.wwebjs_auth/session/GrShaderCache/f_00000b
+	whatsapp-bot/.wwebjs_auth/session/GrShaderCache/f_00000c
+	whatsapp-bot/.wwebjs_auth/session/MEIPreload/
+	whatsapp-bot/.wwebjs_auth/session/OnDeviceHeadSuggestModel/20251024.824731831.14/
+	whatsapp-bot/.wwebjs_auth/session/PKIMetadata/
+	whatsapp-bot/.wwebjs_auth/session/SSLErrorAssistant/
+	whatsapp-bot/.wwebjs_auth/session/SafetyTips/
+	whatsapp-bot/.wwebjs_auth/session/Subresource Filter/
+	whatsapp-bot/.wwebjs_auth/session/TrustTokenKeyCommitments/
+	whatsapp-bot/.wwebjs_auth/session/WasmTtsEngine/
+	whatsapp-bot/.wwebjs_auth/session/ZxcvbnData/
+	whatsapp-bot/.wwebjs_auth/session/component_crx_cache/06476966b53bdd9b749120d0b45e39b44bf04d5bb0cce055ea69a450bdd6a503
+	whatsapp-bot/.wwebjs_auth/session/component_crx_cache/0e2ed32dfbfae3f036a081e4e7291187dcc2c00e75ddb8beb1bb96b9af4316c9
+	whatsapp-bot/.wwebjs_auth/session/component_crx_cache/261bea60d22ebca3a95ce335c03ec751a0b58b2b7bdbd6ea51dfa54381b07775
+	whatsapp-bot/.wwebjs_auth/session/component_crx_cache/3eb16d6c28b502ac4cfee8f4a148df05f4d93229fa36a71db8b08d06329ff18a
+	whatsapp-bot/.wwebjs_auth/session/component_crx_cache/40c9fb4f6fc047a1238c010d94c9997d0942ef01eb55aff39722ed71b21ebca3
+	whatsapp-bot/.wwebjs_auth/session/component_crx_cache/457587bb03ee91b8ca5cdfd55c4f811fb2632c493c59f126178492d175e63f7d
+	whatsapp-bot/.wwebjs_auth/session/component_crx_cache/545666a4efd056351597bb386aea1368105ededc976ed5650d8682daab9f37ff
+	whatsapp-bot/.wwebjs_auth/session/component_crx_cache/56c21927faa028be6ce18c931660eec37e41da4bfbfd47cafa48350f828c0dbd
+	whatsapp-bot/.wwebjs_auth/session/component_crx_cache/5b2cb7d8359fb5c5da23869595b923fe569dc8d4648330e2d784750dbb97a9dc
+	whatsapp-bot/.wwebjs_auth/session/component_crx_cache/777adca19ccaca03f3922fa618833704d1a2cf1a06cd4ec1e257d4494afb2b95
+	whatsapp-bot/.wwebjs_auth/session/component_crx_cache/7b05c14dba04ed522210b733f004cb0e74d7679a653b19bd029f9bc0e6b19903
+	whatsapp-bot/.wwebjs_auth/session/component_crx_cache/9bec6c2c0185d3305ac8495047a1aa01e725d58f8f18d219742a2988f07cd93a
+	whatsapp-bot/.wwebjs_auth/session/component_crx_cache/9f05612b688b03288e06d9c07487b6a4977aabb5f56d8daf64d45c16d92080a5
+	whatsapp-bot/.wwebjs_auth/session/component_crx_cache/abd93867c038d4d17c101ace2226d7e21303d984d7097271392bae6be478495b
+	whatsapp-bot/.wwebjs_auth/session/component_crx_cache/ae216724654f3e52d3c502328caf83f773e66cc5818c38850165864005a35169
+	whatsapp-bot/.wwebjs_auth/session/component_crx_cache/c52c62a7c50daf7d3f73ec16977cd4b0ea401710807d5dbe3850941dd1b73a70
+	whatsapp-bot/.wwebjs_auth/session/component_crx_cache/f8929f38e4311c5717f1a0d4a0bc4fb0277329557a1a5aecb93317808669ba4f
+	whatsapp-bot/.wwebjs_auth/session/hyphen-data/
+	whatsapp-bot/.wwebjs_cache/2.3000.1035684144.html
+	whatsapp-bot/.wwebjs_cache/2.3000.1035709447.html
+	whatsapp-bot/.wwebjs_cache/2.3000.1035712111.html
+	whatsapp-bot/.wwebjs_cache/2.3000.1035713792.html
+	whatsapp-bot/ICONE.jpg
+	whatsapp-bot/PAINEL_ABRAVACOM.exe
+	whatsapp-bot/PAINEL_ABRAVACOM.old.exe
+	whatsapp-bot/PAINEL_ABRAVACOM_BKP_2.exe
+	whatsapp-bot/PAINEL_HOTEISRIO.exe
+	whatsapp-bot/RoboAbracon-Icone.exe
+	whatsapp-bot/RoboAbracon-VersaoFinal.exe
+	whatsapp-bot/RoboAbracon.exe
+	whatsapp-bot/RoboAbracon.old.exe
+	whatsapp-bot/Test.exe
+	whatsapp-bot/Test2.exe
+	whatsapp-bot/aplicar_icone.js
+	whatsapp-bot/crash.txt
+	whatsapp-bot/data.json
+	whatsapp-bot/gui.js
+	whatsapp-bot/icon_256.png
+	whatsapp-bot/icone.ico
+	whatsapp-bot/injetar_resedit.js
+	whatsapp-bot/main.js
+	whatsapp-bot/public/
+	whatsapp-bot/test_query.js
+	whatsapp-bot/unnamed (2).png
+
+no changes added to commit (use "git add" and/or "git commit -a")

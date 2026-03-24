@@ -18,7 +18,7 @@ const BrandLogo: React.FC<BrandLogoProps> = ({
 }) => {
   const [logoLoaded, setLogoLoaded] = useState(true);
 
-  const heightClass = compact ? 'h-12' : 'h-14 sm:h-[4.5rem]';
+  const heightClass = compact ? 'h-14 sm:h-16' : 'h-20 sm:h-[6.5rem]';
 
   return (
     <div className={`flex items-center gap-3 ${className}`.trim()}>
